@@ -1,6 +1,5 @@
 ##### Quick start
-- [XLocalizer][1]
-- [What is XLocalizer][2]
+- [What is XLocalizer][1]
 - [Localization setup based on XML][5]
 - [Localization setup based on DB][6]
 - [Localization setup based on RESX][7]
@@ -36,7 +35,7 @@
   - [Validating localized input][27]
 
 [1]:../XLocalizer/index.md
-[2]:../XLocalizer/what-is-xlocalizer.md
+[2]: .
 [3]: .
 [4]: .
 [5]:../XLocalizer/setup-xml.md
