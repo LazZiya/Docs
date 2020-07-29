@@ -24,14 +24,10 @@ All product and company names of translation services are trademarks™ or registe
 
 During the development of `XLocalizer` I've used many online translation services with the freemium plan, but it is up to you to use a priced plan from the respective service.
 
- Each translation service has its pros and cons. [MyMemory Translate][10] provided the best results for the languages I've been working with _(in terms performans and amount of free translation requests)_. So, in this documentation you will see most samples refering to [MyMemory Translate][10] as the translation service. But you are free to use any other service that fits your needs.
+ Each translation service has its pros and cons. [MyMemory Translate][1] provided the best results for the languages I've been working with _(in terms performans and amount of free translation requests)_. So, in this documentation you will see most samples refering to [MyMemory Translate][1] as the translation service. But you are free to use any other service that fits your needs.
+#
+### Next: [Xml based localization setup][2]
+#
 
-[1]:../XLocalizer/setup-db.md
-[2]:../XLocalizer/export-db-to-resx.md
-[3]:../XLocalizer/export-xml-to-resx.md
-[4]:../XLocalizer/setup-quick-start.md
-[5]:../XLocalizer/setup.md
-[6]:../XLocalizer/translate-services.md
-[8]:https://github.com/LazZiya/XLocalizer/blob/master/XLocalizer/IXResourceProvider.cs
-[9]:https://github.com/LazZiya/XLocalizer.Translate/blob/master/XLocalizer.Translate/ITranslator.cs
-[10]:https://rapidapi.com/translated/api/mymemory-translation-memory
+[1]:https://rapidapi.com/translated/api/mymemory-translation-memory
+[2]:../XLocalizer/setup-xml.md

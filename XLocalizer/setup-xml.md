@@ -217,7 +217,7 @@ namespace XmlLocalizationSample
 ````
 
 #
-#### NEXT > [Localizing views][2]
+#### Next: [Localizing views][2]
 #
 [1]:../XLocalizer/translate-services.md
 [2]:../XLocalizer/localizing-views.md
