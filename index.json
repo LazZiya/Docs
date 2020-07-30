@@ -2,7 +2,7 @@
   "items": [
     {
       "title":"XLocalizer Docs",
-      "description":"Localizer package for Asp.Net Core web applications, powered by online translation and auto resource creating."
+      "description":"Localizer package for Asp.Net Core web applications, powered by online translation and auto resource creating.",
       "repoUrl":"https://github.com/LazZiya/XLocalizer",
       "docsFolder":"XLocalizer"
     }
