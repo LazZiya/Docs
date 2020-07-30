@@ -1,4 +1,5 @@
-[
+{
+    "items":[
     {
       "title":"XLocalizer Docs",
       "description":"Localizer package for Asp.Net Core web applications, powered by online translation and auto resource creating.",
@@ -12,3 +13,4 @@
       "docsFolder":"LazZiya.TagHelpers"
     }
 ]
+}
