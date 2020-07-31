@@ -24,7 +24,7 @@
 [2]:../LazZiya.TagHelpers/Paging-TagHelper-Basic-Setup.md
 [3]:../LazZiya.TagHelpers/Paging-TagHelper-Attributes.md
 [4]:../LazZiya.TagHelpers/Paging-TagHelper-Json-Settings.md
-[5]:../LazZiya.TagHelpers/Paging-TagHelper-Ajax-support.md
+[5]:../LazZiya.TagHelpers/Paging-TagHelper-Ajax-Support.md
 [6]:../LazZiya.TagHelpers/Paging-TagHelper-Number-Formats
 [7]:../LazZiya.TagHelpers/Alert-TagHelper-Overview.md
 [8]:../LazZiya.TagHelpers/Alerts-TagHelper-Front-end-Alerts.md
