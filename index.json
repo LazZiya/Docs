@@ -1,0 +1,14 @@
+[
+  {
+    "title": "XLocalizer Docs",
+    "description": "Localizer package for Asp.Net Core web applications, powered by online translation and auto resource creating.",
+    "repoUrl": "https://github.com/LazZiya/XLocalizer",
+    "docsFolder": "XLocalizer"
+  },
+  {
+    "title": "LazZiya.TagHelpers Docs",
+    "description": "A collection of usefull taghelpers for every Asp.Net Core project.",
+    "repoUrl": "https://github.com/LazZiya/TagHelpers",
+    "docsFolder": "LazZiya.TagHelpers"
+  }
+]
