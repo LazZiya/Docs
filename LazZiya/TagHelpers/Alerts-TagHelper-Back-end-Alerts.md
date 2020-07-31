@@ -1,0 +1,44 @@
+### TempData Extensions
+In the backend add reference to `LazZiya.TagHelpers.Alerts` namespace, then use the alert extensions of `TempData` to send alerts from the backend to the UI.
+
+````cs
+using LazZiya.TagHelpers.Alerts;
+
+public IndexModel : PageModel
+{
+    public void OnGet()
+    {
+        TempData.Success("A success message from the backend");
+    }
+}
+````
+
+On the front end, just add the alert tag where you want to show it:
+````html
+<alert></alert>
+````
+
+The alert tag will not render if there is no alerts in the `TempData`. Backend alerts will be styled with reference to their types (primary, success, warning, ...etc.). Once the alert is displayed it will be removed from the `TempData` and will not render in the next request.
+
+### Attributes
+All [front end alerts][1] attributes can be used from the backend as well. Additionally, it is possible to send multiple alerts from the backend, The `<alert></alert>` html tag will render all of them in order.  
+
+Below two alert are sent from the backend:
+````cs
+TempData.Success("This is success alert message from c# backend!");
+TempData.Warning("This is a warning alert message", "Alert Header", false);
+````
+
+### All backend alerts
+````cs
+TempData.Primary
+TempData.Secondary
+TempData.Success
+TempData.Info
+TempData.Warning
+TempData.Danger
+TempData.Light
+TempData.Dark
+````
+
+[1]:../../LazZiya/TagHelpers/Alerts-TagHelper-front-end-Alerts.md

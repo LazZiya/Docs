@@ -4,5 +4,5 @@ Some input fields need to be localized (decimal numbers, dates, ...etc.). But wi
 
 To have client side validation full compatibility with all cultures see [`LocalizationValdiationScripts`][1] taghelper from [`LazZiya.TagHelpers`][2]
 
-[1]:https://github.com/LazZiya/TagHelpers/wiki/LocalizationValidationScripts-TagHelper-Setup
+[1]:../LazZiya/TagHelpers/LocalizationValidationScripts-TagHelper-Setup.md
 [2]:https://github.com/LazZiya/TagHelpers
