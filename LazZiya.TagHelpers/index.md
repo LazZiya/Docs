@@ -60,7 +60,7 @@ Add all client side scripts that are required for validating localized inputs li
 ## Live demos:
 http://demo.ziyad.info/en/
 
-[1]:../../LazZiya/TagHelpers/Paging-TagHelper-Basic-Setup.md
-[2]:../../LazZiya/TagHelpers/Alerts-TagHelper-Front-end-Alerts.md
-[3]:../../LazZiya/TagHelpers/LanguageNav-TagHelper-Setup.md
-[4]:../../LazZiya/TagHelpers/LocalizationValidationScripts-TagHelper-Setup.md
+[1]:../LazZiya.TagHelpers/Paging-TagHelper-Basic-Setup.md
+[2]:../LazZiya.TagHelpers/Alerts-TagHelper-Front-end-Alerts.md
+[3]:../LazZiya.TagHelpers/LanguageNav-TagHelper-Setup.md
+[4]:../LazZiya.TagHelpers/LocalizationValidationScripts-TagHelper-Setup.md

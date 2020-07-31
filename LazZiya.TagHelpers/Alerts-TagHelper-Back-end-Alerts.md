@@ -41,4 +41,4 @@ TempData.Light
 TempData.Dark
 ````
 
-[1]:../../LazZiya/TagHelpers/Alerts-TagHelper-front-end-Alerts.md
+[1]:../LazZiya.TagHelpers/Alerts-TagHelper-front-end-Alerts.md

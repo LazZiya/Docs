@@ -114,4 +114,4 @@ Attributes to set class names for the html parts of the paging controls.
 </div>
 ````
 
-[1]:../../LazZiya/TagHelpers/Paging-TagHelper-Number-Formats.md
+[1]:../LazZiya.TagHelpers/Paging-TagHelper-Number-Formats.md

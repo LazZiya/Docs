@@ -13,5 +13,5 @@
 
 
 [1]:https://github.com/LazZiya/TagHelpers/blob/master/LazZiya.TagHelpers/LanguageNavModels.cs#L6
-[2]:../../LazZiya/TagHelpers/LanguageNav-TagHelper-Setup.md#set-culture-cookie
+[2]:../LazZiya.TagHelpers/LanguageNav-TagHelper-Setup.md#set-culture-cookie
 [3]:https://github.com/LazZiya/TagHelpers/blob/master/LazZiya.TagHelpers/LanguageNavModels.cs#L60

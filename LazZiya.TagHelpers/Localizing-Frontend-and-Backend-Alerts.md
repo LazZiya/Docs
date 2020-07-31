@@ -18,5 +18,5 @@ Or if hyou are using [`LazZiya.ExpressLocalization`][1] you can pass instance of
 ### Applies to version:
 5.0
 
-[1]:../../LazZiya/ExpressLocalization/index.md
+[1]:../LazZiya.ExpressLocalization/index.md
 [2]:https://github.com/LazZiya/ExpressLocalization/blob/master/LazZiya.ExpressLocalization/ISharedCultureLocalizer.cs

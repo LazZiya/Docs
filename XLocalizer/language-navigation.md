@@ -6,6 +6,6 @@ To easily create a language navigation dropdown for changing the culture and set
 ### Next: [Client side validiation][3]
 #
 
-[1]:../LazZiya/TagHelpers/LanguageNav-TagHelper-Setup.md
+[1]:../LazZiya.TagHelpers/LanguageNav-TagHelper-Setup.md
 [2]:https://github.com/LazZiya/TagHelpers
 [3]:../XLocalizer/client-side-validation.md
