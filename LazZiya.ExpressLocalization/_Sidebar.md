@@ -18,7 +18,6 @@
 
 #### Loclization with DB (NEW)
 - [Creating Localization DB](../LazZiya.ExpressLocalization/DB-Localization-Setup.md)
-- [Seed DB with Initial Values](../LazZiya.ExpressLocalization/Seed-DB-with-Initial-Values.md)
 
 #### Views Localization
 - [Localize TagHelper](../LazZiya.ExpressLocalization/Localize-TagHelper.md)
