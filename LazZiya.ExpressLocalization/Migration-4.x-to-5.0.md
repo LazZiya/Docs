@@ -1,0 +1,1 @@
+> ## IMPORTANT: Due to several breaking changes in the planned v5, it has been introducedas a new nuget package. See [`XLocalizer`](../XLocalizer/index.md) for more details.
