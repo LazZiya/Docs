@@ -7,7 +7,7 @@
 
 #### ExpressLocalization Setup
 - [Setup for Razor Pages](../LazZiya.ExpressLocalization/Setup-for-Razor-Pages.md)
-- [Setup for MVC](../LazZiya.ExpressLocalization/Setup-for-mvc.md)
+- [Setup for MVC](../LazZiya.ExpressLocalization/Setup-for-MVC.md)
 - [Customized Setup](../LazZiya.ExpressLocalization/Customized-Setup.md)
 
 #### Localization with Resource Files
