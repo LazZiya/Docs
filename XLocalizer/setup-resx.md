@@ -6,6 +6,7 @@ _RESX_ resource files are the default file type for localization. But, _RESX_ fi
 - [Create resources folder](#create-resources-folder)
 - [Startup settings](#startup-settings)
 - [Full startup code for RESX](#full-startup-code-for-resx)
+- [Sample peoject](#sample-project)
 
 
 #### Install
@@ -131,3 +132,8 @@ namespace SampleProject
 }
 
 ````
+
+#### Sample project
+[Download sample project from GitHub][1]
+
+[1]:https://github.com/LazZiya/XLocalizer.Samples/tree/master/ResxLocalizationSample

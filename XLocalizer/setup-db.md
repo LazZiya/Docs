@@ -9,6 +9,7 @@ This pacakge adds database support for `XLocalizer`.
 - [Localization stores setup](#localization-stores-setup)
 - [ApplicationDbContext Lifetime](#applicationdbcontext-lifetime)
 - [Full startup code for DB setup](#full-startup-code-for-db-setup)
+- [Sample project](#sample-project)
 - [Next: Localizing Views][4]
 
 #### Install
@@ -281,6 +282,9 @@ namespace DbLocalizationSample
 
 ````
 
+#### Sample project
+[Download sample project from GitHub][5]
+
 #
 ### Next: [Localizing views][4]
 #
@@ -289,3 +293,4 @@ namespace DbLocalizationSample
 [2]:https://github.com/LazZiya/XLocalizer/blob/master/XLocalizer.DB/Models/IXDbResource.cs
 [3]:https://github.com/LazZiya/XLocalizer/blob/master/XLocalizer.DB/Models/XDbResource.cs
 [4]:../XLocalizer/localizing-views.md
+[5]:https://github.com/LazZiya/XLocalizer.Samples/tree/master/DbLocalizationSample

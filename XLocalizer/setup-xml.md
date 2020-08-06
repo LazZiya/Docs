@@ -8,6 +8,7 @@ Localization based on _XML_ files works very similar to _RESX_ process, we only 
 - [User secrets](#user-secrets)
 - [Caching](#caching)
 - [Full startup code for XML](#full-startup-code-for-xml)
+- [Sample project][#sample-project]
 - [Next: Localizing views][2]
 
 
@@ -216,8 +217,11 @@ namespace XmlLocalizationSample
 
 ````
 
+#### Sample project
+[Download sample project from GitHub][3]
 #
 #### Next: [Localizing views][2]
 #
 [1]:../XLocalizer/translate-services.md
 [2]:../XLocalizer/localizing-views.md
+[3]:https://github.com/LazZiya/XLocalizer.Samples/tree/master/XmlLocalizationSample
