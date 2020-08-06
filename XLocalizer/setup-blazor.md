@@ -1,5 +1,9 @@
-# Localization setup based on XML
-Localization based on _XML_ files works very similar to _RESX_ process, we only use _.xml_ files instead of _.resx_ to store resources. But the ability to edit _XML_ files at run time gives us the flexibility of automtically adding missing resources to _XML_ resource files.
+# Localization of Blazor Server Projects
+Localization of Blazor projects is very similar to Razor or MVC projects with a few restrictions/changes listed below.
+
+> - No support for route based localization, cookie based localization can be used instead.
+> - No support for [`LocalizeTagHelper`][2], traditional way of injecting `IStringLocailzer` to the views can be used instead.
+> - No support for `IHtmlLocalizer`, only `IStringLocalizer` can be used intead.
 
 ### Table of contents
 - [Install](#install)
@@ -7,9 +11,11 @@ Localization based on _XML_ files works very similar to _RESX_ process, we only 
 - [Startup settings](#startup-settings)
 - [User secrets](#user-secrets)
 - [Caching](#caching)
-- [Full startup code for XML](#full-startup-code-for-xml)
+- [Localizing view](#localizing-view)
+- [Setup culture cookie](#setup-culture-cookie)
+- [Language navigation](#language-navigation)
+- [Full startup code for Blazor Server project](#full-startup-code-for-blazor-server-project)
 - [Sample project](#sample-project)
-- [Next: Localizing views][2]
 
 
 #### Install
@@ -42,9 +48,6 @@ public class LocSource
 
 - Configure request localization options and optionally add `RouteSegmentRequestCultureProvider` :
 ````csharp
-// Add namespace for optional routing setup
-using XLocalizer.Routing;
-
 // Configure request localization options
 services.Configure<RequestLocalizationOptions>(ops => 
 {
@@ -53,9 +56,6 @@ services.Configure<RequestLocalizationOptions>(ops =>
     ops.SupportedCultures = cultures;
     ops.SupportedUICultures = cultures;
     ops.DefaultRequestCulture = new RequestCulture("en");
-
-    // Optional: add custom provider to support localization based on {culture} route value
-    ops.RequestCultureProviders.Insert(0, new RouteSegmentRequestCultureProvider(cultures));
 });        
 ````
 
@@ -74,22 +74,10 @@ services.AddHttpClient<ITranslator, MyMemoryTranslateService>();
 
 > You can provide translation support based on any custom provider type by implementing `ITranslator` interface.
 
-- Add route based localization for razor pages:
-````csharp
-services.AddRazorPages()
-        .AddRazorPagesOptions(ops => { ops.Conventions.Insert(0, new RouteTemplateModelConventionRazorPages()); });
-````
-
-Or if you are using MVC use;
-````csharp
-services.AddMvc()
-        .AddMvcOptions(ops => { ops.Conventions.Insert(0, new RouteTemplateModelConventionMvc()); });
-````
 
 - Add `XLocalizer` setup and enable `AutoAddKeys` and `AutoTranslate` options:
 ````csharp
 services.AddRazorPages()
-        .AddRazorPagesOptions(ops => { ops.Conventions.Insert(0, new RouteTemplateModelConventionRazorPages()); });
         .AddXLocalizer<LocSource, MyMemoryTranslateService>(ops => 
         {
             ops.ResourcesPath = "LocalizationResources";
@@ -124,22 +112,149 @@ Read more about translation services in [Translation services][1].
 ops.UseExpressMemoryCache = false;
 ```` 
 
-#### Full startup code for XML
+#### Localizing View
+Inject `IStringLocalizer` and use it as below:
+````html
+@inject IStringLocalizer _loc
+
+<h1>@_loc["Welcome"]</h1>
+````
+
+#### Setup Culture Cookie
+Open `_Host.cshtml` file and add cookie code inside the `<body>` tag:
+````html
+<body>
+    @{
+        this.HttpContext.Response.Cookies.Append(
+            CookieRequestCultureProvider.DefaultCookieName,
+            CookieRequestCultureProvider.MakeCookieValue(
+                new RequestCulture(
+                    CultureInfo.CurrentCulture,
+                    CultureInfo.CurrentUICulture)));
+    }
+    ....
+</body>
+````
+
+#### Language Navigation
+Language navigation requruires adding a controller with the cookie code inside it, so before creating the language navigation we need to add controller support:
+* Add controllers support in startup:
+````csharp
+services.AddControllers();
+````
+
+* Map controllers endpoints:
+````csharp
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllers();
+    endpoints.MapBlazorHub();
+    endpoints.MapFallbackToPage("/_Host");
+});
+````
+
+* Create a new controller and use the below SetCulture method inside it:
+````csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Mvc;
+
+namespace BlazorLocalizationSample.Controllers
+{
+    [Route("[controller]/[action]")]
+    public class CultureController : Controller
+    {
+        public IActionResult SetCulture(string culture, string redirectUri)
+        {
+            if (culture != null)
+            {
+                HttpContext.Response.Cookies.Append(
+                    CookieRequestCultureProvider.DefaultCookieName,
+                    CookieRequestCultureProvider.MakeCookieValue(
+                        new RequestCulture(culture)));
+            }
+
+            return LocalRedirect(redirectUri);
+        }
+    }
+}
+````
+* Create a new razor component named `LanguageNav.razor` under Shared folde:
+````html
+@inject NavigationManager NavigationManager
+
+<select @onchange="OnSelected" class="form-control col-2">
+    @foreach (var c in SupportedCultures)
+    {
+        var culture = System.Globalization.CultureInfo.GetCultureInfo(c);
+        if (CurrentCultureName == c)
+        {
+            <option value="@c" selected>@culture.EnglishName</option>
+        }
+        else
+        {
+
+            <option value="@c">@culture.EnglishName</option>
+        }
+    }
+</select>
+
+@code {
+    private void OnSelected(ChangeEventArgs e)
+    {
+        var culture = (string)e.Value;
+        var uri = new Uri(NavigationManager.Uri)
+            .GetComponents(UriComponents.PathAndQuery, UriFormat.Unescaped);
+        var query = $"?culture={Uri.EscapeDataString(culture)}&" +
+            $"redirectUri={Uri.EscapeDataString(uri)}";
+
+        NavigationManager.NavigateTo("/Culture/SetCulture" + query, forceLoad: true);
+    }
+
+    private string CurrentCultureName = System.Globalization.CultureInfo.CurrentCulture.Name;
+    private string[] SupportedCultures = { "en", "tr", "ar" };
+}
+````
+
+* Use the language component in the `MainLayout.razor` page where you want the language navigation to appear:
+````html
+@inherits LayoutComponentBase
+
+<div class="sidebar">
+    <NavMenu />
+</div>
+
+<div class="main">
+    <div class="top-row px-4">
+        <LanguageNav></LanguageNav>
+        <a href="https://docs.microsoft.com/aspnet/" target="_blank">@_loc["About"]</a>
+    </div>
+
+    <div class="content px-4">
+        @Body
+    </div>
+</div>
+````
+
+#### Full startup code for Blazor Server project
 ````csharp
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using BlazorLocalizationSample.Data;
+using System.Globalization;
 using XLocalizer.Translate;
+using XLocalizer.Translate.MyMemoryTranslate;
 using XLocalizer;
 using XLocalizer.Xml;
-using System.Globalization;
-using XLocalizer.Routing;
-using XLocalizer.Translate.MyMemoryTranslate;
-using XmlLocalizationSample.LocalizationResources;
+using BlazorLocalizationSample.LocalizationResources;
 
-namespace XmlLocalizationSample
+namespace BlazorLocalizationSample
 {
     public class Startup
     {
@@ -151,6 +266,7 @@ namespace XmlLocalizationSample
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
+        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
             services.Configure<RequestLocalizationOptions>(ops =>
@@ -159,29 +275,21 @@ namespace XmlLocalizationSample
                 ops.SupportedCultures = cultures;
                 ops.SupportedUICultures = cultures;
                 ops.DefaultRequestCulture = new Microsoft.AspNetCore.Localization.RequestCulture("en");
-
-                // Optional: add custom provider to support localization based on route value {culture}
-                ops.RequestCultureProviders.Insert(0, new RouteSegmentRequestCultureProvider(cultures));
             });
-            
-            // Optional: To enable online translation register one or more translation services
-            services.AddHttpClient<ITranslator, MyMemoryTranslateService>();
 
-            // Comment below line to switch to RESX based localization.
+            services.AddHttpClient<ITranslator, MyMemoryTranslateService>();
             services.AddSingleton<IXResourceProvider, XmlResourceProvider>();
 
+            services.AddControllers();
             services.AddRazorPages()
-                // Optional: Add {culture} route template to all razor pages routes e.g. /en/Index
-                .AddRazorPagesOptions(ops => { ops.Conventions.Insert(0, new RouteTemplateModelConventionRazorPages()); })
-
-                // Add XLocalization with a default resource <LocSource>
-                // and specify a service for handling translation requests
                 .AddXLocalizer<LocSource, MyMemoryTranslateService>(ops =>
                 {
                     ops.ResourcesPath = "LocalizationResources";
                     ops.AutoAddKeys = true;
                     ops.AutoTranslate = true;
                 });
+            services.AddServerSideBlazor();
+            services.AddSingleton<WeatherForecastService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -190,7 +298,6 @@ namespace XmlLocalizationSample
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseDatabaseErrorPage();
             }
             else
             {
@@ -203,26 +310,26 @@ namespace XmlLocalizationSample
             app.UseStaticFiles();
 
             app.UseRouting();
-
-            // Use request localization middleware
             app.UseRequestLocalization();
-
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapRazorPages();
+                endpoints.MapControllers();
+                endpoints.MapBlazorHub();
+                endpoints.MapFallbackToPage("/_Host");
             });
         }
     }
 }
-
 ````
 
 #### Sample project
 [Download sample project from GitHub][3]
 
-#
-#### Next: [Localizing views][2]
-#
+#### References:
+- [ASP.NET Core Blazor globalization and localization][5]
+
 [1]:../XLocalizer/translate-services.md
 [2]:../XLocalizer/localizing-views.md
-[3]:https://github.com/LazZiya/XLocalizer.Samples/tree/master/XmlLocalizationSample
+[3]:https://github.com/LazZiya/XLocalizer.Samples/tree/master/BlazorLocalizationSample
+[4]:../XLocalizer/localizing-views.md#traditional-localization-for-views
+[5]:https://docs.microsoft.com/en-us/aspnet/core/blazor/globalization-localization?view=aspnetcore-3.1

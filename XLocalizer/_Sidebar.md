@@ -3,6 +3,7 @@
 - [Localization setup based on XML][5]
 - [Localization setup based on DB][6]
 - [Localization setup based on RESX][7]
+- [Localization setup for Blazor][4]
 
 ##### Translation
 - [Translation services][8]
@@ -37,7 +38,7 @@
 [1]:../XLocalizer/index.md
 [2]: .
 [3]: .
-[4]: .
+[4]:../XLocalizer/setup-blazor.md
 [5]:../XLocalizer/setup-xml.md
 [6]:../XLocalizer/setup-db.md
 [7]:../XLocalizer/setup-resx.md

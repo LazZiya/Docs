@@ -5,7 +5,7 @@ XLocalizer has a handy extension pack; [XLocalizer.TagHelpers][3] for localizing
 - [Install](#install)
 - [Setup](#setup)
 - [Localize texts](#localize-texts)
-- [Loalize HTML](#localize-html)
+- [Localize HTML](#localize-html)
 - [Localize attributes](#localize-attributes)
 - [Specify culture](#specify-culture)
 - [Provide arguments for localized contents](#provide-arguments-for-localized-contents)
