@@ -3,7 +3,7 @@ Localization of Blazor projects is very similar to Razor or MVC projects with a 
 
 > - No support for route based localization, cookie based localization can be used instead.
 > - No support for [`LocalizeTagHelper`][2], traditional way of injecting `IStringLocailzer` to the views can be used instead.
-> - No support for `IHtmlLocalizer`, only `IStringLocalizer` can be used intead.
+> - No support for `IHtmlLocalizer`, only `IStringLocalizer` can be used instead.
 
 ### Table of contents
 - [Install](#install)
