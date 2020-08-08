@@ -3,9 +3,11 @@ title: XLocalizer for Asp.Net Core
 keywords: localization, asp.net-core, xlocalizer
 description: Goodbye _"manually creating localization resources"_, welcome XLocalizer...!
 author: Ziya Mollamahmut
-date: 08-08-2020
+date: 08/08/2020
 versions: 1.0
 ---
+
+# XLocalizer for Asp.Net Core
 
 By [Ziya Mollamahmut][0]
 
