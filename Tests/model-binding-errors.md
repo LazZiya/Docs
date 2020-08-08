@@ -1,4 +1,16 @@
-## Model Binding Errors
+---
+title: Localizing Model Binding Errors
+keywords: localization, asp.net-core, model, binding, error, messages
+description: Learn how to localize model binding error messages with XLocalizer in Asp.Net Core web app.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 1.0
+---
+
+# Localizing Model Binding Errors
+
+By [Ziya Mollamahmut][0]
+
 No additional setup required for model binding error messages, it will be localized automatically by `XLocalizer`, you don't even need to add them manually if you have enabled auto translation and auto adding keys.
 
 Just in case you want to manually add the model binding messages see them below:
@@ -18,4 +30,5 @@ The supplied value is invalid for {0}.
 ### Next: [Identity errors][1]
 #
 
+[0]:https://github.com/LazZiya
 [1]:../XLocalizer/identity-errors.md

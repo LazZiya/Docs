@@ -1,15 +1,17 @@
 ---
 title: XLocalizer for Asp.Net Core
 keywords: localization, asp.net-core, xlocalizer
-description: Goodbye _"manually creating localization resources"_, welcome XLocalizer...!
+description: Learn about localizing Asp.Net Core web apps with XLocalizer powered by auto translate and auto key adding.
 author: Ziya Mollamahmut
-date: 08/08/2020
+date: 08-Aug-2020
 versions: 1.0
 ---
 
 # XLocalizer for Asp.Net Core
 
 By [Ziya Mollamahmut][0]
+
+Goodbye _"manually creating localization resources"_, welcome **XLocalizer**...! 
 
 #### What is XLocalizer
 This is a nuget package that offers localization for Asp.Net Core based on _.resx_, _.xml_, _db_ or any other custom _file/db_ type. Powered by online translation and auto resource creating. XLocalizer has many powerful features and can be extended with custom tools. 

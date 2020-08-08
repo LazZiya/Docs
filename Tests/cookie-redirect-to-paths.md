@@ -1,3 +1,16 @@
+---
+title: Configure Cookie RedirectTo Paths
+keywords: localization, asp.net-core, xlocalizer, cookie, redirectto, path
+description: Configure localized cookie redirect to paths in Asp.Net Core web app.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 1.0
+---
+
+# Configure Cookie RedirectTo Paths
+
+By [Ziya Mollamahmut][0]
+
 `XLocalizer` will automatically configure app cookie to add culture value to the redirect path when redirect events are invoked.
 
 The default events and paths are: 
@@ -34,4 +47,5 @@ services.AddRazorPages()
 
 in this case you need to manually configure the app cookie to handle the culture value on redirect events as described in [issue #2][2]
 
+[0]:https://github.com/LazZiya
 [2]: https://github.com/LazZiya/ExpressLocalization/issues/6

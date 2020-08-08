@@ -1,4 +1,16 @@
-### XLocalizer.Translate.YandexTranslate
+---
+title: Use Yandex Translate For Localization
+keywords: localization, asp.net-core, translate, online, yandex, service
+description: Learn how to use yandex translation service for localization of Asp.Net Core web apps with XLocalizer.Translate.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 1.0
+---
+
+# Use Yandex Translate For Localization
+
+By [Ziya Mollamahmut][0]
+
 This nuget is based on the free plan of [Yandex Translate](https://tech.yandex.com/translate/).
 
 > See [GitHub repo](https://github.com/LazZiya/XLocalizer.Translate.YandexTranslate)
@@ -38,3 +50,5 @@ services.AddRazorPages()
             ops.AutoTranslate = true;
         });
 ````
+
+[0]:https://github.com/LazZiya

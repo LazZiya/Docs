@@ -1,4 +1,16 @@
+---
+title: XLocalizer - Quick Start
+keywords: localization, asp.net-core
+description: A quick start to setup XLocalizer in Asp.Net Core.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 1.0
+---
+
 # XLocalizer - Quick Start
+
+By [Ziya Mollamahmut][0]
+
 In this page I will show quickly how to setup `XLocalizer` with _XML_ resources and enabling `AutoKeyAdding` and `AutoTranslate` options.
 
 ### Table of contents
@@ -102,3 +114,5 @@ namespace XmlLocalizationSample
     }
 }
 ````
+
+[0]:https://github.com/LazZiya

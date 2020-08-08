@@ -1,4 +1,16 @@
-# XLocalizer.DB
+---
+title: Using DB as Localization Source
+keywords: localization, asp.net-core, db
+description: Learn how to use database as source for localization with XLocalizer.DB in Asp.Net Core.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 1.0
+---
+
+# Using DB as Localization Source
+
+By [Ziya Mollamahmut][0]
+
 This pacakge adds database support for `XLocalizer`.
 
 ### Table of contents
@@ -289,6 +301,7 @@ namespace DbLocalizationSample
 ### Next: [Localizing views][4]
 #
 
+[0]:https://github.com/LazZiya
 [1]:../XLocalizer/translate-services.md
 [2]:https://github.com/LazZiya/XLocalizer/blob/master/XLocalizer.DB/Models/IXDbResource.cs
 [3]:https://github.com/LazZiya/XLocalizer/blob/master/XLocalizer.DB/Models/XDbResource.cs
