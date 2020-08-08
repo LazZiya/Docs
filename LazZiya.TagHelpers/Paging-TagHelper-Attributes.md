@@ -1,3 +1,16 @@
+---
+title: Paging TagHelper Attributes
+keywords: asp.net-core, taghelpers, paging, control, pagination, attributes
+description: Attributes of PagingTagHelper for Asp.Net Core.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 1.x, 2.x, 3.x, 4.x, 5.x
+---
+
+# Paging TagHelper Attributes
+
+By [Ziya Mollamahmut](https://github.com/LazZiya)
+
 ## Quick navigation
 - [Required attributes](#required-attributes)
 - [Optional attributes](#optional-attributes)

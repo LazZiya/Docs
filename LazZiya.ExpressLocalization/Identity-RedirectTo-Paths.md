@@ -1,3 +1,16 @@
+---
+title: Configuring Identity RedirectTo Paths
+keywords: localization, asp.net-core, express-localization, identity, redirectto, paths
+description: Localization of identity errors in Asp.Net Core with ExpressLocalization.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 3.1.3., 3.1.2, 3.1.1
+---
+
+# Configuring Identity RedirectTo Paths
+
+By [Ziya Mollamahmut](https://github.com/LazZiya)
+
 _ExpressLocalization_ will automatically configure app cookie to add culture value to the redirect path when redirect events are invoked.
 
 The default events and paths are: 
@@ -40,7 +53,5 @@ services.AddRazorPages()
 
 in this case you need to manually configure the app cookie to handle the culture value on redirect events as described in [issue #2][2]
 
-### Applies to below ExpressLocalization versions
- 3.1.3., 3.1.2, 3.1.1
 
 [2]: https://github.com/LazZiya/ExpressLocalization/issues/6

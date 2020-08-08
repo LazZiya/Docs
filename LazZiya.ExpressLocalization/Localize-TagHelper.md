@@ -1,3 +1,16 @@
+---
+title: Localizing Views
+keywords: localization, asp.net-core, views, razor, pages, mvc, taghelpers
+description: Learn how to localize views with ExpressLocalization in Asp.Net Core web app.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 4.x
+---
+
+# Localizing Views
+
+By [Ziya Mollamahmut](https://github.com/LazZiya)
+
 ### Setup
 Localize views using `LocalizeTagHelper`, first it must be added to `_ViewImports.cshtml_
 ````
@@ -63,7 +76,3 @@ Specify localization resource type using `localize-source`
 See [demo page][1].
 
 [1]:http://demo.ziyad.info/en/localize
-
-
-### Applies to ExpressLocalization versions:
- 4.0

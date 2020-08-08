@@ -1,4 +1,16 @@
-### XLocalizer.Translate.SystranTranslate
+---
+title: Use SYSTRAN.io Translation For Localization
+keywords: localization, asp.net-core, translate, online, systran.io, service
+description: Learn how to use systran.io translation service for localization of Asp.Net Core web apps with XLocalizer.Translate.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 1.0
+---
+
+# Use SYSTRAN.io Translate For Localization
+
+By [Ziya Mollamahmut](https://github.com/LazZiya)
+
 This nuget is based on the free plan of [Systran Translate via RapidAPI](https://rapidapi.com/systran/api/systran-io-translation-and-nlp).
 
 > See [GitHub repo](https://github.com/LazZiya/XLocalizer.Translate.SystranTranslate)
@@ -38,3 +50,5 @@ services.AddRazorPages()
             ops.AutoTranslate = true;
         });
 ````
+
+

@@ -1,3 +1,16 @@
+---
+title: Creating Localization Resource Files
+keywords: localization, asp.net-core, express-localization, resource, files
+description: Learn about how to create localization resource files for ExpressLocalization in Asp.Net Core.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 1.x, 2.x, 3.x, 4.x
+---
+
+# Creating Localization Resource Files
+
+By [Ziya Mollamahmut](https://github.com/LazZiya)
+
 **ExpressLocalization** supports shared resources, it is possible to use one resource file for each culture, or multiple resources depending on resource content group.
 
 #### Resource Content Groups
@@ -27,6 +40,3 @@ You are free to choose how many resource files will be used to handle localized 
 - [A - One resource file for each culture](../LazZiya.ExpressLocalization/One-Resource-File.md)
 - [B - Two resource files for each culture](../LazZiya.ExpressLocalization/Two-Resource-Files.md)
 - [C - Four resource files for each culture](../LazZiya.ExpressLocalization/Four-Resource-Files.md)
-
-### Applies to ExpressLocalization versions:
- 4.0, 3.2, 3.1, 3.0, 2.0, 1.1, 1.0

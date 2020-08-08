@@ -1,3 +1,26 @@
+---
+title: AlertTagHelper - Backend Alerts
+keywords: asp.net-core, taghelpers, alerts, backend
+description: Create bootstrap alerts from backend with LazZiya.TagHelpers.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 2.2, 3.x, 4.x, 5.x
+---
+
+# AlertTagHelper - Backend Alerts
+
+By [Ziya Mollamahmut](https://github.com/LazZiya)
+
+* Install package
+````
+PM > Install-Package LazZiya.TagHelpers
+````
+
+* Add to _VÝewImports.cshtml:
+````html
+@addTagHelper *, LazZiya.TagHelpers
+````
+
 ### TempData Extensions
 In the backend add reference to `LazZiya.TagHelpers.Alerts` namespace, then use the alert extensions of `TempData` to send alerts from the backend to the UI.
 

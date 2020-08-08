@@ -1,3 +1,16 @@
+---
+title: LanguageNav TagHelper Attributes
+keywords: asp.net-core, taghelpers, language, dropdown, localization
+description: Attributes of LanguageNav TagHelper.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 1.x, 2.x, 3.x, 4.x, 5.x
+---
+
+# LanguageNav TagHelper Attributes
+
+By [Ziya Mollamahmut](https://github.com/LazZiya)
+
 > All language navigation taghelper attributes are optional.
 
 | Html attribute | type | default value | description |

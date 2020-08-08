@@ -1,3 +1,16 @@
+---
+title: Localizing Default Data Annotations
+keywords: localization, asp.net-core, express-localization, data, annotations
+description: Learn how use a localize default data annotations in Asp.Net Core.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 1.x, 2.x, 3.x, 4.x
+---
+
+# Localizing Default Data Annotations
+
+By [Ziya Mollamahmut](https://github.com/LazZiya)
+
 DataAnnotations localization setup is already done during the express setup in `startup.cs` file for [razor pages][1] or [MVC][2].
 
 All we have to do is just provide an error message to the relevant attribute or a `Name` value for `Display` attribute:

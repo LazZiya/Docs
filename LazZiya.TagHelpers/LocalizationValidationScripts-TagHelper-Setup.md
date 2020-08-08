@@ -1,3 +1,16 @@
+---
+title: Valdiating Localized Input in Asp.Net Core
+keywords: asp.net-core, taghelpers, language, localizatin, valdiating, input
+description: Valdiating localized input in Asp.Net Core like decimals.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 2.1, 3.x, 4.x, 5.x
+---
+
+# Valdiating Localized Input in Asp.Net Core
+
+By [Ziya Mollamahmut](https://github.com/LazZiya)
+
 ### Introduction
 Some input fields need to be localized (decimal numbers, dates, ...etc.). But without client side localizing libraries this could make problems with different cultures (e.g. decimal numbers 1.23 and 1,23).
 
@@ -10,7 +23,12 @@ If you had a look at that article you must noticed that there is a lot of work t
 ### Setup
 - Install `LazZiya.TagHelpers` from nuget:
 ````
-Install-Package LazZiya.TagHelpers
+PM > Install-Package LazZiya.TagHelpers
+````
+
+- Add to __ViewImports.cshtml_:
+````html
+@addTagHelper *, LazZiya.TagHelpers
 ````
 
 - Register in startup _only for v4.0 and newer, earlier versions doesn't require this step_
@@ -18,11 +36,6 @@ Install-Package LazZiya.TagHelpers
 @using LazZiya.TagHelpers
 
 services.AddTransient<ITagHelperComponent, LocalizationValidationScriptsTagHelperComponent>();
-````
-
-- Add to __ViewImports.cshtml_:
-````html
-@addTagHelper *, LazZiya.TagHelpers
 ````
 
 - Insert the html tag inside `Scripts` section just after validation scripts partial:

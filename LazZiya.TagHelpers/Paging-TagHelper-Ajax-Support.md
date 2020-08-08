@@ -1,6 +1,28 @@
-# Paging with Ajax support
+---
+title: Paging Control with Ajax Support for Asp.Net Core
+keywords: asp.net-core, taghelpers, paging, control, pagination, ajax
+description: Easily create a paging control with ajax support for large amount of records with PagingTagHelper for Asp.Net Core.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 4.x, 5.x
+---
+
+# Paging Control with Ajax Support for Asp.Net Core
+
+By [Ziya Mollamahmut](https://github.com/LazZiya)
+
 
 > Starting from `LazZiya.TagHelpers v4.0` ajax support is included with `PagingTagHelper`.
+
+* Install package
+````
+PM > Install-Package LazZiya.TagHelpers
+````
+
+* Add to _VÝewImports.cshtml:
+````html
+@addTagHelper *, LazZiya.TagHelpers
+````
 
 ## Quick navigation
 - [Required attributes](#required-attributes)

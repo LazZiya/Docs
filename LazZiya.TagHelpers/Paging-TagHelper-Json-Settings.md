@@ -1,3 +1,16 @@
+---
+title: Paging TagHelper Json Settings
+keywords: asp.net-core, taghelpers, paging, control, pagination, json, attributes
+description: Json settings of PagingTagHelper for Asp.Net Core.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 1.x, 2.x, 3.x, 4.x, 5.x
+---
+
+# Paging TagHelper Json Settings
+
+By [Ziya Mollamahmut](https://github.com/LazZiya)
+
 ### Json Settings
 
 All settings of `PagingTagHelper` can be done via `appSettings.json`. This settings can be applied to all paging controls or specific ones. This provides a flexibility in controlling the paging controls and offers a clean html on the other hand.

@@ -1,4 +1,16 @@
-## Localizing Views
+---
+title: Localizing Views
+keywords: localization, asp.net-core, views, razor, pages, mvc, taghelpers
+description: Learn how to localize views with XLocalizer.TagHelpers in Asp.Net Core web app.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 1.0
+---
+
+# Localizing Views
+
+By [Ziya Mollamahmut](https://github.com/LazZiya)
+
 XLocalizer has a handy extension pack; [XLocalizer.TagHelpers][3] for localizing views using a simple html tag.
 
 ### Table of contents
@@ -94,6 +106,7 @@ Default localization interfaces can be used to localize view contents:
 #
 ### Next: [Localizing DataAnnotations][2]
 #
+
 
 [1]:http://demo.ziyad.info/en/localize
 [2]:../XLocalizer/localizing-validation-attributes-errors.md

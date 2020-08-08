@@ -1,3 +1,16 @@
+---
+title: Localizing Data Annotations with Express Attributes
+keywords: localization, asp.net-core, express-localization, express, attributes
+description: Learn how use a localize data annotations with express attributes.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 3.2, 4.x
+---
+
+# Localizing Data Annotations with Express Attributes
+
+By [Ziya Mollamahmut](https://github.com/LazZiya)
+
 Some of the data attributes do not produce localized error messages if not specified manually in the attributes `ErrorMessage="..."`. Expess data attributes eliminates the need to manually provide error message for each attribute and it produces localized error messages automatically.
 
 Sample required attribute usage:
@@ -55,7 +68,3 @@ The rest of the frameworks data attributes are already providing a default error
 // "The {0} field is not a valid fully-qualified http, https, or ftp URL."
 [Url]
 ```` 
-
-
-### Applies to ExpressLocalization versions:
- 4.0, 3.2.0

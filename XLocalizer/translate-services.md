@@ -1,4 +1,16 @@
-# XLocalizer.Translate
+---
+title: Use Online Translation Services For Localization
+keywords: localization, asp.net-core, translate, online, service
+description: Learn how to use online translation services for localization of Asp.Net Core web apps with XLocalizer.Translate.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 1.0
+---
+
+# Use Online Translation Services For Localization
+
+By [Ziya Mollamahmut](https://github.com/LazZiya)
+
 Provides translation support to web applications. Can be used with `XLocalizer` or as standalsone services.
 
 ### Table of contents
@@ -105,6 +117,7 @@ using XLocalizer.Translate.MyMemoryTranslate;
 
 services.AddSingleton<ITranslatorFactory, TranslatorFactory<MyMemoryTranslateService>();
 ````
+
 
 [1]:https://github.com/LazZiya/XLocalizer.Translate/blob/master/XLocalizer.Translate/ITranslator.cs
 [2]:https://github.com/LazZiya/XLocalizer.Translate/blob/master/XLocalizer.Translate/ITranslatorFactory.cs

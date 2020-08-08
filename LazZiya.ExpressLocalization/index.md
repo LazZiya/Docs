@@ -1,3 +1,16 @@
+---
+title: Express Localization
+keywords: localization, asp.net-core, express-localization
+description: All dirty localizaiton setup in simple steps.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 1.x, 2.x 3.x, 4.x
+---
+
+# Express Localization
+
+By [Ziya Mollamahmut](https://github.com/LazZiya)
+
 Less is more, do full localization in fewer steps...
 
 Install from nuget :

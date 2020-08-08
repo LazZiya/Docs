@@ -1,4 +1,15 @@
+---
+title: Client Side Validation
+keywords: localization, asp.net-core, xlocalizer, client, side, validation
+description: setup client side validation in Asp.Net Core web application.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 1.0
+---
+
 ## Client Side Validation
+
+By [Ziya Mollamahmut](https://github.com/LazZiya)
 
 Client side validation is done during filling the form before the submit button is clicked. It requires adding validation span as below:
 
@@ -30,5 +41,6 @@ You can add the relevant scripts manually as well:
 #
 ### Next: [Validating localized input][1]
 #
+
 
 [1]:../XLocalizer/validating-localized-input.md

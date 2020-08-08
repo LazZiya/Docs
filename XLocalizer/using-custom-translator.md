@@ -1,4 +1,16 @@
-﻿#### Custom translation services
+﻿---
+title: Custom Translation Service
+keywords: localization, asp.net-core, translate, cusotm, service
+description: Learn how to create custom translation service to use for localizing Asp.Net Core web apps with XLocalizer.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 1.0
+---
+
+# Custom Translation Service
+
+By [Ziya Mollamahmut](https://github.com/LazZiya)
+
 Any custom translation service that implements [`ITranslator`][1] interface can be used with `XLocalizer`.
 
 ### See already implemented translation services

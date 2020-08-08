@@ -1,3 +1,16 @@
+---
+title: Localizing AlertTaghelper Contents in Asp.Net Core
+keywords: asp.net-core, taghelpers, localizatin, alerts
+description: Learn how to localize contents of AlertTagHelper from LazZiya.TagHelpers for Asp.Net Core.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 5.x
+---
+
+# Localizing AlertTaghelper Contents in Asp.Net Core
+
+By [Ziya Mollamahmut](https://github.com/LazZiya)
+
 All front-end and back-end alerts can be localized by parsing `IStringLocalizer` instance to the alert tag:
 
 ````html

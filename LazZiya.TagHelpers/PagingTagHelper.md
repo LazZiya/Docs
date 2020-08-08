@@ -1,8 +1,31 @@
-# Create a pagination control
+---
+title: Create Paging Control Easily with PagingTagHelper
+keywords: asp.net-core, taghelpers, paging, control, pagination
+description: Easily create a paging control for large amount of records with PagingTagHelper for Asp.Net Core.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 1.x, 2.x, 3.x, 4.x, 5.x
+---
+
+# Easily Create Paging Control for Asp.Net Core
+
+By [Ziya Mollamahmut](https://github.com/LazZiya)
+
+* Install package
+````
+PM > Install-Package LazZiya.TagHelpers
+````
+
+* Add to _VÝewImports.cshtml:
+````html
+@addTagHelper *, LazZiya.TagHelpers
+````
+
+### Create a pagination control
 
 Only few parameters are required to fire up the pagination control
 
-````razor
+````html
 <paging total-records="Model.TotalRecords"
             page-no="Model.PageNo"
             query-string-value="@(Request.QueryString.Value)"
@@ -12,7 +35,7 @@ Only few parameters are required to fire up the pagination control
 Query string value is necessary if there is multiple search filters in the url.
 
 Full options of pagination control :
-````razor
+````html
     <paging total-records="Model.TotalRecords"
             page-no="Model.PageNo"
             page-size="Model.PageSize"

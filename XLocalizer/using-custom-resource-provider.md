@@ -1,4 +1,16 @@
-#### Resource providers
+---
+title: Custom Resource Provider
+keywords: localization, asp.net-core, resource, provider, cusotm
+description: Learn how to create custom resource provider to store localized resources in custom file types files with XLocalizer.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 1.0
+---
+
+# Custom Resource Provider
+
+By [Ziya Mollamahmut](https://github.com/LazZiya)
+
 Resource providers are responsible for doing read/write operations for the resource files. `XLocalizer` has built-in support for _.resx, .xml_ file types. Additionally it has support for DB with EF (requires [`XLocalizer.DB`][1]).
 
 #### Extending source types
@@ -24,6 +36,7 @@ services.AddSingleton<IXDbResourceProvider, MyCustomDbProvider>();
 services.AddRazorPages()
         .AddXDbLocalizer<ApplicatonDbContext>(...)
 ````
+
 
 [1]:../XLocalizer/setup-db.md
 [2]:https://github.com/LazZiya/XLocalizer/blob/master/XLocalizer/IXResourceProvider.cs

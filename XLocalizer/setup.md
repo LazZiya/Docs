@@ -1,4 +1,15 @@
+---
+title: XLocalizer Setup
+keywords: localization, asp.net-core
+description: Learn how to setup XLocalizer for localization of Asp.Net Core web app.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 1.0
+---
+
 # XLocalizer Setup
+
+By [Ziya Mollamahmut](https://github.com/LazZiya)
 
 Install main package from nuget:
 ````
@@ -48,6 +59,7 @@ services.AddRazorPages()
 services.AddMvc()
         .AddMvcOptions(ops => { ops.Conventions.Insert(0, new RouteTemplateModelConventionMvc()); });
 ````
+
 
 [1]:../XLocalizer/setup-xml.md
 [2]:../XLocalizer/setup-db.md

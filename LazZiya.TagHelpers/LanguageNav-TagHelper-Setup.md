@@ -1,15 +1,31 @@
+---
+title: Add a Language Dropdown with LanguageNav TagHelper
+keywords: asp.net-core, taghelpers, language, dropdown, localization
+description: Add a language navigation dropdown to Asp.Net Core web apps easily with LanguageNav TagHelper.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 1.x, 2.x, 3.x, 4.x, 5.x
+---
+
+# Add a Language DropDown with LanguageNav TagHelper
+
+By [Ziya Mollamahmut](https://github.com/LazZiya)
+
 Adds a language navigation that lists all supported cultures.
 
 ### Quick Navigation
-- [Setup](#setup)
 - [Redirect to URL](#redirect-to-url)
 - [Redirect to the same page](#redirect-to-the-same-page)
 - [Show country flags](#show-country-flags)
 - [Set culture cookie](#set-culture-cookie)
 
-### Setup
-Add `LazZiya.TagHelpers` to __viewImports.cshtml_
-````razor
+* Install package
+````
+PM > Install-Package LazZiya.TagHelpers
+````
+
+* Add to _VÝewImports.cshtml:
+````html
 @addTagHelper *, LazZiya.TagHelpers
 ````
 

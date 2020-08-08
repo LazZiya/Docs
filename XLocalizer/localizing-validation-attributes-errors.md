@@ -1,4 +1,16 @@
-## Localizing Data Annotations
+---
+title: Localizing Data Annotations
+keywords: localization, asp.net-core, data-annotations, validation, attributes
+description: Learn how to localize DataAnnotations error messages with XLocalizer in Asp.Net Core web app.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 1.0
+---
+
+# Localizing Data Annotations
+
+By [Ziya Mollamahmut](https://github.com/LazZiya)
+
 Another handful feature of XLocalizer is Express attributes; Some of the data attributes do not produce localized error messages if not specified manually in the attributes `ErrorMessage="..."`. Expess data attributes eliminates the need to manually provide error message for each attribute and it produces localized error messages automatically.
 
 - Sample required attribute usage:
@@ -39,7 +51,7 @@ Below is a list of all express data attributes and their default error messages:
 
 The rest of the frameworks data attributes are already providing a default error messages, so they are localized by _ExpressLocalization_ by default as well:
 
-````cs
+````csharp
 // "The {0} field is not a valid credit card number."
 [CreditCard]
 
@@ -62,5 +74,6 @@ The rest of the frameworks data attributes are already providing a default error
 #
 ### Next: [Model binding errors][1]
 #
+
 
 [1]:../XLocalizer/model-binding-errors.md

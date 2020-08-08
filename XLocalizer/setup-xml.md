@@ -1,4 +1,16 @@
-# Localization setup based on XML
+---
+title: XML Based Localization Setup
+keywords: localization, asp.net-core, xml, resource, files
+description: Localization setup of Asp.Net Core based on XML resource files with XLocalizer.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 1.0
+---
+
+# XML Based Localization Setup
+
+By [Ziya Mollamahmut](https://github.com/LazZiya)
+
 Localization based on _XML_ files works very similar to _RESX_ process, we only use _.xml_ files instead of _.resx_ to store resources. But the ability to edit _XML_ files at run time gives us the flexibility of automtically adding missing resources to _XML_ resource files.
 
 ### Table of contents
@@ -223,6 +235,8 @@ namespace XmlLocalizationSample
 #
 #### Next: [Localizing views][2]
 #
+
+
 [1]:../XLocalizer/translate-services.md
 [2]:../XLocalizer/localizing-views.md
 [3]:https://github.com/LazZiya/XLocalizer.Samples/tree/master/XmlLocalizationSample

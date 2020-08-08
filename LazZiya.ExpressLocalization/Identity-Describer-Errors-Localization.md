@@ -1,3 +1,16 @@
+---
+title: Localizing Identity Errors
+keywords: localization, asp.net-core, express-localization, identity, errors
+description: Localization of identity errors in Asp.Net Core with ExpressLocalization.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 1.x, 2.x 3.x, 4.x
+---
+
+# Localizing Identity Errors
+
+By [Ziya Mollamahmut](https://github.com/LazZiya)
+
 Identity errors localization setup is done by default with `ExpressLocalization`, you only need to provide the localized versions for the below messages in resx files:
 
 ### Default identity describer errors

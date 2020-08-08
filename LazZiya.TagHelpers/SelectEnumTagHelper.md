@@ -1,3 +1,16 @@
+---
+title: SelectEnum TagHelper
+keywords: asp.net-core, taghelpers, select, enum
+description: Creates a select list dropdown from Enum, with ability to set selected value and localization support.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 1.x, 2.x, 3.x, 4.x, 5.x
+---
+
+# SelectEnum TagHelper
+
+By [Ziya Mollamahmut](https://github.com/LazZiya)
+
 # What is it?
 Creates a select list dropdown from Enum, with ability to set selected value and localization support.
 

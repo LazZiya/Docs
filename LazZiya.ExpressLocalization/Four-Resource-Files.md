@@ -1,4 +1,16 @@
-### Four resource files for each culture:
+---
+title: Four resource files for each culture
+keywords: localization, asp.net-core, express-localization
+description: Use four resource files for each culture in ExpressLocalization.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 1.x, 2.x, 3.x, 4.x
+---
+
+# Four resource files for each culture
+
+By [Ziya Mollamahmut](https://github.com/LazZiya)
+
 If you still want to split error messages to different resource files, you can create a resource file for each type as below:
 - Create a dummy class for views localization `LocSourceViews.cs`
 ````csharp
@@ -51,8 +63,5 @@ services.AddRazorPages()
     - LocSourceData.ar.resx
     - LocSourceModelBinding.ar.resx
     - LocSourceIdentity.ar.resx
-
-### Applies to ExpressLocalization versions:
- 4.0, 3.2, 3.1, 3.0, 2.0, 1.1, 1.0
 
 [1]:../LazZiya.ExpressLocalization/Setup-for-Razor-Pages.md

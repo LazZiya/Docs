@@ -1,4 +1,16 @@
+---
+title: Localization of Blazor Server Projects
+keywords: localization, asp.net-core, blazor
+description: Learn how to localize Blazor server app with XLocalizer.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 1.0
+---
+
 # Localization of Blazor Server Projects
+
+By [Ziya Mollamahmut](https://github.com/LazZiya)
+
 Localization of Blazor projects is very similar to Razor or MVC projects with a few restrictions/changes listed below.
 
 > - No support for route based localization, cookie based localization can be used instead.
@@ -327,6 +339,7 @@ namespace BlazorLocalizationSample
 
 #### References:
 - [ASP.NET Core Blazor globalization and localization][5]
+
 
 [1]:../XLocalizer/translate-services.md
 [2]:../XLocalizer/localizing-views.md

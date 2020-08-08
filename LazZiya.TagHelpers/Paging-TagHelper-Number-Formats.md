@@ -1,3 +1,16 @@
+---
+title: Paging TagHelper Number Formats
+keywords: asp.net-core, taghelpers, paging, control, pagination, number, formats, attributes
+description: Change the number fortmat of PagingTagHelper for Asp.Net Core.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 4.x, 5.x
+---
+
+# Paging TagHelper Number Formats
+
+By [Ziya Mollamahmut](https://github.com/LazZiya)
+
 ### Changing numbers format
 Paging taghelper provides a handy feature to display numbers in different formats (Arabic, Hindi, Roman, Hex, ...etc.)
 

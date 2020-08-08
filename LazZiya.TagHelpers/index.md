@@ -1,4 +1,15 @@
+---
+title: LazZiya.TagHelpers
+keywords: asp.net-core, taghelpers, paging, alerts, language, dropdown, localization, valdiation, scripts
+description: A collection of usefull tag helpers for every Asp.Net Core web app.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 1.x, 2.x, 3.x, 4.x, 5.x
+---
+
 # LazZiya.TagHelpers
+
+By [Ziya Mollamahmut](https://github.com/LazZiya)
 
 ## What is it?
 A collection of useful TagHelpers for any ASP.NET Core project.

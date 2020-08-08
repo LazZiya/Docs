@@ -1,3 +1,16 @@
+---
+title: Migrating from 3.x to 4.x
+keywords: localization, asp.net-core, migrating
+description: Migrate from ExpressLocalization 3.x to 4.x.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 1.0
+---
+
+# Migrating from 3.x to 4.x
+
+By [Ziya Mollamahmut](https://github.com/LazZiya)
+
 Use this manual to upgrade from `LazZiya.ExpressLocalization v3.x` to `v4.0`.
 
 

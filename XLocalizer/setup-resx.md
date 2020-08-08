@@ -1,4 +1,16 @@
-# Setup localization based on RESX
+---
+title: RESX Based Localization Setup
+keywords: localization, asp.net-core, resx, resource, files
+description: Localization setup of Asp.Net Core based on RESX resource files with XLocalizer.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 1.0
+---
+
+# RESX Based Localization Setup
+
+By [Ziya Mollamahmut](https://github.com/LazZiya)
+
 _RESX_ resource files are the default file type for localization. But, _RESX_ files do not support editing at runtime! So if you do not want to fill them manually, start localization setup based on XML or DB, then export the resources to _RESX_ files.
 
 ### Table of contents
@@ -135,5 +147,6 @@ namespace SampleProject
 
 #### Sample project
 [Download sample project from GitHub][1]
+
 
 [1]:https://github.com/LazZiya/XLocalizer.Samples/tree/master/ResxLocalizationSample

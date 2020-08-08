@@ -1,3 +1,16 @@
+---
+title: Customized Setup
+keywords: localization, asp.net-core, express-localization, custom, setup
+description: Learn how use a custom setup of ExpressLocalization.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 1.x, 2.x, 3.x, 4.x
+---
+
+# Customized Setup
+
+By [Ziya Mollamahmut](https://github.com/LazZiya)
+
 If you don't want to use all localization settings in one step, you can use customized setup methods as described below.
 
 ````csharp

@@ -1,3 +1,16 @@
+---
+title: Culture Fallback Behavior
+keywords: localization, asp.net-core, xlocalizer, culture,fallback,behavior
+description: Learn how the app chooses the culture in a localized Asp.Net Core web app.
+author: Ziya Mollamahmut
+date: 08-Aug-2020
+versions: 1.0
+---
+
+# Culture Fallback Behavior
+
+By [Ziya Mollamahmut](https://github.com/LazZiya)
+
 Asp.Net Core uses [localization culture providers][5] to detect the request culture and respond accordingly. The culture checking process goes one by one through all registered providers, whenever a request culture is detected the check process stops and the localization process starts accordingly.
 
 If the request culture is not found in the first provider, next provider will be checked. Finally if no culture is detected the default culture will be used.
@@ -18,6 +31,7 @@ services.Configure<RequestLocalizationOptions>(ops =>
 2) [QueryStringRequestCultureProvider][7]
 3) [CookieRequestCultureProvider][3]
 4) [AcceptedLanguageHeaderRequestCultureProvider][4]
+
 
 [6]: https://github.com/LazZiya/XLocalizer/blob/master/XLocalizer/Routing/RouteSegmentRequestCultureProvider.cs
 [7]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.localization.querystringrequestcultureprovider
