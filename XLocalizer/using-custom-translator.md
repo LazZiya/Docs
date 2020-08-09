@@ -1,4 +1,4 @@
-﻿---
+---
 title: Custom Translation Service
 keywords: localization, asp.net-core, translate, cusotm, service
 description: Learn how to create custom translation service to use for localizing Asp.Net Core web apps with XLocalizer.
