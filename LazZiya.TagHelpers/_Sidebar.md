@@ -7,6 +7,7 @@
 - [Json Settings][4]
 - [Ajax Support][5]
 - [Number Formats][6]
+- [Styling][13]
 
 ### Alert TagHelper
 - [Overview][7]
@@ -32,3 +33,4 @@
 [10]:../LazZiya.TagHelpers/LanguageNav-TagHelper-Setup.md
 [11]:../LazZiya.TagHelpers/LanguageNav-TagHelper-Attributes.md
 [12]:../LazZiya.TagHelpers/LocalizationValidationScripts-TagHelper-Setup.md
+[13]:../LazZiya.TagHelpers/Paging-TagHelper-Styling.md

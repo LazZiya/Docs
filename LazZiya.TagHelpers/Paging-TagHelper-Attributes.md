@@ -103,6 +103,7 @@ Attributes to set class names for the html parts of the paging controls.
 | `class-total-pages` | yes | `string` | `badge badge-light` | Class name for the total pages info badge |
 | `class-total-records` | yes | `string` | `badge badge-dark` | Class name for the total records info badge |
 | `class-disabled-jumping-buttons` | yes | `string` | `disabled` | Class name for the navigation buttons e.g. goto first/last/prev/next buttons while they are disabled. |
+| `class-page-link` | yes | `string` | null | Class name for the page link item. This value will be added next to the fixed class `page-link`. |
 |<img width="450"/>|<img width="50"/>|<img width="50"/>|<img width="350"/>| [Goto top](#quick-navigation) |
 
 `PagingTagHelper` will render a bootstrap styled paging control. By default it is like below:

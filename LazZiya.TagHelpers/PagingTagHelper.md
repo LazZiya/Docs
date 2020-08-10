@@ -117,7 +117,7 @@ appSettings.json:
 }
 ````
 HTML Code:
-````razor
+````html
     <!-- custom settings -->
     <paging total-records="Model.TotalRecords" 
             page-no="Model.PageNo" 
