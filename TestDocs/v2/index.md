@@ -4,6 +4,6 @@
 * [goto V3][2]
 * [Totorial v2][3]
 
-[1]:../V1/index.md
-[2]:../V3/index.md
+[1]:../v1/index.md
+[2]:../v3/index.md
 [3]:tutorial.md
