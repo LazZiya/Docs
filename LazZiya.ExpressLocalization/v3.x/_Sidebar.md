@@ -1,10 +1,6 @@
 - [Home](index.md)
 - [Release History](https://github.com/LazZiya/ExpressLocalization/releases)
 
-### Migration
-- [3.x to 4.0](Migration-3.x-to-4.0.md)
-- [4.x to 5.0](Migration-4.x-to-5.0.md)
-
 #### ExpressLocalization Setup
 - [Setup for Razor Pages](Setup-for-Razor-Pages.md)
 - [Setup for MVC](Setup-for-MVC.md)
@@ -17,7 +13,6 @@
 - [Four Resource Files](Four-Resource-Files.md)
 
 #### Views Localization
-- [Localize TagHelper](Localize-TagHelper.md)
 - [ISharedCultureLocalizer](SharedCultureLocalizer.md)
 
 #### DataAnnotations Localization

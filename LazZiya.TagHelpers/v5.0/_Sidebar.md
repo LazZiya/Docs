@@ -1,6 +1,3 @@
-### LazZiya.TagHelpers v5.0
----
-
 - [Index][1]
 - [Release Notes](https://github.com/LazZiya/TagHelpers/releases)
 
