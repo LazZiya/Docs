@@ -1,4 +1,4 @@
-<details><summary>Meta details</summary>
+<details hidden><summary>Meta details</summary>
 <p>
 
 ````json
