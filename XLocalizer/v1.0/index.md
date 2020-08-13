@@ -1,11 +1,19 @@
----
-title: XLocalizer for Asp.Net Core
-keywords: localization, asp.net-core, xlocalizer
-description: Learn about localizing Asp.Net Core web apps with XLocalizer powered by auto translate and auto key adding.
-author: Ziya Mollamahmut
-date: 08-Aug-2020
-versions: 1.0
----
+<details><summary>Meta</summary>
+<p>
+
+````json
+{
+"title": "XLocalizer for Asp.Net Core"
+"keywords": "localization, asp.net-core, xlocalizer"
+"description": "Learn about localizing Asp.Net Core web apps with XLocalizer powered by auto translate and auto key adding."
+"author": "Ziya Mollamahmut"
+"date": "08-Aug-2020"
+"versions": "1.0"
+}
+````
+
+</p>
+</details>
 
 # XLocalizer for Asp.Net Core
 
