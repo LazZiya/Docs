@@ -1,18 +1,12 @@
-<details><summary>Meta details</summary>
-<p>
+<details><summary>meta details</summary>
 
-````json
-{
-    "title": "XLocalizer for Asp.Net Core",
-    "keywords": "localization, asp.net-core, xlocalizer",
-    "description": "Learn about localizing Asp.Net Core web apps with XLocalizer powered by auto translate and auto key adding.",
-    "author": "Ziya Mollamahmut",
-    "date": "08-Aug-2020",
-}
-````
+<span id="mdTitle">XLocalizer for Asp.Net Core</span>
+<span id="mdKeywords">localization, asp.net-core, xlocalizer</span>
+<span id="mdDescription">Learn about localizing Asp.Net Core web apps with XLocalizer powered by auto translate and auto key adding.</span>
+<span id="mdAuthor">Ziya Mollamahmut</span>
+<span id="mdDate">08-Aug-2020</span>
 
-</p>
-</details>
+</detail>
 
 # XLocalizer for Asp.Net Core
 
