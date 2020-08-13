@@ -1,5 +1,4 @@
-<details hidden><summary>Meta details</summary>
-<p>
+<div hidden>
 
 ````json
 {
@@ -11,8 +10,7 @@
 }
 ````
 
-</p>
-</details>
+</div>
 
 # XLocalizer for Asp.Net Core
 
