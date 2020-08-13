@@ -6,7 +6,7 @@
 <span id="mdAuthor">Ziya Mollamahmut</span>
 <span id="mdDate">08-Aug-2020</span>
 
-</detail>
+</details>
 
 # XLocalizer for Asp.Net Core
 
