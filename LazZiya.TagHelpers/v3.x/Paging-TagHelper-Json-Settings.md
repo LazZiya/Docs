@@ -1,11 +1,18 @@
----
-title: Paging TagHelper Json Settings
-keywords: asp.net-core, taghelpers, paging, control, pagination, json, attributes
-description: Json settings of PagingTagHelper for Asp.Net Core.
-author: Ziya Mollamahmut
-date: 08-Aug-2020
-versions: 1.x, 2.x, 3.x, 4.x, 5.x
----
+<!-- meta tags details, will be assigned to meta tags inside header by js -->
+<div id="meta-info">
+<details><summary>meta info</summary>
+
+> * Title: <i id="md-title">Paging TagHelper Json Settings</i>
+> * Keywords: <i id="md-keywords">asp.net-core, taghelpers, paging, control, pagination, json, attributes</i>
+> * Description: <i id="md-description">Json settings of PagingTagHelper for Asp.Net Core.</i>
+> * Author: <i id="md-author">Ziya Mollamahmut</i>
+> * Date: <i id="md-date">02-Oct-2019</i>
+> * Image: <i id="md-image">https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v3.0/images/lazziya-tagheleprs-logo.png</i>
+> * Image-alt: <i id="md-image-alt">LazZiya.TagHelpers Logo</i>
+> * Version: <i id="md-version">v3.0</i>
+
+</details>
+</div>
 
 # Paging TagHelper Json Settings
 
@@ -104,6 +111,7 @@ All json settings with default values in one shot:
     "lazziya": {
         "pagingTagHelper": {
             "default": {
+                "number-system": "default",
                 "max-displayed-pages": 10,
                 "page-size-dropdown-items": "10-25-50",
                 "query-string-key-page-no": "p",

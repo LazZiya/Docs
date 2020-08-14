@@ -1,11 +1,18 @@
----
-title: Paging TagHelper Attributes
-keywords: asp.net-core, taghelpers, paging, control, pagination, attributes
-description: Attributes of PagingTagHelper for Asp.Net Core.
-author: Ziya Mollamahmut
-date: 08-Aug-2020
-versions: 1.x, 2.x, 3.x, 4.x, 5.x
----
+<!-- meta tags details, will be assigned to meta tags inside header by js -->
+<div id="meta-info">
+<details><summary>meta info</summary>
+
+> * Title: <i id="md-title">Paging TagHelper Attributes</i>
+> * Keywords: <i id="md-keywords">asp.net-core, taghelpers, paging, control, pagination, attributes</i>
+> * Description: <i id="md-description">Attributes of PagingTagHelper for Asp.Net Core.</i>
+> * Author: <i id="md-author">Ziya Mollamahmut</i>
+> * Date: <i id="md-date">02-Oct-2019</i>
+> * Image: <i id="md-image">https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v3.0/images/lazziya-tagheleprs-logo.png</i>
+> * Image-alt: <i id="md-image-alt">LazZiya.TagHelpers Logo</i>
+> * Version: <i id="md-version">v3.0</i>
+
+</details>
+</div>
 
 # Paging TagHelper Attributes
 
@@ -75,6 +82,7 @@ Attributes to set the texts of the buttons and labels.
 | `text-next` | yes | `string` | `&rsaquo;` | Text for goto next record button |
 | `text-total-pages` | yes | `string` | `pages` | Text for total pages badge e.g. 100 pages |
 | `text-total-records` | yes | `string` | `records` | Text for total records badge e.g. 1000 records |
+| [`number-format`][1] | yes | `string` | `default` | See [Number format][1] for more details. |
 |<img width="300"/>|<img width="50"/>|<img width="50"/>|<img width="50"/>| [Goto top](#quick-navigation) |
 
 #### Texts for screen readers
@@ -126,3 +134,5 @@ Attributes to set class names for the html parts of the paging controls.
     </div>
 </div>
 ````
+
+[1]:Paging-TagHelper-Number-Formats.md
