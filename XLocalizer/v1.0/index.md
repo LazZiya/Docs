@@ -1,5 +1,6 @@
-<div class="d-none">
 <!-- meta tags details, will be assigned to meta tags inside header by js -->
+<div id="meta-details">
+<details><sumary>meta details</summary>
 
 > * Title: <i id="md-title">XLocalizer for Asp.Net Core</i>
 > * Keywords: <i id="md-keywords">localization, asp.net-core, xlocalizer</i>
@@ -9,6 +10,7 @@
 > * Image: <i id="md-image">https://raw.githubusercontent.com/LazZiya/Docs/master/images/XLocalizer/xlocalizer-logo.PNG</i>
 > * Image-alt: <i id="md-image-alt">XLocalizer Logo</i>
 
+</detasil>
 </div>
 
 # XLocalizer for Asp.Net Core
