@@ -1,11 +1,18 @@
----
-title: XLocalizer - Quick Start
-keywords: localization, asp.net-core
-description: A quick start to setup XLocalizer in Asp.Net Core.
-author: Ziya Mollamahmut
-date: 08-Aug-2020
-versions: 1.0
----
+<!-- meta tags details, will be assigned to meta tags inside header by js -->
+<div id="meta-info">
+<details><summary>meta info</summary>
+
+> * Title: <i id="md-title">XLocalizer - Quick Start</i>
+> * Keywords: <i id="md-keywords">localization, asp.net-core</i>
+> * Description: <i id="md-description">A quick start to setup XLocalizer in Asp.Net Core.</i>
+> * Author: <i id="md-author">Ziya Mollamahmut</i>
+> * Date: <i id="md-date">08-Aug-2020</i>
+> * Image: <i id="md-image">https://github.com/LazZiya/Docs/raw/vNext/XLocalizer/v1.0/images/xlocalizer-logo.png</i>
+> * Image-alt: <i id="md-image-alt">XLocalizer Logo</i>
+> * Version: <i id="md-version">v1.0</i>
+
+</details>
+</div>
 
 # XLocalizer - Quick Start
 

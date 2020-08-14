@@ -7,10 +7,11 @@
 > * Description: <i id="md-description">Learn about localizing Asp.Net Core web apps with XLocalizer powered by auto translate and auto key adding.</i>
 > * Author: <i id="md-author">Ziya Mollamahmut</i>
 > * Date: <i id="md-date">08-Aug-2020</i>
-> * Image: <i id="md-image">https://raw.githubusercontent.com/LazZiya/Docs/master/images/XLocalizer/xlocalizer-logo.PNG</i>
+> * Image: <i id="md-image">https://github.com/LazZiya/Docs/raw/vNext/XLocalizer/v1.0/images/xlocalizer-logo.png</i>
 > * Image-alt: <i id="md-image-alt">XLocalizer Logo</i>
+> * Version: <i id="md-version">v1.0</i>
 
-</detasil>
+</details>
 </div>
 
 # XLocalizer for Asp.Net Core
