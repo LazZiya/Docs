@@ -1,6 +1,6 @@
 [
   {
-    "title": "XLocalizer Docs",
+    "title": "XLocalizer",
     "description": "Asp.Net Core localization, powered by online translation and auto resource creating.",
     "repoUrl": "https://github.com/LazZiya/XLocalizer",
     "folder": "XLocalizer",
@@ -8,7 +8,7 @@
     "image": "https://github.com/LazZiya/Docs/raw/master/XLocalizer/v1.0/images/xlocalizer-logo.png"
   },
   {
-    "title": "LazZiya.TagHelpers Docs",
+    "title": "LazZiya.TagHelpers",
     "description": "A collection of usefull taghelpers for every Asp.Net Core project.",
     "repoUrl": "https://github.com/LazZiya/TagHelpers",
     "folder": "LazZiya.TagHelpers",
@@ -16,7 +16,7 @@
     "image": "https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v5.0/images/lazziya-taghelpers-logo.png"
   },
   {
-    "title": "LazZiya.ExpressLocalization Docs",
+    "title": "LazZiya.ExpressLocalization",
     "description": "All dirty localization settings in simple steps",
     "repoUrl": "https://github.com/LazZiya/ExpressLocalization",
     "folder": "LazZiya.ExpressLocalization",
