@@ -1,0 +1,8 @@
+{
+  "title": "XLocalizer Docs",
+  "description": "Asp.Net Core localization, powered by online translation and auto resource creating.",
+  "repoUrl": "https://github.com/LazZiya/XLocalizer",
+  "folder": "XLocalizer",
+  "versions": [ "v1.0" ],
+  "image": "https://github.com/LazZiya/Docs/raw/master/XLocalizer/v1.0/images/xlocalizer-logo.png"
+}
