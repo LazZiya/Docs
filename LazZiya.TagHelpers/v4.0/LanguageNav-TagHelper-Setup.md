@@ -1,11 +1,18 @@
----
-title: Add a Language Dropdown with LanguageNav TagHelper
-keywords: asp.net-core, taghelpers, language, dropdown, localization
-description: Add a language navigation dropdown to Asp.Net Core web apps easily with LanguageNav TagHelper.
-author: Ziya Mollamahmut
-date: 08-Aug-2020
-versions: 1.x, 2.x, 3.x, 4.x, 5.x
----
+<!-- meta tags details, will be assigned to meta tags inside header by js -->
+<div id="meta-info">
+<details><summary>meta info</summary>
+
+> * Title: <i id="md-title">Add a Language Dropdown with LanguageNav TagHelper</i>
+> * Keywords: <i id="md-keywords">asp.net-core, taghelpers, language, dropdown, localization</i>
+> * Description: <i id="md-description">Add a language navigation dropdown to Asp.Net Core web apps easily with LanguageNav TagHelper.</i>
+> * Author: <i id="md-author">Ziya Mollamahmut</i>
+> * Date: <i id="md-date">27-Mar-2020</i>
+> * Image: <i id="md-image">https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v4.0/images/lazziya-tagheleprs-logo.png</i>
+> * Image-alt: <i id="md-image-alt">LazZiya.TagHelpers Logo</i>
+> * Version: <i id="md-version">v4.0</i>
+
+</details>
+</div>
 
 # Add a Language DropDown with LanguageNav TagHelper
 
@@ -77,7 +84,7 @@ E.g. if we have our cultures like: "tr-tr", "ar-sy", and "en-us" we can use flag
 <language-nav flags="true"></language-nav>
 ````
 
-![LanguageNav with Flags](https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v5.0/images/languagenav-taghelper-with-flags.PNG)
+![LanguageNav with Flags](https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v4.0/images/languagenav-taghelper-with-flags.PNG)
 
 > Flags are svg files that shown with css thanks to [flag-icon-css][3].
 

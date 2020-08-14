@@ -1,11 +1,18 @@
----
-title: AlertTagHelper - Backend Alerts
-keywords: asp.net-core, taghelpers, alerts, backend
-description: Create bootstrap alerts from backend with LazZiya.TagHelpers.
-author: Ziya Mollamahmut
-date: 08-Aug-2020
-versions: 2.2, 3.x, 4.x, 5.x
----
+<!-- meta tags details, will be assigned to meta tags inside header by js -->
+<div id="meta-info">
+<details><summary>meta info</summary>
+
+> * Title: <i id="md-title">AlertTagHelper - Backend Alerts</i>
+> * Keywords: <i id="md-keywords">asp.net-core, taghelpers, alerts, backend</i>
+> * Description: <i id="md-description">Create bootstrap alerts from backend with LazZiya.TagHelpers.</i>
+> * Author: <i id="md-author">Ziya Mollamahmut</i>
+> * Date: <i id="md-date">27-Mar-2020</i>
+> * Image: <i id="md-image">https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v4.0/images/lazziya-tagheleprs-logo.png</i>
+> * Image-alt: <i id="md-image-alt">LazZiya.TagHelpers Logo</i>
+> * Version: <i id="md-version">v4.0</i>
+
+</details>
+</div>
 
 # AlertTagHelper - Backend Alerts
 

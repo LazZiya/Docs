@@ -1,11 +1,18 @@
----
-title: AlertTagHelper - Frontend Alerts
-keywords: asp.net-core, taghelpers, alerts, backend
-description: Create bootstrap alerts from frontend with LazZiya.TagHelpers.
-author: Ziya Mollamahmut
-date: 08-Aug-2020
-versions: 2.2, 3.x, 4.x, 5.x
----
+<!-- meta tags details, will be assigned to meta tags inside header by js -->
+<div id="meta-info">
+<details><summary>meta info</summary>
+
+> * Title: <i id="md-title">AlertTagHelper - Frontend Alerts</i>
+> * Keywords: <i id="md-keywords">asp.net-core, taghelpers, alerts, backend</i>
+> * Description: <i id="md-description">Create bootstrap alerts from frontend with LazZiya.TagHelpers.</i>
+> * Author: <i id="md-author">Ziya Mollamahmut</i>
+> * Date: <i id="md-date">27-Mar-2020</i>
+> * Image: <i id="md-image">https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v4.0/images/lazziya-tagheleprs-logo.png</i>
+> * Image-alt: <i id="md-image-alt">LazZiya.TagHelpers Logo</i>
+> * Version: <i id="md-version">v4.0</i>
+
+</details>
+</div>
 
 # AlertTagHelper - Frontend Alerts
 
@@ -30,7 +37,7 @@ Create bootstrap 4.x themed alerts with simple html tag.
 </alert-primary>
 ````
 
-![Primary alert front end](https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v5.0/images/alert-taghelper-primary-front-end.PNG)
+![Primary alert front end](https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v4.0/images/alert-taghelper-primary-front-end.PNG)
 
 ### Un-dismissable alert
 Use `dismissable` attribute to remove the alert closing button. 
@@ -40,7 +47,7 @@ Use `dismissable` attribute to remove the alert closing button.
 </alert-info>
 ```` 
 
-![Alert no dismiss](https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v5.0/images/alert-taghelper-no-dismiss.PNG)
+![Alert no dismiss](https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v4.0/images/alert-taghelper-no-dismiss.PNG)
 
 ### Alert header
 Add alert header using `alert-heading` attribute
@@ -50,7 +57,7 @@ Add alert header using `alert-heading` attribute
 </alert-warning>
 ````
 
-![Alert with header](https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v5.0/images/alert-taghelper-with-header.PNG)
+![Alert with header](https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v4.0/images/alert-taghelper-with-header.PNG)
 
 ### Html content
 It is possible to use html content inside the alert body.
@@ -63,7 +70,7 @@ It is possible to use html content inside the alert body.
 </alert-danger>
 ````
 
-![Alert with HTML content](https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v5.0/images/alert-taghelper-html-content.PNG)
+![Alert with HTML content](https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v4.0/images/alert-taghelper-html-content.PNG)
 
 ### All alerts
 ````html
@@ -77,7 +84,7 @@ It is possible to use html content inside the alert body.
 <alert-dark>
 ````
 
-![All alerts](https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v5.0/images/alert-taghelper-all-front-end.PNG)
+![All alerts](https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v4.0/images/alert-taghelper-all-front-end.PNG)
 
 See samples in the [demo page][1].
 
