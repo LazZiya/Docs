@@ -1,4 +1,4 @@
-<div hidden>
+<div class="d-none">
 <!-- meta tags details, will be assigned to meta tags inside header by js -->
 
 > * Title: <i id="md-title">XLocalizer for Asp.Net Core</i>
