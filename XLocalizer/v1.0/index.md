@@ -1,12 +1,19 @@
+<details><summary>meta details</summary>
 <!-- meta tags details, will be assigned to meta tags inside header by js -->
-<!--
-<i id="mdTitle">XLocalizer for Asp.Net Core</i>
-<i id="mdKeywords">localization, asp.net-core, xlocalizer</i>
-<i id="mdDescription">Learn about localizing Asp.Net Core web apps with XLocalizer powered by auto translate and auto key adding.</i>
-<i id="mdAuthor">Ziya Mollamahmut</i>
-<i id="mdDate">08-Aug-2020</i>
-<i id="mdImage">https://raw.githubusercontent.com/LazZiya/Docs/master/images/XLocalizer/xlocalizer-logo.PNG</i>
--->
+
+<ul>
+<li id="mdTitle">XLocalizer for Asp.Net Core</li>
+<li id="mdKeywords">localization, asp.net-core, xlocalizer</li>
+<li id="mdDescription">Learn about localizing Asp.Net Core web apps with XLocalizer powered by auto translate and auto key adding.</li>
+<li id="mdAuthor">Ziya Mollamahmut</li>
+<li id="mdDate">08-Aug-2020</li>
+<li id="mdImage">https://raw.githubusercontent.com/LazZiya/Docs/master/images/XLocalizer/xlocalizer-logo.PNG</li>
+<li id="mdImageAlt">XLocalizer Logo</li>
+</ul>
+
+</details>
+
+[//]: # (This is a comment)
 
 # XLocalizer for Asp.Net Core
 
