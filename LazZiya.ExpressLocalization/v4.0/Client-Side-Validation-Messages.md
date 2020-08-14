@@ -1,11 +1,18 @@
----
-title: Localization of Client Side Validation Messages
-keywords: localization, asp.net-core, express-localization, client, side, validation
-description: Learn about localizing client side valdiation error messages with ExpressLocalization in Asp.Net Core.
-author: Ziya Mollamahmut
-date: 08-Aug-2020
-versions: 1.x, 2.x, 3.x, 4.x
----
+<!-- meta tags details, will be assigned to meta tags inside header by js -->
+<div id="meta-info">
+<details><summary>meta info</summary>
+
+> * Title: <i id="md-title">Localization of Client Side Validation Messages</i>
+> * Keywords: <i id="md-keywords">localization, asp.net-core, express-localization, client, side, validation</i>
+> * Description: <i id="md-description">Learn about localizing client side valdiation error messages with ExpressLocalization in Asp.Net Core.</i>
+> * Author: <i id="md-author">Ziya Mollamahmut</i>
+> * Date: <i id="md-date">08-Aug-2020</i>
+> * Image: <i id="md-image">https://github.com/LazZiya/Docs/raw/master/LazZiya.ExpressLocalization/v4.0/images/lazziya-express-localization-logo.png</i>
+> * Image-alt: <i id="md-image-alt">LazZiya.ExpressLocalization Logo</i>
+> * Version: <i id="md-version">v4.0</i>
+
+</details>
+</div>
 
 # Localization of Client Side Validation Messages
 
