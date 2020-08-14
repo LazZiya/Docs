@@ -1,11 +1,18 @@
----
-title: Culture Fallback Behavior
-keywords: localization, asp.net-core, express-localization, culture, fallback, behavior
-description: Learn how ExpressLocalization chooses the culture in a localized Asp.Net Core web app.
-author: Ziya Mollamahmut
-date: 08-Aug-2020
-versions: 1.x, 2.x, 3.x, 4.x
----
+<!-- meta tags details, will be assigned to meta tags inside header by js -->
+<div id="meta-info">
+<details><summary>meta info</summary>
+
+> * Title: <i id="md-title">Culture Fallback Behavior</i>
+> * Keywords: <i id="md-keywords">localization, asp.net-core, express-localization, culture, fallback, behavior</i>
+> * Description: <i id="md-description">Learn how ExpressLocalization chooses the culture in a localized Asp.Net Core web app.</i>
+> * Author: <i id="md-author">Ziya Mollamahmut</i>
+> * Date: <i id="md-date">27-Sep-2019</i>
+> * Image: <i id="md-image">https://github.com/LazZiya/Docs/raw/master/LazZiya.ExpressLocalization/v3.0/images/lazziya-express-localization-logo.png</i>
+> * Image-alt: <i id="md-image-alt">LazZiya.ExpressLocalization Logo</i>
+> * Version: <i id="md-version">v3.0</i>
+
+</details>
+</div>
 
 # Culture Fallback Behavior
 
