@@ -1,23 +1,23 @@
 - [Index][1]
 - [Release Notes](https://github.com/LazZiya/TagHelpers/releases)
 
-#### Paging TagHelper
+##### Paging TagHelper
 - [Basic Setup][2]
 - [Attributes][3]
 - [Json Settings][4]
 - [Ajax Support][5]
 - [Number Formats][6]
 
-#### Alert TagHelper
+##### Alert TagHelper
 - [Overview][7]
 - [Front-end Alerts][8]
 - [Back-end Alerts][9]
 
-#### Language Navigation
+##### Language Navigation
 - [Setup][10]
 - [Attributes][11]
 
-#### Validation Scripts
+##### Validation Scripts
 - [Setup][12]
 
 [1]:index.md
