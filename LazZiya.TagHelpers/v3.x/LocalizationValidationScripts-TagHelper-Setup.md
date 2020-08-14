@@ -14,7 +14,7 @@ By [Ziya Mollamahmut](https://github.com/LazZiya)
 ### Introduction
 Some input fields need to be localized (decimal numbers, dates, ...etc.). But without client side localizing libraries this could make problems with different cultures (e.g. decimal numbers 1.23 and 1,23).
 
-![ES number input validiation](https://github.com/LazZiya/Docs/raw/master/images/LazZiya.TagHelpers/localization-validiation-scripts-number-es.PNG)
+![ES number input validiation](https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v5.0/images/localization-validiation-scripts-number-es.PNG)
 
 Validating localized input requires a couple of additional scripts _for each culture_ to be included under the form. For more details see [How to install client side validation scripts article manually][1].
 

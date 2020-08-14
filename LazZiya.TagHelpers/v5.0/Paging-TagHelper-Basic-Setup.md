@@ -1,11 +1,18 @@
----
-title: Paging TagHelper Basic Setup
-keywords: asp.net-core, taghelpers, paging, control, pagination, attributes
-description: Basic setup of PagingTagHelper for Asp.Net Core.
-author: Ziya Mollamahmut
-date: 08-Aug-2020
-versions: 1.x, 2.x, 3.x, 4.x, 5.x
----
+<!-- meta tags details, will be assigned to meta tags inside header by js -->
+<div id="meta-info">
+<details><summary>meta info</summary>
+
+> * Title: <i id="md-title">Paging TagHelper Basic Setup</i>
+> * Keywords: <i id="md-keywords">asp.net-core, taghelpers, paging, control, pagination, attributes</i>
+> * Description: <i id="md-description">Basic setup of PagingTagHelper for Asp.Net Core.</i>
+> * Author: <i id="md-author">Ziya Mollamahmut</i>
+> * Date: <i id="md-date">08-Aug-2020</i>
+> * Image: <i id="md-image">https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v5.0/images/lazziya-tagheleprs-logo.png</i>
+> * Image-alt: <i id="md-image-alt">LazZiya.TagHelpers Logo</i>
+> * Version: <i id="md-version">v5.0</i>
+
+</details>
+</div>
 
 # Paging TagHelper Basic Setup
 
@@ -23,11 +30,11 @@ Paging taghelper requires below parameters to render the paging control:
 
 Output:
 
-![PagingTagHelper - default](https://github.com/LazZiya/Docs/raw/master/images/LazZiya.TagHelpers/paging-tag-helper-full.PNG)
+![PagingTagHelper - default](https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v5.0/images/paging-tag-helper-full.PNG)
 
 ### Customized setup
 PagingTagHelper can be customized using [`html`][1] or [`json`][2] attributes:
-![PagingTagHelper - customization](https://github.com/LazZiya/Docs/raw/master/images/LazZiya.TagHelpers/paging-tag-helper-samples.PNG)
+![PagingTagHelper - customization](https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v5.0/images/paging-tag-helper-samples.PNG)
 
 [1]:Paging-TagHelper-Attributes.md
 [2]:Paging-TagHelper-Json-Settings.md

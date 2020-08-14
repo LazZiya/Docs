@@ -1,11 +1,18 @@
----
-title: Paging TagHelper Number Formats
-keywords: asp.net-core, taghelpers, paging, control, pagination, number, formats, attributes
-description: Change the number fortmat of PagingTagHelper for Asp.Net Core.
-author: Ziya Mollamahmut
-date: 08-Aug-2020
-versions: 4.x, 5.x
----
+<!-- meta tags details, will be assigned to meta tags inside header by js -->
+<div id="meta-info">
+<details><summary>meta info</summary>
+
+> * Title: <i id="md-title">Paging TagHelper Number Formats</i>
+> * Keywords: <i id="md-keywords">asp.net-core, taghelpers, paging, control, pagination, number, formats, attributes</i>
+> * Description: <i id="md-description">Change the number fortmat of PagingTagHelper for Asp.Net Core.</i>
+> * Author: <i id="md-author">Ziya Mollamahmut</i>
+> * Date: <i id="md-date">08-Aug-2020</i>
+> * Image: <i id="md-image">https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v5.0/images/lazziya-tagheleprs-logo.png</i>
+> * Image-alt: <i id="md-image-alt">LazZiya.TagHelpers Logo</i>
+> * Version: <i id="md-version">v5.0</i>
+
+</details>
+</div>
 
 # Paging TagHelper Number Formats
 
@@ -36,7 +43,7 @@ Sample to use `Roman` numbers:
 </paging>
 ````
 
-![PagingTagHelper - number formats](https://github.com/LazZiya/Docs/raw/master/images/LazZiya.TagHelpers/paging-tag-helper-number-formats.PNG)
+![PagingTagHelper - number formats](https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v5.0/images/paging-tag-helper-number-formats.PNG)
 
 ### Custom number format
 You may specify a custom number format by passing a string list delimited by space char, each char represents a number by order

@@ -1,11 +1,18 @@
----
-title: Paging TagHelper Styling
-keywords: asp.net-core, taghelpers, paging, control, pagination, styling
-description: Change the look of PagingTagHelper via bootstrap styling.
-author: Ziya Mollamahmut
-date: 10-Aug-2020
-versions: 5.x
----
+<!-- meta tags details, will be assigned to meta tags inside header by js -->
+<div id="meta-info">
+<details><summary>meta info</summary>
+
+> * Title: <i id="md-title">Paging TagHelper Styling</i>
+> * Keywords: <i id="md-keywords">asp.net-core, taghelpers, paging, control, pagination, styling</i>
+> * Description: <i id="md-description">Change the look of PagingTagHelper via bootstrap styling.</i>
+> * Author: <i id="md-author">Ziya Mollamahmut</i>
+> * Date: <i id="md-date">08-Aug-2020</i>
+> * Image: <i id="md-image">https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v5.0/images/lazziya-tagheleprs-logo.png</i>
+> * Image-alt: <i id="md-image-alt">LazZiya.TagHelpers Logo</i>
+> * Version: <i id="md-version">v5.0</i>
+
+</details>
+</div>
 
 # Paging TagHelper Styling
 
@@ -60,6 +67,6 @@ See all available styling attributes [here][0].
 5.x
 
 [0]:Paging-TagHelper-Attributes.md#styling-attributes
-[1]:https://github.com/LazZiya/Docs/raw/master/images/LazZiya.TagHelpers/paging-tag-helper-default.PNG
-[2]:https://github.com/LazZiya/Docs/raw/master/images/LazZiya.TagHelpers/paging-tag-helper-dark.PNG
-[3]:https://github.com/LazZiya/Docs/raw/master/images/LazZiya.TagHelpers/paging-tag-helper-gray.PNG
+[1]:https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v5.0/images/paging-tag-helper-default.PNG
+[2]:https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v5.0/images/paging-tag-helper-dark.PNG
+[3]:https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v5.0/images/paging-tag-helper-gray.PNG

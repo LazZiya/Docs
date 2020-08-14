@@ -30,7 +30,7 @@ Create bootstrap 4.x themed alerts with simple html tag.
 </alert-primary>
 ````
 
-![Primary alert front end](https://github.com/LazZiya/Docs/raw/master/images/LazZiya.TagHelpers/alert-taghelper-primary-front-end.PNG)
+![Primary alert front end](https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v5.0/images/alert-taghelper-primary-front-end.PNG)
 
 ### Un-dismissable alert
 Use `dismissable` attribute to remove the alert closing button. 
@@ -40,7 +40,7 @@ Use `dismissable` attribute to remove the alert closing button.
 </alert-info>
 ```` 
 
-![Alert no dismiss](https://github.com/LazZiya/Docs/raw/master/images/LazZiya.TagHelpers/alert-taghelper-no-dismiss.PNG)
+![Alert no dismiss](https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v5.0/images/alert-taghelper-no-dismiss.PNG)
 
 ### Alert header
 Add alert header using `alert-heading` attribute
@@ -50,7 +50,7 @@ Add alert header using `alert-heading` attribute
 </alert-warning>
 ````
 
-![Alert with header](https://github.com/LazZiya/Docs/raw/master/images/LazZiya.TagHelpers/alert-taghelper-with-header.PNG)
+![Alert with header](https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v5.0/images/alert-taghelper-with-header.PNG)
 
 ### Html content
 It is possible to use html content inside the alert body.
@@ -63,7 +63,7 @@ It is possible to use html content inside the alert body.
 </alert-danger>
 ````
 
-![Alert with HTML content](https://github.com/LazZiya/Docs/raw/master/images/LazZiya.TagHelpers/alert-taghelper-html-content.PNG)
+![Alert with HTML content](https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v5.0/images/alert-taghelper-html-content.PNG)
 
 ### All alerts
 ````html
@@ -77,7 +77,7 @@ It is possible to use html content inside the alert body.
 <alert-dark>
 ````
 
-![All alerts](https://github.com/LazZiya/Docs/raw/master/images/LazZiya.TagHelpers/alert-taghelper-all-front-end.PNG)
+![All alerts](https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v5.0/images/alert-taghelper-all-front-end.PNG)
 
 See samples in the [demo page][1].
 

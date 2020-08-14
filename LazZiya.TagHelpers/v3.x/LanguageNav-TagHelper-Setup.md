@@ -77,7 +77,7 @@ E.g. if we have our cultures like: "tr-tr", "ar-sy", and "en-us" we can use flag
 <language-nav flags="true"></language-nav>
 ````
 
-![LanguageNav with Flags](https://github.com/LazZiya/Docs/raw/master/images/LazZiya.TagHelpers/languagenav-taghelper-with-flags.PNG)
+![LanguageNav with Flags](https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v5.0/images/languagenav-taghelper-with-flags.PNG)
 
 > Flags are svg files that shown with css thanks to [flag-icon-css][3].
 

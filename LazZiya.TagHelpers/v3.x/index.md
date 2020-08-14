@@ -41,7 +41,7 @@ Create a pagination control _styled with bootstrap 4.x_ using simple html tag.
         total-records="Model.TotalRecords">
 </paging>
 ````
-[![PagingTagHelper default](https://github.com/LazZiya/Docs/raw/master/images/LazZiya.TagHelpers/paging-tag-helper-full.PNG)][1]
+[![PagingTagHelper default](https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v5.0/images/paging-tag-helper-full.PNG)][1]
 
 ### [Alert TagHelper ][2]
 Create bootstrap alerts using very simple html tag.
@@ -51,7 +51,7 @@ Create bootstrap alerts using very simple html tag.
     My alert text ...
 </alert>
 ````
-[![AlertTagHelper - success](https://github.com/LazZiya/Docs/raw/master/images/LazZiya.TagHelpers/alert-taghelper-success.PNG)][2]
+[![AlertTagHelper - success](https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v5.0/images/alert-taghelper-success.PNG)][2]
 
 ### [Language Navigation TagHelper][3]
 Create a language dropdown navigation for websites. Supported cultures will be used to create the navigation items.
@@ -59,14 +59,14 @@ Create a language dropdown navigation for websites. Supported cultures will be u
 ````html
 <language-nav flags="true"></language-nav>
 ````
-[![LanguageNavTagHelper with flags](https://github.com/LazZiya/Docs/raw/master/images/LazZiya.TagHelpers/languagenav-taghelper-with-flags.PNG)][3]
+[![LanguageNavTagHelper with flags](https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v5.0/images/languagenav-taghelper-with-flags.PNG)][3]
 
 ### [Localization Validation Scripts TagHelper][4]
 Add all client side scripts that are required for validating localized inputs like decimal numbers, dates, ..etc.
 ````html
 <localization-validation-scripts></localization-validation-scripts>
 ````
-[![Localization number es](https://github.com/LazZiya/Docs/raw/master/images/LazZiya.TagHelpers/localization-validiation-scripts-number-es.PNG)][4]
+[![Localization number es](https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v5.0/images/localization-validiation-scripts-number-es.PNG)][4]
 
 ## Live demos:
 http://demo.ziyad.info/en/

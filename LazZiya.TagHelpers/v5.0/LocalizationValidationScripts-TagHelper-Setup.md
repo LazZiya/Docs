@@ -1,11 +1,18 @@
----
-title: Valdiating Localized Input in Asp.Net Core
-keywords: asp.net-core, taghelpers, language, localizatin, valdiating, input
-description: Valdiating localized input in Asp.Net Core like decimals.
-author: Ziya Mollamahmut
-date: 08-Aug-2020
-versions: 2.1, 3.x, 4.x, 5.x
----
+<!-- meta tags details, will be assigned to meta tags inside header by js -->
+<div id="meta-info">
+<details><summary>meta info</summary>
+
+> * Title: <i id="md-title">Valdiating Localized Input in Asp.Net Core</i>
+> * Keywords: <i id="md-keywords">asp.net-core, taghelpers, language, localizatin, valdiating, input</i>
+> * Description: <i id="md-description">Valdiating localized input in Asp.Net Core like decimals.</i>
+> * Author: <i id="md-author">Ziya Mollamahmut</i>
+> * Date: <i id="md-date">08-Aug-2020</i>
+> * Image: <i id="md-image">https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v5.0/images/lazziya-tagheleprs-logo.png</i>
+> * Image-alt: <i id="md-image-alt">LazZiya.TagHelpers Logo</i>
+> * Version: <i id="md-version">v5.0</i>
+
+</details>
+</div>
 
 # Valdiating Localized Input in Asp.Net Core
 
@@ -14,7 +21,7 @@ By [Ziya Mollamahmut](https://github.com/LazZiya)
 ### Introduction
 Some input fields need to be localized (decimal numbers, dates, ...etc.). But without client side localizing libraries this could make problems with different cultures (e.g. decimal numbers 1.23 and 1,23).
 
-![ES number input validiation](https://github.com/LazZiya/Docs/raw/master/images/LazZiya.TagHelpers/localization-validiation-scripts-number-es.PNG)
+![ES number input validiation](https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v5.0/images/localization-validiation-scripts-number-es.PNG)
 
 Validating localized input requires a couple of additional scripts _for each culture_ to be included under the form. For more details see [How to install client side validation scripts article manually][1].
 

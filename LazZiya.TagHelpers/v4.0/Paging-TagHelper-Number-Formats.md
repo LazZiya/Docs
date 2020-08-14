@@ -36,7 +36,7 @@ Sample to use `Roman` numbers:
 </paging>
 ````
 
-![PagingTagHelper - number formats](https://github.com/LazZiya/Docs/raw/master/images/LazZiya.TagHelpers/paging-tag-helper-number-formats.PNG)
+![PagingTagHelper - number formats](https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v5.0/images/paging-tag-helper-number-formats.PNG)
 
 ### Custom number format
 You may specify a custom number format by passing a string list delimited by space char, each char represents a number by order
