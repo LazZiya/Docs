@@ -1,5 +1,5 @@
 <!-- meta tags details, will be assigned to meta tags inside header by js -->
-<div id="meta-details">
+<div id="meta-info">
 <details><summary>meta info</summary>
 
 > * Title: <i id="md-title">XLocalizer for Asp.Net Core</i>
