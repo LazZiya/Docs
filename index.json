@@ -5,7 +5,7 @@
     "repoUrl": "https://github.com/LazZiya/XLocalizer",
     "folder": "XLocalizer",
     "versions": [ "v1.0" ],
-    "image": "https://github.com/LazZiya/Docs/raw/master/XLocalizer/v1.0/images/xlocalizer-logo.png"
+    "image": "https://github.com/LazZiya/Docs/raw/vNext/XLocalizer/v1.0/images/xlocalizer-logo.png"
   },
   {
     "title": "LazZiya.TagHelpers",
@@ -13,7 +13,7 @@
     "repoUrl": "https://github.com/LazZiya/TagHelpers",
     "folder": "LazZiya.TagHelpers",
     "versions": [ "v5.0", "v4.0", "v3.0" ],
-    "image": "https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v5.0/images/lazziya-taghelpers-logo.png"
+    "image": "https://github.com/LazZiya/Docs/raw/vNext/LazZiya.TagHelpers/v5.0/images/lazziya-taghelpers-logo.png"
   },
   {
     "title": "LazZiya.ExpressLocalization",
@@ -21,6 +21,6 @@
     "repoUrl": "https://github.com/LazZiya/ExpressLocalization",
     "folder": "LazZiya.ExpressLocalization",
     "versions": [ "v4.0", "v3.0" ],
-    "image": "https://github.com/LazZiya/Docs/raw/master/LazZiya.ExpressLocalization/v4.0/images/lazziya-express-localization-logo.png"
+    "image": "https://github.com/LazZiya/Docs/raw/vNext/LazZiya.ExpressLocalization/v4.0/images/lazziya-express-localization-logo.png"
   }
 ]
