@@ -6,7 +6,7 @@
 > * Keywords: <i id="md-keywords">localization, asp.net-core, xml, resource, files</i>
 > * Description: <i id="md-description">Localization setup of Asp.Net Core based on XML resource files with XLocalizer.</i>
 > * Author: <i id="md-author">Ziya Mollamahmut</i>
-> * Date: <i id="md-date">08-Aug-2020</i>
+> * Date: <i id="md-date">02-Sep-2020</i>
 > * Image: <i id="md-image">https://github.com/LazZiya/Docs/raw/master/XLocalizer/v1.0/images/xlocalizer-logo.png</i>
 > * Image-alt: <i id="md-image-alt">XLocalizer Logo</i>
 > * Version: <i id="md-version">v1.0</i>
@@ -99,11 +99,13 @@ services.AddRazorPages()
         .AddRazorPagesOptions(ops => { ops.Conventions.Insert(0, new RouteTemplateModelConventionRazorPages()); });
 ````
 
-Or if you are using MVC use;
+Or if you are using MVC:
 ````csharp
 services.AddMvc()
         .AddMvcOptions(ops => { ops.Conventions.Insert(0, new RouteTemplateModelConventionMvc()); });
 ````
+
+and make sure that all controllers and actions have `[Route("...")]` attribute.
 
 - Add `XLocalizer` setup and enable `AutoAddKeys` and `AutoTranslate` options:
 ````csharp
@@ -114,8 +116,11 @@ services.AddRazorPages()
             ops.ResourcesPath = "LocalizationResources";
             ops.AutoAddKeys = true;
             ops.AutoTranslate = true;
+            ops.TranslateFromCulture = "en"
         });
 ````
+
+If `TranslateFromCulture` is not defined, the default request culture will be used as source culture for translation.
 
 - Configure the app to use request localization middleware:
 ````csharp
