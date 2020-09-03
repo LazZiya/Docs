@@ -22,7 +22,7 @@ Asp.Net Core uses [localization culture providers][5] to detect the request cult
 
 If the request culture is not found in the first provider, next provider will be checked. Finally if no culture is detected the default culture will be used.
 
-`XLocalizer` is using the order defined in `startup` for configuring request localization options. for example given the below setup:
+`XLocalizer` is using the order defined in `startup` to check for the request culture, for example given the below setup:
 ````cs
 services.Configure<RequestLocalizationOptions>(ops =>
 {
