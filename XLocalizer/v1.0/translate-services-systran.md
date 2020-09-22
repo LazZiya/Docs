@@ -27,6 +27,8 @@ This nuget is based on the free plan of [Systran Translate via RapidAPI](https:/
 PM > Install-Package XLocalizer.Translate.SystranTranslate
 ````
 
+> Notice: To install the latest preview add `-Pre` to the command line
+
 **Add RapidAPI key to user secrets**
 > Right click on the project name and select _Manage User Secrets_, then add the API key as below:
 

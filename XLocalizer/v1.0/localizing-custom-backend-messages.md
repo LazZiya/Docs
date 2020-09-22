@@ -21,7 +21,7 @@ By [Ziya Mollamahmut](https://github.com/LazZiya)
 Custom backend error messages can be localized by injecting `IStringLocalizer`, `IHtmlLocalizer`, `IStringLocalizerFactory` or `IHtmlLocalizerFactory` to the controller or PageModel as below:
 
 ````csharp
-using LazZiya.ExpressLocalization
+using XLocalizer
 
 public class IndexModel : PageModel
 {
