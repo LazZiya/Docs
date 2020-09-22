@@ -38,6 +38,8 @@ PM > Install-Package XLocalizer
 PM > Install-Package XLocalizer.Translate.MyMemoryTranslate
 ````
 
+> Notice: The packages are still in preview mode, add `-Pre` to the command line to install the latest preview
+
 #### Create resources folder
 Let's start by creating a folder and a dummy class for our localized resources.
 

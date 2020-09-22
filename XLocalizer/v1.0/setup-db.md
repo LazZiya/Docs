@@ -38,6 +38,7 @@ PM > Install-Package XLocalizer
 PM > Install-Package XLocalizer.DB
 PM > Install-Package XLocalizer.Translate.MymemoryTranslate
 ````
+> Notice: The packages are still in preview mode, add `-Pre` to the command line to install the latest preview
 
 #### Startup settings
 
