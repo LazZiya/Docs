@@ -27,6 +27,8 @@ This nuget is based on the free plan of [Yandex Translate](https://tech.yandex.c
 PM > Install-Package XLocalizer.Translate.YandexTranslate
 ````
 
+> Notice: To install the latest preview add `-Pre` to the command line
+
 **Add Yandex Translate API key to user secrets**
 > Right click on the project name and select _Manage User Secrets_, then add the API key as below:
 

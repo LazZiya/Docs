@@ -34,7 +34,7 @@ Install nuget package:
 PM > Install-Package XLocalizer
 ````
 
-> Notice: The packages are still in preview mode, add `-Pre` to the command line to install the latest preview
+> Notice: To install the latest preview add `-Pre` to the command line
 
 #### Create resources folder
 Create a folder and a dummy class for our localized resources.
