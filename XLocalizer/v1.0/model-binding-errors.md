@@ -22,7 +22,7 @@ If the source translation culture is "en", no additional setup required for mode
 
 But if the source translation culture is different than "en", then we have to provide the default model binding errors in the relevant default culture, so XLocalizer can use them as source for translation.
 
-#### How to customize defatul model binding errors
+#### How to customize default model binding errors
 
 * Create a new class (e.g.: `CustomModelBindingErrors`) that implements [`IModelBindingErroeMessagesProvider`][2] and provide your custom model binding errors.
 * Register your class in startup.
