@@ -6,7 +6,7 @@
 > * Keywords: <i id="md-keywords">localization, asp.net-core, translate, online, service</i>
 > * Description: <i id="md-description">Learn how to use online translation services for localization of Asp.Net Core web apps with XLocalizer.Translate.</i>
 > * Author: <i id="md-author">Ziya Mollamahmut</i>
-> * Date: <i id="md-date">08-Aug-2020</i>
+> * Date: <i id="md-date">23-Oct-2020</i>
 > * Image: <i id="md-image">https://github.com/LazZiya/Docs/raw/master/XLocalizer/v1.0/images/xlocalizer-logo.png</i>
 > * Image-alt: <i id="md-image-alt">XLocalizer Logo</i>
 > * Version: <i id="md-version">v1.0</i>
@@ -53,9 +53,12 @@ services.AddRazorPages()
         {
             // ...
             ops.AutoTranslate = true;
+            ops.TranslateFrom = "en";
         });
 ````
 > Recommended read [IHttpClientFactory](https://docs.microsoft.com/en-us/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests)
+
+If `TranslateFrom` is not defined, then `DefaultRequestCulture` will be considered as the source culture for translation.
 
 #### Use as standalone service
 ````csharp
