@@ -4,6 +4,7 @@
 - [Localization setup based on DB][6]
 - [Localization setup based on RESX][7]
 - [Localization setup for Blazor][4]
+- [Localization setup via JSON settings][2]
 
 ##### Translation
 - [Translation services][8]
@@ -36,7 +37,7 @@
   - [Validating localized input][27]
 
 [1]:index.md
-[2]: .
+[2]:setup-json.md
 [3]: .
 [4]:setup-blazor.md
 [5]:setup-xml.md
