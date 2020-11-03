@@ -18,7 +18,7 @@
 
 By [Ziya Mollamahmut](https://github.com/LazZiya)
 
-In some cases you may want to provide all `XLocalizerOptions` in a json file like `appsettings.json`. Simply read the configuration and bind it to `XLocalizerOptions` as below:
+In some cases you may want to provide all `XLocalizerOptions` in a json file like `appsettings.json`. Simply get the relevant configuration section and bind it to `XLocalizerOptions` as below:
 
 ````csharp
 services.AddRazorPages()

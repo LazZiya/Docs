@@ -18,7 +18,7 @@
 
 By [Ziya Mollamahmut](https://github.com/LazZiya)
 
-All validation errors are localized by XLocalizer with the default setup, so no additional steps required to localize validlation errors. What is more, **there is no need to provide an error message inside valdiation attributes!** All attributes will have an error message assigned and localized by XLocalizer by default.
+All validation errors are localized by XLocalizer with the default setup, so no additional steps required to localize validation errors. What is more, **there is no need to provide an error message inside valdiation attributes!** All attributes will have an error message assigned and localized by XLocalizer by default.
 
 Below are sample attributes with the default error messages they produce:
 

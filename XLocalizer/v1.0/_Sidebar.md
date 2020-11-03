@@ -17,9 +17,9 @@
 ##### Localization
 - [Localizing views][14]
 - [Localizing custom backend messages][15]
-- [Localizing validation attributes errors][16]
-- [Model binding errors][17]
-- [Identity errors][18]
+- [Localizing/Customizing validation attributes errors][16]
+- [Localizing/Customizing Model binding errors][17]
+- [Localizing/Customizing Identity errors][18]
 
 ##### Export to RESX
 - [Export XML to RESX][19]
