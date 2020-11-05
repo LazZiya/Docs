@@ -39,6 +39,8 @@ PM > Install-Package XLocalizer.DB
 PM > Install-Package XLocalizer.Translate.MymemoryTranslate
 ````
 
+> Notice: To install the latest preview add `-Pre` to the command line
+
 #### Startup settings
 
 - Configure request localization options and optionally add `RouteSegmentRequestCultureProvider` :

@@ -23,6 +23,8 @@ Install main package from nuget:
 PM > Install-Package XLocalizer
 ````
 
+> Notice: To install the latest preview add `-Pre` to the command line
+
 Because XLocalizer supports multiple source types, you can use any of the below setups:
 
 - [Common localization settings](#common-localization-settings)

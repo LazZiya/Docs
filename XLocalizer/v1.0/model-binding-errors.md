@@ -6,7 +6,7 @@
 > * Keywords: <i id="md-keywords">localization, asp.net-core, model, binding, error, messages</i>
 > * Description: <i id="md-description">Learn how to localize model binding error messages with XLocalizer in Asp.Net Core web app.</i>
 > * Author: <i id="md-author">Ziya Mollamahmut</i>
-> * Date: <i id="md-date">08-Aug-2020</i>
+> * Date: <i id="md-date">02-Sep-2020</i>
 > * Image: <i id="md-image">https://github.com/LazZiya/Docs/raw/master/XLocalizer/v1.0/images/xlocalizer-logo.png</i>
 > * Image-alt: <i id="md-image-alt">XLocalizer Logo</i>
 > * Version: <i id="md-version">v1.0</i>
@@ -18,20 +18,33 @@
 
 By [Ziya Mollamahmut](https://github.com/LazZiya)
 
-No additional setup required for model binding error messages, it will be localized automatically by `XLocalizer`, you don't even need to add them manually if you have enabled auto translation and auto adding keys.
+All model binding errors are localized by XLocalizer with the default setup, so no additional steps required to localize data annotations errors. 
 
-Just in case you want to manually add the model binding messages see them below:
+When the source translation culture is "en", no additional setup required for localizing model binding error messages, it will be localized automatically by `XLocalizer`. But if the source translation culture is different than "en", then we have to provide the default model binding errors in the relevant default culture, so XLocalizer can use them as source for translation.
+
+#### Customize model binding errors
+
+Model binding errors can be customized by providing a new object of type `XLocalizer.ErrorMessages.ModelBindingErrors` into `XLocalizerOptions` in startup file.
+
+````csharp
+services.AddRazorPages()
+        .AddXLocalizer<...>(ops =>
+        {
+            // ...
+            ops.ModelBindingErrors = new ModelBindingErrors 
+            {
+                AttemptedValueIsInvalidAccessor = "The value '{0}' is not valid for {1}.",
+                MissingBindRequiredValueAccessor = "A value for the '{0}' parameter or property was not provided.",
+                MissingKeyOrValueAccessor = "A value is required.",
+                // ...
+            };
+        });
 ````
-A value is required.
-A non-empty request body is required.
-A value for the '{0}' parameter or property was not provided.
-The value '{0}' is not valid.
-The value '{0}' is invalid.
-The value '{0}' is not valid for {1}.
-The field {0} must be a number.
-The supplied value is invalid.
-The supplied value is invalid for {0}.
-````
+
+Same way we can provide the default model binding errors in a different culture other than "en".
+
+#### Customize via json
+See [Setup XLocalizer via JSON Settings][3].
 
 #
 ### Next: [Identity errors][1]
@@ -39,3 +52,5 @@ The supplied value is invalid for {0}.
 
 
 [1]:identity-errors.md
+[2]:https://github.com/LazZiya/XLocalizer/blob/master/XLocalizer/ModelBinding/IModelBindingErrorMessagesProvider.cs
+[3]:setup-json.md

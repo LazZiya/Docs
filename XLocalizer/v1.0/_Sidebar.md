@@ -4,6 +4,7 @@
 - [Localization setup based on DB][6]
 - [Localization setup based on RESX][7]
 - [Localization setup for Blazor][4]
+- [Localization setup via JSON settings][2]
 
 ##### Translation
 - [Translation services][8]
@@ -16,9 +17,9 @@
 ##### Localization
 - [Localizing views][14]
 - [Localizing custom backend messages][15]
-- [Localizing validation attributes errors][16]
-- [Model binding errors][17]
-- [Identity errors][18]
+- [Localizing/Customizing validation attributes errors][16]
+- [Localizing/Customizing Model binding errors][17]
+- [Localizing/Customizing Identity errors][18]
 
 ##### Export to RESX
 - [Export XML to RESX][19]
@@ -36,7 +37,7 @@
   - [Validating localized input][27]
 
 [1]:index.md
-[2]: .
+[2]:setup-json.md
 [3]: .
 [4]:setup-blazor.md
 [5]:setup-xml.md
