@@ -75,7 +75,7 @@ Attributes to set the texts of the buttons and labels.
 
 | Html attribute name | Json attribute | Value type | Default value | Description |
 |:---|:---|:---|:---|:---|
-| `text-page-size` | yes | `string` |  | The text to display on the page size label. It will display current page size when no text is provided |
+| `text-page-size` | yes | `string` | "{0}"  | The text to display on the page size label. The text must contain a placeholder in a formatted string as: "Show {0} pages" |
 | `text-first` | yes | `string` | `&laquo;` | Text for goto first record button |
 | `text-last` | yes | `string` | `&raquo;` | Text for goto last record button |
 | `text-previous` | yes | `string` | `&lsaquo;` | Text for goto previous record button |

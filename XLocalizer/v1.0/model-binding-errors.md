@@ -18,49 +18,33 @@
 
 By [Ziya Mollamahmut](https://github.com/LazZiya)
 
-If the source translation culture is "en", no additional setup required for model binding error messages, it will be localized automatically by `XLocalizer`, you don't even need to add them manually to the resource file if you have enabled auto translation and auto adding keys.
+All model binding errors are localized by XLocalizer with the default setup, so no additional steps required to localize data annotations errors. 
 
-But if the source translation culture is different than "en", then we have to provide the default model binding errors in the relevant default culture, so XLocalizer can use them as source for translation.
+When the source translation culture is "en", no additional setup required for localizing model binding error messages, it will be localized automatically by `XLocalizer`. But if the source translation culture is different than "en", then we have to provide the default model binding errors in the relevant default culture, so XLocalizer can use them as source for translation.
 
-#### How to customize default model binding errors
+#### Customize model binding errors
 
-* Create a new class (e.g.: `CustomModelBindingErrors`) that implements [`IModelBindingErroeMessagesProvider`][2] and provide your custom model binding errors.
-* Register your class in startup.
+Model binding errors can be customized by providing a new object of type `XLocalizer.ErrorMessages.ModelBindingErrors` into `XLocalizerOptions` in startup file.
 
 ````csharp
-public class CustomModelBindingErrors : IModelBindingErrorMessagesProvider
-{
-    string IModelBindingErrorMessagesProvider.AttemptedValueIsInvalidAccessor => "The value '{0}' is not valid for {1}.";
-
-    string IModelBindingErrorMessagesProvider.MissingBindRequiredValueAccessor => "A value for the '{0}' parameter or property was not provided.";
-
-    string IModelBindingErrorMessagesProvider.MissingKeyOrValueAccessor => "A value is required.";
-
-    string IModelBindingErrorMessagesProvider.MissingRequestBodyRequiredValueAccessor => "A non-empty request body is required.";
-
-    string IModelBindingErrorMessagesProvider.NonPropertyAttemptedValueIsInvalidAccessor => "The value '{0}' is not valid.";
-
-    string IModelBindingErrorMessagesProvider.NonPropertyUnknownValueIsInvalidAccessor => "The supplied value is invalid.";
-
-    string IModelBindingErrorMessagesProvider.NonPropertyValueMustBeANumberAccessor => "The field must be a number.";
-
-    string IModelBindingErrorMessagesProvider.UnknownValueIsInvalidAccessor => "The supplied value is invalid for {0}.";
-
-    string IModelBindingErrorMessagesProvider.ValueIsInvalidAccessor => "The value '{0}' is invalid.";
-
-    string IModelBindingErrorMessagesProvider.ValueMustBeANumberAccessor => "The field {0} must be a number.";
-
-    string IModelBindingErrorMessagesProvider.ValueMustNotBeNullAccessor => "The value '{0}' is invalid.";
-}
+services.AddRazorPages()
+        .AddXLocalizer<...>(ops =>
+        {
+            // ...
+            ops.ModelBindingErrors = new ModelBindingErrors 
+            {
+                AttemptedValueIsInvalidAccessor = "The value '{0}' is not valid for {1}.",
+                MissingBindRequiredValueAccessor = "A value for the '{0}' parameter or property was not provided.",
+                MissingKeyOrValueAccessor = "A value is required.",
+                // ...
+            };
+        });
 ````
 
-* Register in startup:
-````csharp
-services.AddSingleton<IModelBindingErrorMessagesProvider, CustomModelBindingErrors>();
-````
+Same way we can provide the default model binding errors in a different culture other than "en".
 
-These errors will override the system default errors for the default culture, so if you have a default culture other that "en" you can provide your localized errors in this class. This way XLocalizer can translate and add them to the resource file.
-
+#### Customize via json
+See [Setup XLocalizer via JSON Settings][3].
 
 #
 ### Next: [Identity errors][1]
@@ -69,3 +53,4 @@ These errors will override the system default errors for the default culture, so
 
 [1]:identity-errors.md
 [2]:https://github.com/LazZiya/XLocalizer/blob/master/XLocalizer/ModelBinding/IModelBindingErrorMessagesProvider.cs
+[3]:setup-json.md
