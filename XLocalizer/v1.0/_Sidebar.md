@@ -9,8 +9,9 @@
 ##### Translation
 - [Translation services][8]
 - [MyMemory Translate][9]
-- [SYSTRAN.io Translate][10]
 - [Google Translate][11]
+- [Microsoft Translate][28]
+- [SYSTRAN.io Translate][10]
 - [Yandex Translate][12]
 - [IBM Watson Language Translator][13]
 
@@ -63,3 +64,4 @@
 [25]:language-navigation.md
 [26]:client-side-validation.md
 [27]:validating-localized-input.md
+[28]:translate-services-microsoft.md
