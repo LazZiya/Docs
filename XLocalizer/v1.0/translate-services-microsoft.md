@@ -2,8 +2,8 @@
 <div id="meta-info">
 <details><summary>meta info</summary>
 
-> * Title: <i id="md-title">Use Google Translation For Localization</i>
-> * Keywords: <i id="md-keywords">localization, asp.net-core, translate, online, google, service</i>
+> * Title: <i id="md-title">Use Microsoft Translation For Localization</i>
+> * Keywords: <i id="md-keywords">localization, asp.net-core, translate, online, microsoft, service</i>
 > * Description: <i id="md-description">Learn how to use mymemory translation service for localization of Asp.Net Core web apps with XLocalizer.Translate.</i>
 > * Author: <i id="md-author">Ziya Mollamahmut</i>
 > * Date: <i id="md-date">12-Nov-2020</i>
@@ -14,33 +14,34 @@
 </details>
 </div>
 
-# Use Google Translate For Localization
+# Use Microsoft Translate For Localization
 
 By [Ziya Mollamahmut](https://github.com/LazZiya)
 
 This nuget containes two services, you can use any of them depending on your requirements:
 
-- [`GoogleTranslateService`](#GoogleTranslateService): Directly connected to Google Translate Api's
-- [`GoogleTranslateServiceRapidApi`](#GoogleTranslateServiceRapidApi): Based on Google Translate services via RapidApi
+- [`MicrosoftTranslateService`](#MicrosoftTranslateService): Directly connected to Microsoft Azure Translate Api's
+- [`MicrosoftTranslateServiceRapidApi`](#MicrosoftTranslateServiceRapidApi): Based on Microsoft Translate services via RapidApi
 
-> See [GitHub repo](https://github.com/LazZiya/XLocalizer.Translate.GoogleTranslate)
+> See [GitHub repo](https://github.com/LazZiya/XLocalizer.Translate.MicrosoftTranslate)
 
 **Install**
 ````
-PM > Install-Package XLocalizer.Translate.GoogleTranslate
+PM > Install-Package XLocalizer.Translate.MicrosoftTranslate
 ````
 
-### GoogleTranslateService
-This service is directly connected to Google Translate Api's, and it offers free usage, but it requires a subscription!  
+### MicrosoftTranslateService
+This service is directly connected to Microsoft Azure Translate Api's, and it offers free usage, but it requires a subscription!  
 
-- [Click here to subscribe to Google Cloud Translation Api][1]
-- [Click here to create a credential and get an API key][2]
-- Add the key and a valid email address to user secrets
+- [Click here to subscribe to Microsoft Azure Translation Api][1]
+- After activating your account and adding Translator services, goto **Keys And Endpoints** and get the Api key and location _(Microsoft provides two keys but only one is enough)_.
+- Add the key and the location to user secrets
 ````json
 {
   "XLocalizer.Translate": {
-    "Google": {
-        "Key": "..."
+    "Microsoft": {
+        "Key": "...",
+        "Location": "global"
     }
   }
 }
@@ -49,13 +50,13 @@ This service is directly connected to Google Translate Api's, and it offers free
 
 - Register in startup
 ````csharp
-services.AddHttpClient<ITranslator, GoogleTranslateService>();
+services.AddHttpClient<ITranslator, MicrosoftTranslateService>();
 ````
 
 - Use with XLocalizer
 ````csharp
 services.AddRazorPages()
-        .AddXLocalizer<LocSource, GoogleTranslateService>(ops =>
+        .AddXLocalizer<LocSource, MicrosoftTranslateService>(ops =>
         {
             // ...
             ops.AutoTranslate = true;
@@ -66,7 +67,7 @@ services.AddRazorPages()
 ---
 
 
-### GoogleTranslateServiceRapidApi
+### MicrosoftTranslateServiceRapidApi
 This service is connected to RapidApi, and it requires a RapidApi key and a subscription to any paid or free plan. 
 - [Click here to choose the right plan for you][3]
 - [Click here to get a RapidApi key][4]
@@ -83,13 +84,13 @@ This service is connected to RapidApi, and it requires a RapidApi key and a subs
 
 - Register in startup
 ````csharp
-services.AddHttpClient<ITranslator, GoogleTranslateServiceRapidApi>();
+services.AddHttpClient<ITranslator, MicrosoftTranslateServiceRapidApi>();
 ````
 
 - Use with XLocalizer
 ````csharp
 services.AddRazorPages()
-        .AddXLocalizer<LocSource, GoogleTranslateServiceRapidApi>(ops =>
+        .AddXLocalizer<LocSource, MicrosoftTranslateServiceRapidApi>(ops =>
         {
             // ...
             ops.AutoTranslate = true;
@@ -97,7 +98,7 @@ services.AddRazorPages()
 ````
 
 
-[1]:https://console.cloud.google.com/apis/library/translate.googleapis.com
+[1]:https://azure.microsoft.com/en-us/services/cognitive-services/translator/
 [2]:https://console.cloud.google.com/apis/credentials
-[3]:https://rapidapi.com/googlecloud/api/google-translate1/pricing
+[3]:https://rapidapi.com/microsoft-azure-org-microsoft-cognitive-services/api/microsoft-translator-text/pricing
 [4]:https://rapidapi.com/developer/apps

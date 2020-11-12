@@ -18,7 +18,7 @@
 
 By [Ziya Mollamahmut](https://github.com/LazZiya)
 
-This nuget is based on the free plan of [Systran Translate via RapidAPI](https://rapidapi.com/systran/api/systran-io-translation-and-nlp).
+This nuget is based on the free plan of [Systran Translate via RapidAPI][2].
 
 > See [GitHub repo](https://github.com/LazZiya/XLocalizer.Translate.SystranTranslate)
 
@@ -27,25 +27,21 @@ This nuget is based on the free plan of [Systran Translate via RapidAPI](https:/
 PM > Install-Package XLocalizer.Translate.SystranTranslate
 ````
 
-> Notice: To install the latest preview add `-Pre` to the command line
-
-**Add RapidAPI key to user secrets**
-> Right click on the project name and select _Manage User Secrets_, then add the API key as below:
+- [Click here to get an API key from RapidApi][1]
+- Add RapidAPI key to user secrets
 
 ````json
 {
   "XLocalizer.Translate": {
-    "RapidApiKey": "xxx-rapid-api-key-xxx",
+    "RapidApiKey": "...",
   }
 }
 ````
+> <small>Right click on the project name and select **_Manage User Secrets_**</small>
 
 **Register in startup**
 ````csharp
-using XLocalizer.Translate
-using XLocalizer.Translate.YandexTranslate
-
-services.AddHttpClient<ITranslator, SystranTranslateService>();
+services.AddHttpClient<ITranslator, SystranTranslateServiceRapidApi>();
 ````
 
 **Use with XLocalizer**
@@ -53,7 +49,7 @@ services.AddHttpClient<ITranslator, SystranTranslateService>();
 // Configure XLocalizer to use the translation service 
 // and enable online translation
 services.AddRazorPages()
-        .AddXLocalizer<LocSource, SystranTranslateService>(ops =>
+        .AddXLocalizer<LocSource, SystranTranslateServiceRapidApi>(ops =>
         {
             // ...
             ops.AutoTranslate = true;
@@ -61,3 +57,6 @@ services.AddRazorPages()
 ````
 
 
+
+[1]:https://rapidapi.com/developer/apps
+[2]:https://rapidapi.com/systran/api/systran-io-translation-and-nlp

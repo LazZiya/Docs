@@ -98,16 +98,8 @@ services.AddRazorPages()
 
 
 #### User secrets
-Our translation service is based on RapidAPI, so we need to add the relevant API key to the user secrets file.
-> Right click on the project name and select _Manage User Secrets_, then add the API key as below:
+MyMemory offers a free or paid subscriptions, and depending on your setup it may require an Api key to be provided, for more details see [MyMemoryTranslateService][6].
 
-````json
-{
-  "XLocalizer.Translate": {
-    "RapidApiKey": "xxx-rapid-api-key-xxx",
-  }
-}
-````
 Read more about translation services in [Translation services][1].
 
 ##### Caching
@@ -316,3 +308,4 @@ namespace DbLocalizationSample
 [3]:https://github.com/LazZiya/XLocalizer/blob/master/XLocalizer.DB/Models/XDbResource.cs
 [4]:localizing-views.md
 [5]:https://github.com/LazZiya/XLocalizer.Samples/tree/master/DbLocalizationSample
+[6]:translate-services-mymemory.md

@@ -6,7 +6,7 @@
 > * Keywords: <i id="md-keywords">localization, asp.net-core, translate, online, mymemory, service</i>
 > * Description: <i id="md-description">Learn how to use mymemory translation service for localization of Asp.Net Core web apps with XLocalizer.Translate.</i>
 > * Author: <i id="md-author">Ziya Mollamahmut</i>
-> * Date: <i id="md-date">08-Aug-2020</i>
+> * Date: <i id="md-date">12-Nov-2020</i>
 > * Image: <i id="md-image">https://github.com/LazZiya/Docs/raw/master/XLocalizer/v1.0/images/xlocalizer-logo.png</i>
 > * Image-alt: <i id="md-image-alt">XLocalizer Logo</i>
 > * Version: <i id="md-version">v1.0</i>
@@ -18,7 +18,10 @@
 
 By [Ziya Mollamahmut](https://github.com/LazZiya)
 
-This nuget is based on the free plan of [MyMemory Translate via RapidAPI](https://rapidapi.com/translated/api/mymemory-translation-memory).
+This nuget containes two services, you can use any of them depending on your requirements:
+
+- [`MyMemoryTranslateService`](#MyMemoryTranslateService): Directly connected to MyMemory Api's
+- [`MyMemoryTranslateServiceRapidApi`](#MyMemoryTranslateServiceRapidApi): Based on MyMemory services via RapidApi
 
 > See [GitHub repo](https://github.com/LazZiya/XLocalizer.Translate.MyMemoryTranslate)
 
@@ -27,33 +30,32 @@ This nuget is based on the free plan of [MyMemory Translate via RapidAPI](https:
 PM > Install-Package XLocalizer.Translate.MyMemoryTranslate
 ````
 
-> Notice: To install the latest preview add `-Pre` to the command line
+### MyMemoryTranslateService
+This service is directly connected to MyMemory Api's, and it offers free anonymous usage, but the [daily limit][1] is low! However, you can increase the free daily usage by providing a valid email address and an API key that can be generated via [MyMemory: API key generator][2]. 
 
-**Add RapidAPI key to user secrets**
-> Right click on the project name and select _Manage User Secrets_, then add the API key as below:
-
+- [Click here to goto MyMemory API key generator][2]
+- Add the key and a valid email address to user secrets
 ````json
 {
   "XLocalizer.Translate": {
-    "RapidApiKey": "xxx-rapid-api-key-xxx",
+    "MyMemory": {
+        "Key": "...",
+        "Email": "..."
+    }
   }
 }
 ````
+> <small>Right click on the project name and select **_Manage User Secrets_**</small>
 
-**Register in startup**
+- Register in startup
 ````csharp
-using XLocalizer.Translate
-using XLocalizer.Translate.MyMemoryTranslate
-
 services.AddHttpClient<ITranslator, MyMemoryTranslateService>();
 ````
 
-**Use with XLocalizer**
+- Use with XLocalizer
 ````csharp
-// Configure XLocalizer to use the translation service 
-// and enable online translation
 services.AddRazorPages()
-        .AddXLocalizer<LocSource, MymemoryTranslateService>(ops =>
+        .AddXLocalizer<LocSource, MyMemoryTranslateService>(ops =>
         {
             // ...
             ops.AutoTranslate = true;
@@ -61,3 +63,41 @@ services.AddRazorPages()
 ````
 
 
+---
+
+
+### MyMemoryTranslateServiceRapidApi
+This service is connected to RapidApi, and it requires a RapidApi key and a subscription to any paid or free plan. 
+- [Click here to choose the right plan for you][3]
+- [Click here to get a RapidApi key][4]
+
+- Add RapidAPI key to user secrets
+````json
+{
+  "XLocalizer.Translate": {
+    "RapidApiKey": "...",
+  }
+}
+````
+> <small>Right click on the project name and select **_Manage User Secrets_**</small>
+
+- Register in startup
+````csharp
+services.AddHttpClient<ITranslator, MyMemoryTranslateServiceRapidApi>();
+````
+
+- Use with XLocalizer
+````csharp
+services.AddRazorPages()
+        .AddXLocalizer<LocSource, MyMemoryTranslateServiceRapidApi>(ops =>
+        {
+            // ...
+            ops.AutoTranslate = true;
+        });
+````
+
+
+[1]:https://mymemory.translated.net/doc/usagelimits.php
+[2]:https://mymemory.translated.net/doc/keygen.php
+[3]:https://rapidapi.com/translated/api/mymemory-translation-memory/pricing
+[4]:https://rapidapi.com/developer/apps

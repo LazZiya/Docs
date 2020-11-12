@@ -6,7 +6,7 @@
 > * Keywords: <i id="md-keywords">localization, asp.net-core, xml, resource, files</i>
 > * Description: <i id="md-description">Localization setup of Asp.Net Core based on XML resource files with XLocalizer.</i>
 > * Author: <i id="md-author">Ziya Mollamahmut</i>
-> * Date: <i id="md-date">02-Sep-2020</i>
+> * Date: <i id="md-date">12-Nov-2020</i>
 > * Image: <i id="md-image">https://github.com/LazZiya/Docs/raw/master/XLocalizer/v1.0/images/xlocalizer-logo.png</i>
 > * Image-alt: <i id="md-image-alt">XLocalizer Logo</i>
 > * Version: <i id="md-version">v1.0</i>
@@ -130,16 +130,8 @@ app.UseRequestLocalization();
 ````
 
 #### User secrets
-Our translation service is based on RapidAPI, so we need to add the relevant API key to the user secrets file.
-> Right click on the project name and select _Manage User Secrets_, then add the API key as below:
+MyMemory offers a free or paid subscriptions, and depending on your setup it may require an Api key to be provided, for more details see [MyMemoryTranslateService][4].
 
-````json
-{
-  "XLocalizer.Translate": {
-    "RapidApiKey": "xxx-rapid-api-key-xxx",
-  }
-}
-````
 Read more about translation services in [Translation services][1].
 
 
@@ -254,3 +246,4 @@ namespace XmlLocalizationSample
 [1]:translate-services.md
 [2]:localizing-views.md
 [3]:https://github.com/LazZiya/XLocalizer.Samples/tree/master/XmlLocalizationSample
+[4]:translate-services-mymemory.md

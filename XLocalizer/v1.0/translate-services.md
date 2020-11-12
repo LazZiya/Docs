@@ -29,9 +29,10 @@ Provides translation support to web applications. Can be used with `XLocalizer` 
 #### Available translation services
 Below services are already available as nugets and ready to install. 
 
-- [XLocalizer.Translate.GoogleTranslate][3]
-- [XLocalizer.Translate.YandexTranslate][4]
 - [XLocalizer.Translate.MyMemoryTranslate][5]
+- [XLocalizer.Translate.GoogleTranslate][3]
+- [XLocalizer.Translate.MicrosoftTranslate][8]
+- [XLocalizer.Translate.YandexTranslate][4]
 - [XLocalizer.Translate.SystranTranslate][6]
 - [XLocalizer.Translate.IBMWatsonTranslate][7]
 
@@ -93,11 +94,12 @@ It is possible to register multiple tranlsation services then retrive specific s
 
 Register multiple translation services:
 ````csharp
-services.AddSingleton<ITranslator, IBMWatsonTranslateService>();
-services.AddHttpClient<ITranslator, YandexTranslateService>();
 services.AddHttpClient<ITranslator, MyMemoryTranslateService>();
 services.AddHttpClient<ITranslator, GoogleTranslateService>();
+services.AddHttpClient<ITranslator, MicrosoftTranslateService>();
+services.AddSingleton<ITranslator, IBMWatsonTranslateService>();
 services.AddHttpClient<ITranslator, SystranTranslateService>();
+services.AddHttpClient<ITranslator, YandexTranslateService>();
 ````
 
 Retrive specific service:
@@ -136,3 +138,4 @@ services.AddSingleton<ITranslatorFactory, TranslatorFactory<MyMemoryTranslateSer
 [5]:translate-services-mymemory.md
 [6]:translate-services-systran.md
 [7]:translate-services-ibm.md
+[8]:translate-services-microsoft.md
