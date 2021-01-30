@@ -1,3 +1,7 @@
+[![GitHub Stars](https://shields.io/github/stars/LazZiya/ExpressLocalization?label=Stars&style=social)](https://github.com/LazZiya/ExpressLocalization)
+[![GitHub Forks](https://shields.io/github/forks/LazZiya/ExpressLocalization?label=Forks&style=social)](https://github.com/LazZiya/ExpressLocalization)
+
+
 - [Home](index.md)
 - [Release History](https://github.com/LazZiya/ExpressLocalization/releases)
 

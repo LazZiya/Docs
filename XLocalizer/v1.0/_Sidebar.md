@@ -1,3 +1,7 @@
+[![GitHub Stars](https://shields.io/github/stars/LazZiya/XLocalizer?label=Stars&style=social)](https://github.com/LazZiya/XLocalizer)
+[![GitHub Forks](https://shields.io/github/forks/LazZiya/XLocalizer?label=Forks&style=social)](https://github.com/LazZiya/XLocalizer)
+
+
 ##### Quick start
 - [What is XLocalizer][1]
 - [Localization setup based on XML][5]

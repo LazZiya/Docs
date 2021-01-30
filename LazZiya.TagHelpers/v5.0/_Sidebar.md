@@ -1,3 +1,7 @@
+[![GitHub Stars](https://shields.io/github/stars/LazZiya/TagHelpers?label=Stars&style=social)](https://github.com/LazZiya/TagHelpers)
+[![GitHub Forks](https://shields.io/github/forks/LazZiya/TagHelpers?label=Forks&style=social)](https://github.com/LazZiya/TagHelpers)
+
+
 - [Index][1]
 - [Release Notes](https://github.com/LazZiya/TagHelpers/releases)
 
