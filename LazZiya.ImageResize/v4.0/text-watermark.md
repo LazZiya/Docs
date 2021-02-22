@@ -49,7 +49,7 @@ using(var img = Image.FromFile("wwwroot/images/my-image.jpg"))
 }
 ````
 
-![Static Image - Static Watermark](https://github.com/LazZiya/Docs/raw/master/LazZiya.ImageResize/v4.0/images/static-image-static-text-watermark.jpg)
+![Static Image - Static Watermark](https://github.com/LazZiya/Docs/raw/master/LazZiya.ImageResize/v4.0/images/static-image-text-watermark.jpg)
 > Sample image with text watermark
 
 - All methods can be combined with resize methods:
