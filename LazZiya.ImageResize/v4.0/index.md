@@ -27,7 +27,9 @@ Image resizing tool for .Net applications to resize images and add text/image wa
 - [Image Resizing Methods][1]
 - [Image Watermark][2]
 - [Text Watermrk][3]
-- [Animated Images (>= v4.0)][4]
+- [Animated Images][4]
+- [Animated Text Watermark][5]
+- [Animated Image Watermark][6]
 
 ## Install :
 
@@ -57,3 +59,5 @@ http://demo.ziyad.info/en/
 [2]:image-watermark.md
 [3]:text-watermark.md
 [4]:animated-image.md
+[5]:animated-text-watermark.md
+[6]:animated-image-watermark.md

@@ -32,34 +32,47 @@ using(var img = Image.FromFile("wwwroot/images/my-image.jpg"))
 ````csharp
 using(var img = Image.FromFile("wwwroot/images/my-image.jpg"))
 {
-    var tmOps = new ImageTextWatermarkOptions
+    var tmOps = new TextWatermarkOptions
                 {
-                    Location = TargetSpot.TopLeft,
-                    Margin = 15, // distance from border
-                    FontSize = 35,
+                    Location = TargetSpot.Center,
+                    Margin = 5, // distance from border
+                    FontSize = 40,
                     FontStyle = FontStyle.Bold,
-                    TextColor = Color.FromArgb(255, Color.Whight), // Use alpha channel to change opacity
-                    BGColor = Color.FromArgb(100, Color.Red), // set alpha to 0 to remove background
-                    OutlineColor = Color.FromArgb(255, Color.Black), // Use alpha channel to change opacity
-                    OutlineWidth = 3.5f // draw an outline around the text
-                }
+                    TextColor = Color.FromArgb(70, Color.White), // Use alpha channel to change opacity
+                    BGColor = Color.FromArgb(0, Color.Black), // set alpha to 0 to remove background
+                    OutlineColor = Color.FromArgb(200, Color.Black), // Use alpha channel to change opacity
+                    OutlineWidth = 0.5f // draw an outline around the text
+                };
 
-    img.AddTextWatermark("https://docs.ziyad.info", tmOps)
+    img.AddTextWatermark("LazZiya.ImageResize", tmOps)
        .SaveAs("wwwroot/images/new-image.jpg");
 }
 ````
+
+![Static Image - Static Watermark](https://github.com/LazZiya/Docs/raw/master/LazZiya.ImageResize/v4.0/images/static-image-static-text-watermark.jpg)
+> Sample image with text watermark
 
 - All methods can be combined with resize methods:
 ````csharp
 using(var img = Image.FromFile("wwwroot/images/my-image.jpg"))
 {
     img.ScaleByWidth(400)
-       .AddTextWatermark("https://docs.ziyad.info")
+       .AddTextWatermark("LazZiya.ImageResize")
        .SaveAs("wwwroot/images/new-image.jpg");
 }
 ````
 
-## Live demos:
-http://demo.ziyad.info/en/
+- Text watermark can be applied to animated images as well
+````csharp
+using(var img = AnimatedImage.FromFile("wwwroot/images/my-image.gif"))
+{
+    img.AddTextWatermark("LazZiya.ImageResize....")
+       .SaveAs("wwwroot/images/new-image.gif");
+}
+````
+![Animated Image - Static Text Watermark](https://github.com/LazZiya/Docs/raw/master/LazZiya.ImageResize/v4.0/images/animated-image-static-text-watermark.gif)
+> <small>Animated image obtained from [Giphy](https://giphy.com/gifs/GoTurkey-turkey-tourism-goturkey-Y2z4kPLUEDddnAjXwh)</small>
+
+#### See also [Animated Text Watermark](animated-text-watermark.md)
 
 [1]:https://github.com/LazZiya/ImageResize/blob/master/LazZiya.ImageResize/TextWatermarkOptions.cs

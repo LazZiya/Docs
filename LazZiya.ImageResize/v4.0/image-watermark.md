@@ -28,33 +28,25 @@ using(var img = Image.FromFile("wwwroot/images/my-image.jpg"))
 ````
 
 - Watermark image parameter can be a string or an `Image` file.
-- `AddImageWatermark` can be overloaded with an additional optional parameter: [`ImageWatermarkOptions`][1]
-
-````csharp
-using(var img = Image.FromFile("wwwroot/images/my-image.jpg"))
-{
-    var wmOps = new ImageWatermarkOptions
-                {
-                    Location = TargetSpot.BottomRight,
-                    Margin = 15 // distance from border
-                    Opacity = 35
-                }
-
-    img.AddImageWatermark("wwwroot/images/logo-watermark.png", wmOps)
-       .SaveAs("wwwroot/images/new-image.jpg");
-}
-````
-
+- `AddImageWatermark` can be overloaded with an additional optional parameter: [`ImageWatermarkOptions`][1]    
 - All methods can be combined with resize methods:
 ````csharp
-using(var img = Image.FromFile("wwwroot/images/my-image.jpg"))
+using (var img = Image.FromStream(stream))
 {
-    img.ScaleByWidth(400)
-       .AddImageWatermark("wwwroot/images/logo-watermark.png")
-       .SaveAs("wwwroot/images/new-image.jpg");
+    var imOps = new ImageWatermarkOptions 
+    {
+        Opacity = 35,
+        Location = TargetSpot.Center
+    };
+
+    img.ScaleAndCrop(600, 300)
+        .AddImageWatermark("wwwroot/images/icon.png", imOps)
+        .SaveAs("wwwroot/upload/new-image.jpg");
 }
 ````
-## Live demos:
-http://demo.ziyad.info/en/
+
+![Static Image - Static Image Watermark](https://github.com/LazZiya/Docs/raw/master/LazZiya.ImageResize/v4.0/images/static-image-static-image-watermark.jpg)
+
+#### See also [Animated Image Watermark](animated-image-watermark.md)
 
 [1]:https://github.com/LazZiya/ImageResize/blob/master/LazZiya.ImageResize/ImageWatermarkOptions.cs
