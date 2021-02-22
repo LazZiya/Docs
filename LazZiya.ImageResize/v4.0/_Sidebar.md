@@ -10,9 +10,13 @@
 - [Image Watermark][3]
 - [Text Watermark][4]
 - [Animated Images][5]
+- [Animated Text Watermark][6]
+- [Animated Image Watermark][7]
 
 [1]:index.md
 [2]:image-resizing-methods.md
 [3]:image-watermark.md
 [4]:text-watermark.md
 [5]:animated-image.md
+[6]:animated-text-watermark.md
+[7]:animated-image-watermark.md
