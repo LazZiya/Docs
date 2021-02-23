@@ -25,15 +25,18 @@ Animated text watermarks can be added to static images (jpg, png) or animated im
 ### - Animated Text Watermark Over Static Image
 ````csharp
 // Add animated text watermark over a static image
-var twmOps = new TextWatermarkOptions 
+using(var img = Image.FromString("wwwroot/images/my-image.jpg"))
 {
-    FontSize = 15,
-    Location = TargetSpot.BottomRight 
-};
+    var twmOps = new TextWatermarkOptions 
+    {
+        FontSize = 15,
+        Location = TargetSpot.BottomRight 
+    };
 
-img.ScaleAndCrop(400, 250)
-    .AddAnimatedTextWatermark("LazZiya.ImageResize....", twmOps)
-    .SaveAs("wwwroot/upload/new-image.gif", 100); // Make sure to save as gif
+    img.ScaleAndCrop(400, 250)
+        .AddAnimatedTextWatermark("LazZiya.ImageResize....", twmOps)
+        .SaveAs("wwwroot/upload/new-image.gif", 100); // Make sure to save as gif
+}
 ````
 
 ![Static Image - Animated Text Watermark](https://github.com/LazZiya/Docs/raw/master/LazZiya.ImageResize/v4.0/images/static-image-animated-text-watermark.gif)
