@@ -14,6 +14,9 @@
 </details>
 </div>
 
+> #### IMPORTANT NOTICE!
+> This library is not maintained anymore. Please upgrade to [XLocalizer][0] for a newer and easier localization experience.
+
 # Localizing Data Annotations with Express Attributes
 
 By [Ziya Mollamahmut](https://github.com/LazZiya)
@@ -75,3 +78,5 @@ The rest of the frameworks data attributes are already providing a default error
 // "The {0} field is not a valid fully-qualified http, https, or ftp URL."
 [Url]
 ```` 
+
+[0]:https://docs.ziyad.info/en/XLocalizer/v1.0/index.md

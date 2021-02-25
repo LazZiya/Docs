@@ -14,6 +14,9 @@
 </details>
 </div>
 
+> #### IMPORTANT NOTICE!
+> This library is not maintained anymore. Please upgrade to [XLocalizer][0] for a newer and easier localization experience.
+
 # Culture Fallback Behavior
 
 By [Ziya Mollamahmut](https://github.com/LazZiya)
@@ -42,6 +45,7 @@ services.AddRazorPages()
 ````
 _reference to issue [#13][8]_
 
+[0]:https://docs.ziyad.info/en/XLocalizer/v1.0/index.md
 [6]: https://github.com/LazZiya/ExpressLocalization/blob/master/LazZiya.ExpressLocalization/RouteSegmentCultureProvider.cs
 [7]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.localization.querystringrequestcultureprovider
 [3]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.localization.cookierequestcultureprovider

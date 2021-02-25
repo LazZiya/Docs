@@ -14,6 +14,9 @@
 </details>
 </div>
 
+> #### IMPORTANT NOTICE!
+> This library is not maintained anymore. Please upgrade to [XLocalizer][0] for a newer and easier localization experience.
+
 # Localizing Default Data Annotations
 
 By [Ziya Mollamahmut](https://github.com/LazZiya)
@@ -53,11 +56,13 @@ public string Name { get; set; }
 
 > Notice : depending on `ExpressLocalization` setup, the error messages must be defined in the relevant resource file for DataAnnotations. For more details see [Creating Resources][5].
 
+
+### Applies to ExpressLocalization versions:
+ 4.0, 3.2, 3.1, 3.0, 2.0, 1.1, 1.0
+
+[0]:https://docs.ziyad.info/en/XLocalizer/v1.0/index.md
 [1]:Setup-for-Razor-Pages.md
 [2]:Setup-for-mvc.md
 [3]:https://github.com/LazZiya/ExpressLocalization/tree/master/LazZiya.ExpressLocalization/Messages
 [4]:https://github.com/LazZiya/ExpressLocalization/blob/master/LazZiya.ExpressLocalization/Messages/DataAnnotationsErrorMessages.cs
 [5]:Creating-Resources.md
-
-### Applies to ExpressLocalization versions:
- 4.0, 3.2, 3.1, 3.0, 2.0, 1.1, 1.0

@@ -14,6 +14,9 @@
 </details>
 </div>
 
+> #### IMPORTANT NOTICE!
+> This library is not maintained anymore. Please upgrade to [XLocalizer][0] for a newer and easier localization experience.
+
 # Customized Setup
 
 By [Ziya Mollamahmut](https://github.com/LazZiya)
@@ -59,3 +62,5 @@ services.AddRazorPages()
 
 ### Applies to ExpressLocalization versions:
  4.0, 3.2, 3.1, 3.0, 2.0, 1.1, 1.0
+
+[0]:https://docs.ziyad.info/en/XLocalizer/v1.0/index.md

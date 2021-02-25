@@ -14,6 +14,9 @@
 </details>
 </div>
 
+> #### IMPORTANT NOTICE!
+> This library is not maintained. Please upgrade to [XLocalizer][0] for a newer and easier localization experience.
+
 # Localizing Views
 
 By [Ziya Mollamahmut](https://github.com/LazZiya)
@@ -82,4 +85,5 @@ Specify localization resource type using `localize-source`
 
 See [demo page][1].
 
+[0]:https://docs.ziyad.info/en/XLocalizer/v1.0/index.md
 [1]:http://demo.ziyad.info/en/localize

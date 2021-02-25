@@ -14,6 +14,9 @@
 </details>
 </div>
 
+> #### IMPORTANT NOTICE!
+> This library is not maintained. Please upgrade to [XLocalizer][0] for a newer and easier localization experience.
+
 # Setup ExpressLocalization for MVC
 
 By [Ziya Mollamahmut](https://github.com/LazZiya)
@@ -69,3 +72,5 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     });
 }
 ````
+
+[0]:https://docs.ziyad.info/en/XLocalizer/v1.0/index.md

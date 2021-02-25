@@ -14,6 +14,9 @@
 </details>
 </div>
 
+> #### IMPORTANT NOTICE!
+> This library is not maintained. Please upgrade to [XLocalizer][0] for a newer and easier localization experience.
+
 # Migrating from 3.x to 4.x
 
 By [Ziya Mollamahmut](https://github.com/LazZiya)
@@ -90,6 +93,7 @@ using LazZiya.ExpressLocalization.DataAnnotations
 
 See all [express valdiation attributes][1] and [default attributes][2] for more details.
 
+[0]:https://docs.ziyad.info/en/XLocalizer/v1.0/index.md
 [1]:DataAnnotations-Localization-Using-Express-Attributes.md
 [2]:DataAnnotations-Localization-Using-Default-Attributes.md
 [3]:Validating-Localized-Input.md

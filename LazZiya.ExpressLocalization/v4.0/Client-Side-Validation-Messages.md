@@ -14,6 +14,9 @@
 </details>
 </div>
 
+> #### IMPORTANT NOTICE!
+> This library is not maintained anymore. Please upgrade to [XLocalizer][0] for a newer and easier localization experience.
+
 # Localization of Client Side Validation Messages
 
 By [Ziya Mollamahmut](https://github.com/LazZiya)
@@ -44,3 +47,5 @@ You can add the relevant scripts manually as well:
 <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
 <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
 ````
+
+[0]:https://docs.ziyad.info/en/XLocalizer/v1.0/index.md

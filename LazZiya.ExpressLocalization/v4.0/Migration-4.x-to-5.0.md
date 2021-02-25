@@ -14,8 +14,13 @@
 </details>
 </div>
 
+> #### IMPORTANT NOTICE!
+> This library is not maintained. Please upgrade to [XLocalizer][0] for a newer and easier localization experience.
+
 # Migrating from 4.x to 5.x
 
 By [Ziya Mollamahmut](https://github.com/LazZiya)
 
 ## IMPORTANT: Due to several breaking changes in the planned v5, it has been introducedas a new nuget package. See [`XLocalizer`](../../XLocalizer/v1.0/index.md) for more details.
+
+[0]:https://docs.ziyad.info/en/XLocalizer/v1.0/index.md

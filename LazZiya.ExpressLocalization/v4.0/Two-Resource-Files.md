@@ -14,6 +14,9 @@
 </details>
 </div>
 
+> #### IMPORTANT NOTICE!
+> This library is not maintained. Please upgrade to [XLocalizer][0] for a newer and easier localization experience.
+
 # Two resource files for each culture
 
 By [Ziya Mollamahmut](https://github.com/LazZiya)
@@ -54,4 +57,5 @@ services.AddRazorPages()
     - LocSourceData.ar.resx
     - LocSourceViews.ar.resx
 
+[0]:https://docs.ziyad.info/en/XLocalizer/v1.0/index.md
 [1]:Setup-for-Razor-Pages.md

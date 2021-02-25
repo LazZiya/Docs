@@ -14,6 +14,11 @@
 </details>
 </div>
 
+
+> #### IMPORTANT NOTICE!
+> This library is not maintained. Please upgrade to [XLocalizer][0] for a newer and easier localization experience.
+
+
 # Express Localization
 
 By [Ziya Mollamahmut](https://github.com/LazZiya)
@@ -42,6 +47,7 @@ _ExpressLocalization_ does all below localization settings easily:
 Some options requires installing additional nuget packages like : 
 - [LazZiya.TagHelpers][5]
 
+[0]:https://docs.ziyad.info/en/XLocalizer/v1.0/index.md
 [1]:https://github.com/LazZiya/ExpressLocalization/blob/master/LazZiya.ExpressLocalization/RouteSegmentCultureProvider.cs
 [3]:https://github.com/LazZiya/ExpressLocalization/blob/master/LazZiya.ExpressLocalization/SharedCultureLocalizer.cs
 [5]:index.md

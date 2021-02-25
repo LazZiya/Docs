@@ -14,6 +14,9 @@
 </details>
 </div>
 
+> #### IMPORTANT NOTICE!
+> This library is not maintained anymore. Please upgrade to [XLocalizer][0] for a newer and easier localization experience.
+
 # Creating Localization Resource Files
 
 By [Ziya Mollamahmut](https://github.com/LazZiya)
@@ -47,3 +50,5 @@ You are free to choose how many resource files will be used to handle localized 
 - [A - One resource file for each culture](One-Resource-File.md)
 - [B - Two resource files for each culture](Two-Resource-Files.md)
 - [C - Four resource files for each culture](Four-Resource-Files.md)
+
+[0]:https://docs.ziyad.info/en/XLocalizer/v1.0/index.md

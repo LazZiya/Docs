@@ -14,6 +14,9 @@
 </details>
 </div>
 
+> #### IMPORTANT NOTICE!
+> This library is not maintained anymore. Please upgrade to [XLocalizer][0] for a newer and easier localization experience.
+
 # Localizing Identity Errors
 
 By [Ziya Mollamahmut](https://github.com/LazZiya)
@@ -45,3 +48,5 @@ User is not in role '{0}'.
 User name '{0}' is already taken.
 User name '{0}' is invalid, can only contain letters or digits.
 ````
+
+[0]:https://docs.ziyad.info/en/XLocalizer/v1.0/index.md

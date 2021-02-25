@@ -14,6 +14,9 @@
 </details>
 </div>
 
+> #### IMPORTANT NOTICE!
+> This library is not maintained. Please upgrade to [XLocalizer][0] for a newer and easier localization experience.
+
 # SharedCultureLocalizaer for ExpressLocalization
 
 By [Ziya Mollamahmut](https://github.com/LazZiya)
@@ -37,3 +40,5 @@ But when it comes to localize long strings with html tags this approach become u
 
 ### Applies to ExpressLocalization versions:
  4.0
+
+[0]:https://docs.ziyad.info/en/XLocalizer/v1.0/index.md

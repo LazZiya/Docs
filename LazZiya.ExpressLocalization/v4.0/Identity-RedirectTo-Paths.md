@@ -14,6 +14,9 @@
 </details>
 </div>
 
+> #### IMPORTANT NOTICE!
+> This library is not maintained anymore. Please upgrade to [XLocalizer][0] for a newer and easier localization experience.
+
 # Configuring Identity RedirectTo Paths
 
 By [Ziya Mollamahmut](https://github.com/LazZiya)
@@ -60,5 +63,5 @@ services.AddRazorPages()
 
 in this case you need to manually configure the app cookie to handle the culture value on redirect events as described in [issue #2][2]
 
-
-[2]: https://github.com/LazZiya/ExpressLocalization/issues/6
+[0]:https://docs.ziyad.info/en/XLocalizer/v1.0/index.md
+[2]:https://github.com/LazZiya/ExpressLocalization/issues/6

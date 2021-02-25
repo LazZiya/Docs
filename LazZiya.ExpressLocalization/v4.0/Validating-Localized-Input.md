@@ -14,6 +14,9 @@
 </details>
 </div>
 
+> #### IMPORTANT NOTICE!
+> This library is not maintained. Please upgrade to [XLocalizer][0] for a newer and easier localization experience.
+
 # Validating Localized Input
 
 By [Ziya Mollamahmut](https://github.com/LazZiya)
@@ -22,6 +25,7 @@ Some input fields need to be localized (decimal numbers, dates, ...etc.). But wi
 
 To have client side validation full compatibility with all cultures see [`LocalizationValdiationScripts`][1] taghelper from [`LazZiya.TagHelpers`][2]
 
+[0]:https://docs.ziyad.info/en/XLocalizer/v1.0/index.md
 [1]:../../LazZiya.TagHelpers/v5.0/LocalizationValidationScripts-TagHelper-Setup.md
 [2]:../../LazZiya.TagHelpers/v5.0/index.md
 

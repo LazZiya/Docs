@@ -14,6 +14,9 @@
 </details>
 </div>
 
+> #### IMPORTANT NOTICE!
+> This library is not maintained anymore. Please upgrade to [XLocalizer][0] for a newer and easier localization experience.
+
 # Localization of Custom Backend Messages
 
 By [Ziya Mollamahmut](https://github.com/LazZiya)
@@ -44,6 +47,7 @@ public class IndexModel : PageModel
 
 > Extra: If you want to have bootstrap styled messages (Success, Warning, Danger, etc.) I suggest you have a look at [AlertTagHelper][2] in [LazZiya.TagHelpers][3] nuget package.
 
+[0]:https://docs.ziyad.info/en/XLocalizer/v1.0/index.md
 [1]:https://github.com/LazZiya/ExpressLocalization/blob/master/LazZiya.ExpressLocalization/ISharedCultureLocalizer.cs
 [2]:Alert-TagHelper-Overview.md
 [3]:index.md

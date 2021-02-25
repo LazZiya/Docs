@@ -14,6 +14,9 @@
 </details>
 </div>
 
+> #### IMPORTANT NOTICE!
+> This library is not maintained. Please upgrade to [XLocalizer][0] for a newer and easier localization experience.
+
 # Localizing Model Binding Errors
 
 By [Ziya Mollamahmut](https://github.com/LazZiya)
@@ -33,3 +36,5 @@ The value '{0}' is invalid.
 The value '{0}' is not valid for {1}.
 The value '{0}' is not valid.
 ````
+
+[0]:https://docs.ziyad.info/en/XLocalizer/v1.0/index.md
