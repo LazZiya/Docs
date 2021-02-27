@@ -35,7 +35,7 @@ Image resizing tool for .Net applications to resize images and add text/image wa
 
 Install via nuget package manager:
 ````
-Install-Package LazZiya.ImageResize
+Install-Package LazZiya.ImageResize -Pre
 ````
 > v4.0 still in preview mode, so add -Pre to the command to install latest preview version
 
