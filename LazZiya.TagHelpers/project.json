@@ -3,6 +3,6 @@
   "description": "A collection of usefull taghelpers for every Asp.Net Core project.",
   "repoUrl": "https://github.com/LazZiya/TagHelpers",
   "folder": "LazZiya.TagHelpers",
-  "versions": [ "v5.0", "v4.0", "v3.0" ],
-  "image": "https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v5.0/images/lazziya-taghelpers-logo.png"
+  "versions": [ "v6.0", "v5.0", "v4.0", "v3.0" ],
+  "image": "https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v6.0/images/lazziya-taghelpers-logo.png"
 }
