@@ -12,6 +12,7 @@
 - [Animated Images][5]
 - [Animated Text Watermark][6]
 - [Animated Image Watermark][7]
+- [Conditional Methods][8]
 
 [1]:index.md
 [2]:image-resizing-methods.md
@@ -20,3 +21,4 @@
 [5]:animated-image.md
 [6]:animated-text-watermark.md
 [7]:animated-image-watermark.md
+[8]:conditional-methods.md
