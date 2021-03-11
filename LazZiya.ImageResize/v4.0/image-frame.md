@@ -6,7 +6,7 @@
 > * Keywords: <i id="md-keywords">asp.net-core, image, resize, crop, scale, text watermark, animated, gif, conditional, frame, border, fill</i>
 > * Description: <i id="md-description">Image resizing tool for .Net applications to resize images and add text/image watermark, Supports most common image types including animated gif.</i>
 > * Author: <i id="md-author">Ziya Mollamahmut</i>
-> * Date: <i id="md-date">09-Mar-2021</i>
+> * Date: <i id="md-date">11-Mar-2021</i>
 > * Image: <i id="md-image">https://github.com/LazZiya/Docs/raw/master/LazZiya.ImageResize/v4.0/images/lazziya-imageresize-logo.png</i>
 > * Image-alt: <i id="md-image-alt">LazZiya.ImageResize Logo</i>
 > * Version: <i id="md-version">v4.0</i>

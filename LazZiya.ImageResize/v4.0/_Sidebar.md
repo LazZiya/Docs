@@ -9,6 +9,7 @@
 - [Image Resizing Methods][2]
 - [Image Watermark][3]
 - [Text Watermark][4]
+- [Image Frame][9]
 - [Animated Images][5]
 - [Animated Text Watermark][6]
 - [Animated Image Watermark][7]
@@ -22,3 +23,4 @@
 [6]:animated-text-watermark.md
 [7]:animated-image-watermark.md
 [8]:conditional-methods.md
+[9]:image-frame.md
