@@ -18,19 +18,22 @@ By [Ziya Mollamahmut](https://github.com/LazZiya)
 
 # Image Frame
 
-Draw a frame around the image, speicify frame style, color, distance, ...etc. This method will not resize the from image, but will add additional space around it to draw the frame.
+Draw a frame around the image, speicify frame style, color, distance, ...etc. This method will not resize the front image, but will add additional space around it to draw the frame.
+
+![Wide Image](https://github.com/LazZiya/Docs/raw/master/LazZiya.ImageResize/v4.0/images/raf-frame.png)
 
 ## Why Image Frame?
 Imagine you have a shopping site, and some products has wide images, while other products has image hight more than other. What is the ideal size to fit all different images in a fixed frame? in some cases you can fix it with CSS by defining `max-width` and `max-height`. But that is not the ideal solution!
 
-#### Sample:
 For example see below two images with different sizes:
 
-![Wide Image](images/sample-wide-image.jpg)
+![Wide Image](https://github.com/LazZiya/Docs/raw/master/LazZiya.ImageResize/v4.0/images/sample-wide-image.jpg)
 
 and 
 
-![Long Image](images/sample-long-image.jpg)
+![Long Image](https://github.com/LazZiya/Docs/raw/master/LazZiya.ImageResize/v4.0/images/sample-long-image.jpg)
+
+#### Sample without using AddFrame:
 
 When we do resize above two images with `Scale` method:
 ````csharp
@@ -43,9 +46,10 @@ using(var img = Image.FromFile("my-image-file.jpg")
 ````
 The result is like below:
 
-![Wide Image](images/raf-no-frame.png)
-![Long Image](images/dush-no-frame.png)
+![Wide Image](https://github.com/LazZiya/Docs/raw/master/LazZiya.ImageResize/v4.0/images/raf-no-frame.png)
+![Long Image](https://github.com/LazZiya/Docs/raw/master/LazZiya.ImageResize/v4.0/images/dush-no-frame.png)
 
+### Sample using AddFrame
 Now lets just add a frame after resize:
 ````csharp
 using(var img = Image.FromFile("my-image-file.jpg")
@@ -56,21 +60,13 @@ using(var img = Image.FromFile("my-image-file.jpg")
        .SaveAs("wwwroot/upload/new-image-with-frame.png");
 }
 ````
-Now we have two identical images :)
+Now we have two identical images:
 
-![Wide Image](images/raf-frame.png)
-![Long Image](images/dush-frame.png)
+![Wide Image](https://github.com/LazZiya/Docs/raw/master/LazZiya.ImageResize/v4.0/images/raf-frame.png)
+![Long Image](https://github.com/LazZiya/Docs/raw/master/LazZiya.ImageResize/v4.0/images/dush-frame.png)
 
 ### Change Image Frame Options
 You can play with `ImageFrameOptions` to customize color, width and shape of the frame and the background. You may even use your imagination to create fantastic frames like below :)
-
-Original image: 
-
-![Original image](images/sample-flower.png)
-
-Resized with multiple frames: 
-
-![Resized with frame](images/multi-bordered-image.png)
 
 ````csharp
 using(var img = Image.FromFile("my-image-file.jpg")
@@ -86,5 +82,40 @@ using(var img = Image.FromFile("my-image-file.jpg")
         .SaveAs("wwwroot/upload/new-image.png");
 }
 ````
+Original image: 
+
+![Original image](https://github.com/LazZiya/Docs/raw/master/LazZiya.ImageResize/v4.0/images/sample-flower.png)
+
+Result: 
+
+![Resized with frame](https://github.com/LazZiya/Docs/raw/master/LazZiya.ImageResize/v4.0/images/multi-bordered-image.png)
+
+Or combine with [image mask](image-mask.md) to get different shape:
+
+````csharp
+// make ellipse frame
+using(var img = Image.FromFile("my-image-file.jpg")
+{
+    img.ScaleAndCrop(150, 150)
+        // Apply rouded mask
+        .Mask(new Rectangle(0,0, 150, 150), ImageFrameShape.Ellipse)
+        .AddFrame(265, 265, new ImageFrameOptions { Thickness = 3, FrameColor = Color.DarkSlateBlue, FillColor = Color.AliceBlue, FrameShape = ImageFrameShape.Ellipse })
+        .AddFrame(new ImageFrameOptions { Thickness = 5, FrameColor = Color.BlueViolet, FrameShape = ImageFrameShape.Ellipse })
+        .AddFrame(new ImageFrameOptions { Thickness = 4, FrameColor = Color.Gold, DashStyle = DashStyle.Dot, FrameShape = ImageFrameShape.Ellipse })
+        .AddFrame(new ImageFrameOptions { Thickness = 8, FrameColor = Color.CornflowerBlue, DashStyle = DashStyle.Dash, FrameShape = ImageFrameShape.Ellipse })
+        .AddFrame(new ImageFrameOptions { Thickness = 4, FrameColor = Color.PaleGoldenrod, DashStyle = DashStyle.Dot, FrameShape = ImageFrameShape.Ellipse })
+        .AddFrame(new ImageFrameOptions { Thickness = 10, FrameColor = Color.DeepSkyBlue, FrameShape = ImageFrameShape.Ellipse })
+        .AddFrame(new ImageFrameOptions { Thickness = 4, FrameColor = Color.DarkSlateBlue, FrameShape = ImageFrameShape.Ellipse })
+        .SaveAs("wwwroot/upload/new-image.png");
+}
+````
+
+Original image: 
+
+![Original image](https://github.com/LazZiya/Docs/raw/master/LazZiya.ImageResize/v4.0/images/sample-flower.png)
+
+Result:
+
+![Resized with frame](https://github.com/LazZiya/Docs/raw/master/LazZiya.ImageResize/v4.0/images/multi-bordered-ellipse.png)
 
 All methods are available with the conditional `If` variation.
