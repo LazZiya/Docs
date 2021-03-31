@@ -4,10 +4,10 @@
 
 ##### Quick start
 - [What is XLocalizer][1]
-- [Localization setup based on XML][5]
-- [Localization setup based on DB][6]
-- [Localization setup based on RESX][7]
-- [Localization setup for Blazor][4]
+- [MVC/Razor Pages and XML Resource][5]
+- [MVC/Razor Pages and DB Resource][6]
+- [MVC/Razor Pages and RESX Resource][7]
+- [Blazor and XML Resource][4]
 - [Localization setup via JSON settings][2]
 
 ##### Translation

@@ -6,7 +6,7 @@
 > * Keywords: <i id="md-keywords">localization, asp.net-core, xlocalizer</i>
 > * Description: <i id="md-description">Learn about localizing Asp.Net Core web apps with XLocalizer powered by auto translate and auto key adding.</i>
 > * Author: <i id="md-author">Ziya Mollamahmut</i>
-> * Date: <i id="md-date">08-Aug-2020</i>
+> * Date: <i id="md-date">31-Mar-2021</i>
 > * Image: <i id="md-image">https://github.com/LazZiya/Docs/raw/master/XLocalizer/v1.0/images/xlocalizer-logo.png</i>
 > * Image-alt: <i id="md-image-alt">XLocalizer Logo</i>
 > * Version: <i id="md-version">v1.0</i>
@@ -35,7 +35,24 @@ This is a nuget package that offers localization for Asp.Net Core based on _.res
 
 **- Standard interfaces :** Easy to use due to using the standard localization interfaces: `IStringLocalizer`, `IHtmlLocalizer`, `IStringLocalizerFactory` and `IHtmlLocalizerFactory`.
 
-#
+
+#### Quick Setup
+````csharp
+services.AddRazorPages()
+    .AddXLocalizer<LocSource, GoogleTranslateService>(ops =>
+    {
+        ops.ResourcesPath = "LocalizationResources";
+        ops.AutoTranslate = true;
+        ops.AutoAddKeys = true;
+        ops.TranslateFromCulture = "en";
+    });
+````
+
+For more details see setup instructions based on project type:
+ - [MVC/Razor Pages and XML Resource][2]
+ - [MVC/Razor Pages and DB Resource][3]
+ - [MVC/Razor Pages and RESX Resource][4]
+ - [Blazor and XML Resource][4]
 
 #### Disclaimer Third Parties
 
@@ -51,3 +68,6 @@ During the development of `XLocalizer` I've used many online translation service
 
 [1]:https://rapidapi.com/translated/api/mymemory-translation-memory
 [2]:setup-xml.md
+[3]:setup-db.md
+[4]:setup-resx.md
+[5]:setup-blazor.md

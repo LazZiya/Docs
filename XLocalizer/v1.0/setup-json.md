@@ -6,7 +6,7 @@
 > * Keywords: <i id="md-keywords">localization, asp.net-core, setup, startup, json, appsettings, options</i>
 > * Description: <i id="md-description">Learn how to setup XLocalizer via json settings.</i>
 > * Author: <i id="md-author">Ziya Mollamahmut</i>
-> * Date: <i id="md-date">02-Nov-2020</i>
+> * Date: <i id="md-date">31-Mar-2021</i>
 > * Image: <i id="md-image">https://github.com/LazZiya/Docs/raw/master/XLocalizer/v1.0/images/xlocalizer-logo.png</i>
 > * Image-alt: <i id="md-image-alt">XLocalizer Logo</i>
 > * Version: <i id="md-version">v1.0</i>

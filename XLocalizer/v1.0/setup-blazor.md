@@ -6,7 +6,7 @@
 > * Keywords: <i id="md-keywords">localization, asp.net-core, blazor</i>
 > * Description: <i id="md-description">Learn how to localize Blazor server app with XLocalizer.</i>
 > * Author: <i id="md-author">Ziya Mollamahmut</i>
-> * Date: <i id="md-date">08-Aug-2020</i>
+> * Date: <i id="md-date">31-Mar-2021</i>
 > * Image: <i id="md-image">https://github.com/LazZiya/Docs/raw/master/XLocalizer/v1.0/images/xlocalizer-logo.png</i>
 > * Image-alt: <i id="md-image-alt">XLocalizer Logo</i>
 > * Version: <i id="md-version">v1.0</i>
@@ -14,7 +14,7 @@
 </details>
 </div>
 
-# Localization of Blazor Server Projects
+# Blazor Server and XML Based Localization Setup
 
 By [Ziya Mollamahmut](https://github.com/LazZiya)
 
