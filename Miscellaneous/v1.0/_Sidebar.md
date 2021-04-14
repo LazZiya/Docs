@@ -1,5 +1,5 @@
-[![GitHub Stars](https://shields.io/github/stars/LazZiya/Miscellaneous?label=Stars&style=social)](https://github.com/LazZiya/Miscellaneous)
-[![GitHub Forks](https://shields.io/github/forks/LazZiya/Miscellaneous?label=Forks&style=social)](https://github.com/LazZiya/Miscellaneous)
+[![GitHub Stars](https://shields.io/github/stars/LazZiya/BlogSamples?label=Stars&style=social)](https://github.com/LazZiya/BlogSamples)
+[![GitHub Forks](https://shields.io/github/forks/LazZiya/BlogSamples?label=Forks&style=social)](https://github.com/LazZiya/BlogSamples)
 
 
 - [Index][1]
