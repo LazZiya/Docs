@@ -35,7 +35,7 @@
     "title": "How To !?",
     "description": "Various tips and samples for how-to setup Asp.Net Core services, and how to use third party tools and services.",
     "repoUrl": "https://github.com/LazZiya/BlogSamples",
-    "folder": "LazZiya.Miscellaneous",
+    "folder": "Miscellaneous",
     "versions": [ "v1.0" ],
     "image": "https://github.com/LazZiya/Docs/raw/master/Miscellaneous/v1.0/images/ziya-logo.png"
   }
