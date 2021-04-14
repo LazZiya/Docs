@@ -16,6 +16,14 @@
     "image": "https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v6.0/images/lazziya-taghelpers-logo.png"
   },
   {
+    "title": "LazZiya.ImageResize",
+    "description": "Image resizing tool for .Net applications. Supports jpg, png and animated gif. Easily add text/image watermarks and more.",
+    "repoUrl": "https://github.com/LazZiya/ImageResize",
+    "folder": "LazZiya.ImageResize",
+    "versions": [ "v4.0", "v3.0" ],
+    "image": "https://github.com/LazZiya/Docs/raw/master/LazZiya.ImageResize/v4.0/images/lazziya-imageresize-logo.png"
+  },
+  {
     "title": "LazZiya.ExpressLocalization",
     "description": "All dirty localization settings in simple steps",
     "repoUrl": "https://github.com/LazZiya/ExpressLocalization",
@@ -24,11 +32,11 @@
     "image": "https://github.com/LazZiya/Docs/raw/master/LazZiya.ExpressLocalization/v4.0/images/lazziya-express-localization-logo.png"
   },
   {
-    "title": "LazZiya.ImageResize",
-    "description": "Image resizing tool for .Net applications to resize images and add text/image watermark, Supports most common image types including animated gif.",
-    "repoUrl": "https://github.com/LazZiya/ImageResize",
-    "folder": "LazZiya.ImageResize",
-    "versions": [ "v4.0", "v3.0" ],
-    "image": "https://github.com/LazZiya/Docs/raw/master/LazZiya.ImageResize/v4.0/images/lazziya-imageresize-logo.png"
+    "title": "How To !?",
+    "description": "Various tips and samples for how-to setup Asp.Net Core services, and how to use third party tools and services.",
+    "repoUrl": "https://github.com/LazZiya/BlogSamples",
+    "folder": "LazZiya.Miscellaneous",
+    "versions": [ "v1.0" ],
+    "image": "https://github.com/LazZiya/Docs/raw/master/Miscellaneous/v1.0/images/ziya-logo.png"
   }
 ]

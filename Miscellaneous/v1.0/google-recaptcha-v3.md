@@ -2,12 +2,12 @@
 <div id="meta-info">
 <details><summary>meta info</summary>
 
-> * Title: <i id="md-title">Miscellaneous Topics</i>
-> * Keywords: <i id="md-keywords">localization, asp.net-core, third, party, tools, services</i>
-> * Description: <i id="md-description">Various tip and How-to for third party tools and services in Asp.Net Core</i>
+> * Title: <i id="md-title">Asp.Net Core - Install Google reCAPTCHA v3</i>
+> * Keywords: <i id="md-keywords">asp.net, core, google, recaptcha, security</i>
+> * Description: <i id="md-description">How to install google reCAPTCHA v3 on Asp.Net Core project using backend validiation.</i>
 > * Author: <i id="md-author">Ziya Mollamahmut</i>
 > * Date: <i id="md-date">18-Mar-2021</i>
-> * Image: <i id="md-image">https://github.com/LazZiya/Docs/raw/master/Miscellaneous/v1.0/images/miscellaneous-logo.png</i>
+> * Image: <i id="md-image">https://github.com/LazZiya/Docs/raw/master/Miscellaneous/v1.0/images/ziya-logo.png</i>
 > * Image-alt: <i id="md-image-alt">Miscellaneous Logo</i>
 > * Version: <i id="md-version">v1.0</i>
 
@@ -43,57 +43,70 @@ Put the site key and secret key in user secrets file:
 - Create a new client service that will connect to the reCAPTCHA API's and do valdiation in the backend, this service will use the <code>SecretKey</code> and <vode>Token</code> for validation.
 
 ````csharp
-public class ReCaptchaService
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
+using Newtonsoft.Json.Linq;
+using System;
+using System.Net;
+using System.Net.Http;
+using System.Net.Sockets;
+using System.Threading.Tasks;
+
+namespace GoogleReCaptchaV3
 {
-    private readonly HttpClient _client;
-    private readonly ILogger _log;
-
-    private readonly string _secretKey;
-
-    public ReCaptchaService(
-        HttpClient httpClient,
-        ILogger<ReCaptchaClient> logger,
-        IConfiguration configuration)
+    public class ReCaptchaService
     {
-        _log = logger;
-        _client = httpClient ?? throw new NullReferenceException(nameof(httpClient));
-        _client.BaseAddress = new Uri("https://www.google.com");
+        private readonly HttpClient _client;
+        private readonly ILogger _log;
 
-        _secretKey = configuration.GetValue<string>("GoogleReCAPTCHAv3:SecretKey") 
-                  ?? throw new NullReferenceException("GoogleReCAPTCHAv3:SecretKey");
-    }
+        private readonly string _secretKey;
 
-    public async Task<bool?> ValidateReCaptchaAsync(string token)
-    {
-        try
+        public ReCaptchaService(
+            HttpClient httpClient,
+            ILogger<ReCaptchaService> logger,
+            IConfiguration configuration)
         {
-            var response = await _client.GetAsync($"/recaptcha/api/siteverify?secret={_secretKey}&response={token}");
+            _log = logger;
+            _client = httpClient ?? throw new NullReferenceException(nameof(httpClient));
+            _client.BaseAddress = new Uri("https://www.google.com");
 
-            if (response.StatusCode != HttpStatusCode.OK)
-                return false;
-
-            string JSONresponse = await response.Content.ReadAsStringAsync();
-            dynamic JSONdata = JObject.Parse(JSONresponse);
-
-            if (JSONdata.success != "true")
-                return false;
-        }
-        catch (SocketException e)
-        {
-            _log.LogCritical("CAN'T CONNECT TO GOOGLE CAPTCHA SERVER!");
-            _log.LogError(e.Message);
-            return null;
-        }
-        catch (HttpRequestException e)
-        {
-            _log.LogCritical("CAN'T CONNECT TO GOOGLE CAPTCHA SERVER!");
-            _log.LogError(e.Message);
-            return null;
+            _secretKey = configuration.GetValue<string>("GoogleReCAPTCHAv3:SecretKey")
+                      ?? throw new NullReferenceException("GoogleReCAPTCHAv3:SecretKey");
         }
 
-        return true;
+        public async Task<bool?> ValidateReCaptchaAsync(string token)
+        {
+            try
+            {
+                var response = await _client.GetAsync($"/recaptcha/api/siteverify?secret={_secretKey}&response={token}");
+
+                if (response.StatusCode != HttpStatusCode.OK)
+                    return false;
+
+                string JSONresponse = await response.Content.ReadAsStringAsync();
+                dynamic JSONdata = JObject.Parse(JSONresponse);
+
+                if (JSONdata.success != "true")
+                    return false;
+            }
+            catch (SocketException e)
+            {
+                _log.LogCritical("CAN'T CONNECT TO GOOGLE CAPTCHA SERVER!");
+                _log.LogError(e.Message);
+                return null;
+            }
+            catch (HttpRequestException e)
+            {
+                _log.LogCritical("CAN'T CONNECT TO GOOGLE CAPTCHA SERVER!");
+                _log.LogError(e.Message);
+                return null;
+            }
+
+            return true;
+        }
     }
 }
+
 ````
 
 - Register the reCAPTCHA service in startup:

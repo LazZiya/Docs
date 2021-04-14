@@ -55,6 +55,7 @@ Attributes to set the query string key names for page number and page size param
 |:---|:---|:---|:---|:---|
 | `query-string-key-page-no` | yes | `string` | `P` | Query string key name of page number |
 | `query-string-key-page-size` | yes | `string` | `S` | Query string key name of page size |
+| `fix-url-path` | yes | `bool` | true | Force adding page path to the url |
 |<img width="250"/>|<img width="50"/>|<img width="50"/>|<img width="50"/>| [Goto top](#quick-navigation) |
 
 #### Display attributes
