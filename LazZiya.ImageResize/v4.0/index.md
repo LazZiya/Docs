@@ -66,11 +66,12 @@ sudo apt install libc6-dev
 sudo apt install libgdiplus
 ````
 
-## Live demos (not covering v4.0 yet):
+### Live demos (not covering v4.0 yet):
 http://demo.ziyad.info/en/
 
-> **Disclaimer :**
-> Parts of the animated gif support depends on a customized version of the code provided by [gOODiDEA.NET](https://www.codeproject.com/Articles/11505/NGif-Animated-GIF-Encoder-for-NET) in CodeProject.com.
+### Disclaimer :
+Parts of the animated gif support depends on a customized version of the code provided by [gOODiDEA.NET](https://www.codeproject.com/Articles/11505/NGif-Animated-GIF-Encoder-for-NET) in CodeProject.com.
+
 
 [2]:image-resizing-methods.md
 [3]:image-watermark.md
