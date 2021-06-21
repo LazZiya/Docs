@@ -9,6 +9,7 @@
 - [MVC/Razor Pages and RESX Resource][7]
 - [Blazor and XML Resource][4]
 - [Localization setup via JSON settings][2]
+- [Best Practice and Recommendations][3]
 
 ##### Translation
 - [Translation services][8]
@@ -43,7 +44,7 @@
 
 [1]:index.md
 [2]:setup-json.md
-[3]: .
+[3]:best-practice.md
 [4]:setup-blazor.md
 [5]:setup-xml.md
 [6]:setup-db.md

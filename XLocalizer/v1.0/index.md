@@ -6,7 +6,7 @@
 > * Keywords: <i id="md-keywords">localization, asp.net-core, xlocalizer</i>
 > * Description: <i id="md-description">Learn about localizing Asp.Net Core web apps with XLocalizer powered by auto translate and auto key adding.</i>
 > * Author: <i id="md-author">Ziya Mollamahmut</i>
-> * Date: <i id="md-date">31-Mar-2021</i>
+> * Date: <i id="md-date">21-Jun-2021</i>
 > * Image: <i id="md-image">https://github.com/LazZiya/Docs/raw/master/XLocalizer/v1.0/images/xlocalizer-logo.png</i>
 > * Image-alt: <i id="md-image-alt">XLocalizer Logo</i>
 > * Version: <i id="md-version">v1.0</i>
@@ -20,23 +20,24 @@ By [Ziya Mollamahmut](https://github.com/LazZiya)
 
 Goodbye _"manually creating localization resources"_, welcome **XLocalizer**...! 
 
-#### What is XLocalizer
+### What is XLocalizer
 This is a nuget package that offers localization for Asp.Net Core based on _.resx_, _.xml_, _db_ or any other custom _file/db_ type. Powered by online translation and auto resource creating. XLocalizer has many powerful features and can be extended with custom tools. 
 
 **- Online Translation :** Auto translation of missed localized values.
-
 **- Auto Key Adding :** Auto adding missing keys to the resources files.
-
 **- Multiple Resource Type Support :** Built-in localization support based on _.RESX_, _.XML_, _DB_. Extendable localization support based on any custom file/db type.
-
 **- Export to Resx :** Resources from any source type can be exported to _.RESX_ files via built-in exporters.
-
 **- Do it Fast :** Custom cache support for speeding up the process of getting localized values from sources.
-
 **- Standard interfaces :** Easy to use due to using the standard localization interfaces: `IStringLocalizer`, `IHtmlLocalizer`, `IStringLocalizerFactory` and `IHtmlLocalizerFactory`.
 
+### How it Works
+`XLocalizer` will translate and save localized keys into automatically created resource files. Since `XLocalizer` modules are implementing the default localization interfaces _(`IStringLocalizer`, etc.)_ so any text passed into the localization services will be translated automatically and added into the relevant resource file/db. 
 
-#### Quick Setup
+Additionally, `XLocalizer` has built-in modules to localize all system error messages like _(DataAnnotations, ModelBinding and Identity errors)_ without any additional workload.
+
+![XLocalizer Simplified Workflow](https://github.com/LazZiya/Docs/raw/master/LazZiya.XLocalizer/v1.0/images/xlocalizer-flowchart.jpg)
+
+### Quick Setup
 ````csharp
 services.AddRazorPages()
     .AddXLocalizer<LocSource, GoogleTranslateService>(ops =>
@@ -44,6 +45,7 @@ services.AddRazorPages()
         ops.ResourcesPath = "LocalizationResources";
         ops.AutoTranslate = true;
         ops.AutoAddKeys = true;
+        ops.UseExpressMemoryCache = true;
         ops.TranslateFromCulture = "en";
     });
 ````
@@ -53,8 +55,10 @@ For more details see setup instructions based on project type:
  - [MVC/Razor Pages and DB Resource][3]
  - [MVC/Razor Pages and RESX Resource][4]
  - [Blazor and XML Resource][4]
+ - [Best Practices and Recommendations][6]
 
-#### Disclaimer Third Parties
+
+### Disclaimer Third Parties
 
 All product and company names of translation services are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them.
 
@@ -71,3 +75,4 @@ During the development of `XLocalizer` I've used many online translation service
 [3]:setup-db.md
 [4]:setup-resx.md
 [5]:setup-blazor.md
+[6]:best-practice.md
