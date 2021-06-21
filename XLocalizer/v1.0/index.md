@@ -23,12 +23,12 @@ Goodbye _"manually creating localization resources"_, welcome **XLocalizer**...!
 ### What is XLocalizer
 This is a nuget package that offers localization for Asp.Net Core based on _.resx_, _.xml_, _db_ or any other custom _file/db_ type. Powered by online translation and auto resource creating. XLocalizer has many powerful features and can be extended with custom tools. 
 
-**- Online Translation :** Auto translation of missed localized values.
-**- Auto Key Adding :** Auto adding missing keys to the resources files.
-**- Multiple Resource Type Support :** Built-in localization support based on _.RESX_, _.XML_, _DB_. Extendable localization support based on any custom file/db type.
-**- Export to Resx :** Resources from any source type can be exported to _.RESX_ files via built-in exporters.
-**- Do it Fast :** Custom cache support for speeding up the process of getting localized values from sources.
-**- Standard interfaces :** Easy to use due to using the standard localization interfaces: `IStringLocalizer`, `IHtmlLocalizer`, `IStringLocalizerFactory` and `IHtmlLocalizerFactory`.
+- Online Translation: Auto translation of missed localized values.
+- Auto Key Adding: Auto adding missing keys to the resources files.
+- Multiple Resource Type Support: Built-in localization support based on _.RESX_, _.XML_, _DB_. Extendable localization support based on any custom file/db type.
+- Export to Resx: Resources from any source type can be exported to _.RESX_ files via built-in exporters.
+- Do it Fast: Custom cache support for speeding up the process of getting localized values from sources.
+- Standard interfaces: Easy to use due to using the standard localization interfaces: `IStringLocalizer`, `IHtmlLocalizer`, `IStringLocalizerFactory` and `IHtmlLocalizerFactory`.
 
 ### How it Works
 `XLocalizer` will translate and save localized keys into automatically created resource files. Since `XLocalizer` modules are implementing the default localization interfaces _(`IStringLocalizer`, etc.)_ so any text passed into the localization services will be translated automatically and added into the relevant resource file/db. 
