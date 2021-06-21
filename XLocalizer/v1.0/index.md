@@ -35,7 +35,7 @@ This is a nuget package that offers localization for Asp.Net Core based on _.res
 
 Additionally, `XLocalizer` has built-in modules to localize all system error messages like _(DataAnnotations, ModelBinding and Identity errors)_ without any additional workload.
 
-![XLocalizer Simplified Workflow](https://github.com/LazZiya/Docs/raw/master/XLocalizer/v1.0/images/XLocalizer-Flowchart-Sample.jpg)
+![XLocalizer Simplified Workflow](https://github.com/LazZiya/Docs/raw/master/XLocalizer/v1.0/images/xlocalizer-flowchart-sample.jpg)
 
 ### Quick Setup
 ````csharp
