@@ -17,6 +17,17 @@
 # Working with Single or Multiple Resource Files
 `XLocalizer` can work with single or multiple resource files. In other words, all localized texts for each single culture can be placed in one resource file, or you can use multiple resource files for each culture to split the contents as required. Read below details to have full insights on how to work with single or multiple resource files.
 
+Simply calling `IStringLocalizer` will create one resource file, and it is the default one defined in startup `LocSource`. 
+````csharp
+IStringLocalizer // Will create the default resource file e.g. "LocSource.en.xml"
+````
+Calling `IStringLocalizer<T>` will create another resource file relevant to type `T`:
+````csharp
+IStringLocalizer<Foo> // Will create a new resource file of type "Foo" e.g. "Foo.en.xml"
+IStringLocalizer<IndexModel> // Will create a new resource file of type "IndexModel" e.g. "IndexModel.en.xml"
+...
+````
+
 ## Understading Resource Files
 When you work with [XML based resources][1], XLocalizer automatically creates `.xml` resource files for each culture automatically. The files will be created according to the setup in `startup.cs` file.
 
