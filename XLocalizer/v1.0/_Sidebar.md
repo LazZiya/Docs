@@ -37,6 +37,7 @@
 - [Using custom resource exporter][23]
 
 ##### Miscellaneous
+  - [Single or multiple resource files][29]
   - [Culture fallback behaviour][24]
   - [Language navigation][25]
   - [Client side validation][26]
@@ -70,3 +71,4 @@
 [26]:client-side-validation.md
 [27]:validating-localized-input.md
 [28]:translate-services-microsoft.md
+[29]:single-or-multiple-resource-files.md
