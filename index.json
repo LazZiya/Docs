@@ -20,7 +20,7 @@
     "description": "Image resizing tool for .Net applications. Supports jpg, png and animated gif. Easily add text/image watermarks and more.",
     "repoUrl": "https://github.com/LazZiya/ImageResize",
     "folder": "LazZiya.ImageResize",
-    "versions": [ "v4.0", "v3.0" ],
+    "versions": [ "v4.1", "v4.0", "v3.0" ],
     "image": "https://github.com/LazZiya/Docs/raw/master/LazZiya.ImageResize/v4.0/images/lazziya-imageresize-logo.png"
   },
   {
