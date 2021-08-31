@@ -25,6 +25,7 @@ XLocalizer has a handy extension pack; [XLocalizer.TagHelpers][3] for localizing
 - [Setup](#setup)
 - [Localize texts](#localize-texts)
 - [Localize HTML](#localize-html)
+- [Localize Select Items](#localize-select-items)
 - [Localize attributes](#localize-attributes)
 - [Specify culture](#specify-culture)
 - [Provide arguments for localized contents](#provide-arguments-for-localized-contents)
@@ -63,6 +64,14 @@ Use `<localize>` html tag or to localize all its contents
     <p>sample contents...</p>
 <localize>
 ````
+
+#### Localize Select Items
+Use `<localize-select>` html tag to localize select items texts.
+````html
+<localize-select asp-items="Model.MyItems"></localize-select>
+````
+
+> Requires `XLocalizer.TagHelpers v1.1.0` or later.
 
 #### Localize attributes
 Localize attributes like `title` inside `<img` tag using `localize-att-*`
