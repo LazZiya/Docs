@@ -41,7 +41,7 @@ You can have a look at the [`EFDbResourceProvider`][5], it has been built with E
 services.AddSingleton<IXDbResourceProvider, MyCustomDbProvider>();
 
 services.AddRazorPages()
-        .AddXDbLocalizer<ApplicatonDbContext>(...)
+        .AddXDbLocalizer<ApplicatonDbContext, GoogleTranslateService>(...)
 ````
 
 
