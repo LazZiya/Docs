@@ -33,7 +33,7 @@ The other option to localize views is using the built-in [`ISharedCultureLocaliz
 But when it comes to localize long strings with html tags this approach become unfriendly. That's why the recommended localization approach is using [`Localize TagHelper`][2].
 
 [1]:https://github.com/LazZiya/ExpressLocalization/blob/master/LazZiya.ExpressLocalization/ISharedCultureLocalizer.cs
-[2]:Localize-TagHelper.md
+[2]:https://demo.ziyad.info/en/localize
 
 ### Applies to ExpressLocalization versions:
  4.0
