@@ -6,7 +6,7 @@
 > * Keywords: <i id="md-keywords">asp.net-core, taghelpers, language, dropdown, localization</i>
 > * Description: <i id="md-description">Attributes of LanguageNav TagHelper.</i>
 > * Author: <i id="md-author">Ziya Mollamahmut</i>
-> * Date: <i id="md-date">08-Aug-2020</i>
+> * Date: <i id="md-date">27-Nov-2021</i>
 > * Image: <i id="md-image">https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v6.0/images/lazziya-tagheleprs-logo.png</i>
 > * Image-alt: <i id="md-image-alt">LazZiya.TagHelpers Logo</i>
 > * Version: <i id="md-version">v6.0</i>
@@ -26,7 +26,7 @@ By [Ziya Mollamahmut](https://github.com/LazZiya)
 | `language-label` | [`LanguageLabel`][1] | `LanguageLabel.EnglishName` | The displayed text for each language in the dropdown. Possible values: `Name`, `DisplayName`, `EnglishName`, `NativeName`, `TwoLetterISOLanguageName` |
 | `redirect-to-url` | `string` | `{0}` | The url to redirect to on language change. |
 | [`cookie-handler-url`][2] | `string` |  | The url to the handler that sets the value of culture cookie. |
-| `render-mode` | [`RenderMode`][3] | `RenderMode.Bootstrap` | Render a bootstrap dropdown or a classic `<select>` dropdown. Possible values: `Bootstrap`, `Classic`. |
+| `render-mode` | [`RenderMode`][3] | `RenderMode.Bootstrap` | Render a bootstrap dropdown or a classic `<select>` dropdown. Possible values: `Bootstrap`, `Bootstrap5`, `Classic`. |
 | `flags` | `bool` | `false` | Show/hide relevant country flags. Works with bootstrap mode only. |
 | `flags-squared` | `bool` | `false` | Show flags in squared format. |
 | <img width="350" /> | | | |

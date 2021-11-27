@@ -6,7 +6,7 @@
 > * Keywords: <i id="md-keywords">asp.net-core, taghelpers, alerts, backend</i>
 > * Description: <i id="md-description">Create bootstrap alerts from frontend with LazZiya.TagHelpers.</i>
 > * Author: <i id="md-author">Ziya Mollamahmut</i>
-> * Date: <i id="md-date">08-Aug-2020</i>
+> * Date: <i id="md-date">27-Nov-2021</i>
 > * Image: <i id="md-image">https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v6.0/images/lazziya-tagheleprs-logo.png</i>
 > * Image-alt: <i id="md-image-alt">LazZiya.TagHelpers Logo</i>
 > * Version: <i id="md-version">v6.0</i>

@@ -4,6 +4,7 @@
 
 - [Index][1]
 - [Release Notes](https://github.com/LazZiya/TagHelpers/releases)
+- [Migrating to v6.0][14]
 
 ##### Paging TagHelper
 - [Basic Setup][2]
@@ -38,3 +39,4 @@
 [11]:LanguageNav-TagHelper-Attributes.md
 [12]:LocalizationValidationScripts-TagHelper-Setup.md
 [13]:Paging-TagHelper-Styling.md
+[14]:Migrating-to-v6.md

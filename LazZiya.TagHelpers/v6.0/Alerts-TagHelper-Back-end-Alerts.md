@@ -6,7 +6,7 @@
 > * Keywords: <i id="md-keywords">asp.net-core, taghelpers, alerts, backend</i>
 > * Description: <i id="md-description">Create bootstrap alerts from backend with LazZiya.TagHelpers.</i>
 > * Author: <i id="md-author">Ziya Mollamahmut</i>
-> * Date: <i id="md-date">08-Aug-2020</i>
+> * Date: <i id="md-date">27-Nov-2021</i>
 > * Image: <i id="md-image">https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v6.0/images/lazziya-tagheleprs-logo.png</i>
 > * Image-alt: <i id="md-image-alt">LazZiya.TagHelpers Logo</i>
 > * Version: <i id="md-version">v6.0</i>
@@ -58,6 +58,27 @@ Below two alert are sent from the backend:
 TempData.Success("This is success alert message from c# backend!");
 TempData.Warning("This is a warning alert message", "Alert Header", false);
 ````
+
+### Slide alerts
+When sending multiple alerts from the backend, you can group them in a slider in the fromt end.
+````html
+<alert slide-alerts="true"></alert>
+````
+
+### Alert Icons
+Optional, show icons in the alerts
+````html
+<alert show-icons="true"></alert>
+````
+
+
+### Bootstrap5.x and .net6 support
+If you are using bootstrap5.0 or .net6.0 you can use `render-mode` to specify `Bootstrap5`
+````html
+<alert render-mode="Bootstrap5"></alert>
+````
+
+By default the icons source is `FontAwesome`, other sources: `Bootstrap` and `Bootstrap5`.
 
 ### All backend alerts
 ````cs

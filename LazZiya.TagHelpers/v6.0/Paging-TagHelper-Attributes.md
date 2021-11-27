@@ -6,7 +6,7 @@
 > * Keywords: <i id="md-keywords">asp.net-core, taghelpers, paging, control, pagination, attributes</i>
 > * Description: <i id="md-description">Attributes of PagingTagHelper for Asp.Net Core.</i>
 > * Author: <i id="md-author">Ziya Mollamahmut</i>
-> * Date: <i id="md-date">08-Aug-2020</i>
+> * Date: <i id="md-date">27-Nov-2021</i>
 > * Image: <i id="md-image">https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v6.0/images/lazziya-tagheleprs-logo.png</i>
 > * Image-alt: <i id="md-image-alt">LazZiya.TagHelpers Logo</i>
 > * Version: <i id="md-version">v6.0</i>
@@ -102,6 +102,7 @@ Attributes to set class names for the html parts of the paging controls.
 
 | Html attribute name | Json attribute | Value type | Default value | Description |
 |:---|:---|:---|:---|:---|
+| `render-mode` | [`RenderMode`][3] | `RenderMode.Bootstrap` | Render with bootstrap supporteded version., `Bootstrap`, `Bootstrap5`. |
 | `class` | yes | `string` | `row` | Class name of the main div |
 | `class-paging-control-div` | yes | `string` | `col` | Class name for the paging control div |
 | `class-info-div` | yes | `string` | `col-2` | Class name for the info div |
