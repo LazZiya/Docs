@@ -42,6 +42,11 @@ ops.UseExpressMemoryCache = false;
 - [Export from DB to RESX][8]
 10. Add a star to [XLocalizer in github][9] :) [![GitHub Stars](https://shields.io/github/stars/LazZiya/XLocalizer?label=Stars&style=social)](https://github.com/LazZiya/XLocalizer)
 
+# Recommendation for `XLocalizer.DB`:
+The default `DbContext` lifetime is `Scoped`, and `XLocalizer.DB` requires a `Transient` lifetime for the `DbContext`. So, it is better to keep localization `DbContext` separate than the application `DbContext`. In other words, use one db for `XLocalizer` services and another one for your application.
+
+For more details about multiple db 
+
 
 [1]:.
 [2]:setup-xml.md
