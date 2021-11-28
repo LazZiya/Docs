@@ -14,7 +14,7 @@
 </details>
 </div>
 
-# Best Practices To Get The Best From XLocalizer
+## Best Practices To Get The Best From XLocalizer
 Here are the recommended steps for developers to follow to achive the best performance and results from XLocalizer. However, depending on your setup and project you may follow different steps according to your requirements.
 
 1. Use [XML][2] or [DB][3] as resource provider.
@@ -42,10 +42,10 @@ ops.UseExpressMemoryCache = false;
 - [Export from DB to RESX][8]
 10. Add a star to [XLocalizer in github][9] :) [![GitHub Stars](https://shields.io/github/stars/LazZiya/XLocalizer?label=Stars&style=social)](https://github.com/LazZiya/XLocalizer)
 
-# Recommendation for `XLocalizer.DB`:
+## Recommendation for `XLocalizer.DB`:
 The default `DbContext` lifetime is `Scoped`, and `XLocalizer.DB` requires a `Transient` lifetime for the `DbContext`. So, it is better to keep localization `DbContext` separate than the application `DbContext`. In other words, use one db for `XLocalizer` services and another one for your application.
 
-For more details about multiple db 
+For more details see [How to use multiple DbContexts in Asp.Net Core App][10].
 
 
 [1]:.
@@ -57,3 +57,4 @@ For more details about multiple db
 [7]:export-xml-to-resx.md
 [8]:export-db-to-resx.md
 [9]:https://github.com/LazZiya/XLocalizer
+[10]:../../Miscellaneous/v1.0/multiple-dbcontexts.md
