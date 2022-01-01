@@ -6,7 +6,7 @@
 > * Keywords: <i id="md-keywords">localization, asp.net-core, xlocalizer, culture,fallback,behavior</i>
 > * Description: <i id="md-description">Learn how the app chooses the culture in a localized Asp.Net Core web app.</i>
 > * Author: <i id="md-author">Ziya Mollamahmut</i>
-> * Date: <i id="md-date">14-Apr-2021</i>
+> * Date: <i id="md-date">01-Jan-2022</i>
 > * Image: <i id="md-image">https://github.com/LazZiya/Docs/raw/master/XLocalizer/v1.0/images/xlocalizer-logo.png</i>
 > * Image-alt: <i id="md-image-alt">XLocalizer Logo</i>
 > * Version: <i id="md-version">v1.0</i>
@@ -52,8 +52,8 @@ services.Configure<RequestLocalizationOption>(ops =>
 ````
 
 
-[1]: https://github.com/LazZiya/Docs/raw/master/LazZiya.XLocalizer/v1.0/images/culture-cookie-localization.jpg
-[2]: https://github.com/LazZiya/Docs/raw/master/LazZiya.XLocalizer/v1.0/images/culture-browser-accepted-headers.jpg
+[1]: https://github.com/LazZiya/Docs/raw/master/XLocalizer/v1.0/images/culture-cookie-localization.png
+[2]: https://github.com/LazZiya/Docs/raw/master/XLocalizer/v1.0/images/culture-browser-accepted-headers.png
 [6]: https://github.com/LazZiya/XLocalizer/blob/master/XLocalizer/Routing/RouteSegmentRequestCultureProvider.cs
 [7]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.localization.querystringrequestcultureprovider
 [3]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.localization.cookierequestcultureprovider
