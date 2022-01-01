@@ -6,7 +6,7 @@
 > * Keywords: <i id="md-keywords">localization, asp.net-core, db</i>
 > * Description: <i id="md-description">Learn how to use database as source for localization with XLocalizer.DB in Asp.Net Core.</i>
 > * Author: <i id="md-author">Ziya Mollamahmut</i>
-> * Date: <i id="md-date">31-Mar-2021</i>
+> * Date: <i id="md-date">01-Jan-2022</i>
 > * Image: <i id="md-image">https://github.com/LazZiya/Docs/raw/master/XLocalizer/v1.0/images/xlocalizer-logo.png</i>
 > * Image-alt: <i id="md-image-alt">XLocalizer Logo</i>
 > * Version: <i id="md-version">v1.0</i>
@@ -80,6 +80,8 @@ Or if you are using MVC use;
 services.AddMvc()
         .AddMvcOptions(ops => { ops.Conventions.Insert(0, new RouteTemplateModelConventionMvc()); });
 ````
+
+> See [MVC Routing][5] for more details.
 
 - Add DB localization setup:
 ````csharp

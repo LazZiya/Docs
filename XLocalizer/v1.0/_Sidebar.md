@@ -39,6 +39,7 @@
 ##### Miscellaneous
   - [Single or multiple resource files][29]
   - [Culture fallback behaviour][24]
+  - [MVC Routing Options][30]
   - [Language navigation][25]
   - [Client side validation][26]
   - [Validating localized input][27]
@@ -72,3 +73,4 @@
 [27]:validating-localized-input.md
 [28]:translate-services-microsoft.md
 [29]:single-or-multiple-resource-files.md
+[30]:routing-mvc.md

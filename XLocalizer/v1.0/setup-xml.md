@@ -6,7 +6,7 @@
 > * Keywords: <i id="md-keywords">localization, asp.net-core, xml, resource, files</i>
 > * Description: <i id="md-description">Localization setup of Asp.Net Core based on XML resource files with XLocalizer.</i>
 > * Author: <i id="md-author">Ziya Mollamahmut</i>
-> * Date: <i id="md-date">31-Mar-2021</i>
+> * Date: <i id="md-date">01-Jan-2022</i>
 > * Image: <i id="md-image">https://github.com/LazZiya/Docs/raw/master/XLocalizer/v1.0/images/xlocalizer-logo.png</i>
 > * Image-alt: <i id="md-image-alt">XLocalizer Logo</i>
 > * Version: <i id="md-version">v1.0</i>
@@ -107,7 +107,9 @@ services.AddMvc()
         .AddMvcOptions(ops => { ops.Conventions.Insert(0, new RouteTemplateModelConventionMvc()); });
 ````
 
-and make sure that all controllers and actions have `[Route("...")]` attribute.
+and make sure that all controllers and actions have `[Route("...")]` attribute. 
+
+> See [MVC Routing][5] for more details.
 
 - Add `XLocalizer` setup and enable `AutoAddKeys` and `AutoTranslate` options:
 ````csharp
@@ -247,3 +249,4 @@ namespace XmlLocalizationSample
 [2]:localizing-views.md
 [3]:https://github.com/LazZiya/XLocalizer.Samples/tree/master/XmlLocalizationSample
 [4]:translate-services-mymemory.md
+[5]:routing-mvc.md
