@@ -6,7 +6,7 @@
 > * Keywords: <i id="md-keywords">asp.net-core, taghelpers, paging, control, pagination, attributes</i>
 > * Description: <i id="md-description">Attributes of PagingTagHelper for Asp.Net Core.</i>
 > * Author: <i id="md-author">Ziya Mollamahmut</i>
-> * Date: <i id="md-date">27-Nov-2021</i>
+> * Date: <i id="md-date">04-May-2022</i>
 > * Image: <i id="md-image">https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v6.0/images/lazziya-tagheleprs-logo.png</i>
 > * Image-alt: <i id="md-image-alt">LazZiya.TagHelpers Logo</i>
 > * Version: <i id="md-version">v6.0</i>
@@ -55,7 +55,8 @@ Attributes to set the query string key names for page number and page size param
 |:---|:---|:---|:---|:---|
 | `query-string-key-page-no` | yes | `string` | `P` | Query string key name of page number |
 | `query-string-key-page-size` | yes | `string` | `S` | Query string key name of page size |
-| `fix-url-path` | yes | `bool` | true | Force adding page path to the url |
+| `fix-url-path` | yes | `bool` | `true` | Force adding page path to the url |
+| `url-template` | no | `string` | `?p={0}&s={1}` | Define custom url template for paging buttons. If this value is not set, the default template will be applied including all query string parameters defined in the page route. IMPORTANT: When setting this value manually, you need to include two place holdres for page no and page size, and make sure you include all other query string parameters manually to the template! |
 |<img width="250"/>|<img width="50"/>|<img width="50"/>|<img width="50"/>| [Goto top](#quick-navigation) |
 
 #### Display attributes

@@ -36,5 +36,19 @@ Output:
 PagingTagHelper can be customized using [`html`][1] or [`json`][2] attributes:
 ![PagingTagHelper - customization](https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v6.0/images/paging-tag-helper-samples.PNG)
 
+### Using custom URL tempalte
+If you want to customize the URL for paging links, replace the value of `url-template` of any custom string value that contains two place holders, `{0}` for page no, and `{1}` for page size.
+
+````html
+<!-- custom url template -->
+<!-- this will create a paging link as "/1-10" -->
+<!-- (page-no, page-size) -->
+<paging total-records="Model.TotalRecords" 
+        page-no="Model.PageNo" 
+        page-size="Model.PageSize" 
+        url-template="{0}-{1}">
+</paging>
+````
+
 [1]:Paging-TagHelper-Attributes.md
 [2]:Paging-TagHelper-Json-Settings.md
