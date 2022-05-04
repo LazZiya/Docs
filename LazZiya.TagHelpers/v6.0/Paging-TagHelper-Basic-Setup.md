@@ -50,5 +50,9 @@ If you want to customize the URL for paging links, replace the value of `url-tem
 </paging>
 ````
 
+If `url-template` value is not set, the default template will be applied including all query string parameters defined in the page route. 
+
+> IMPORTANT: When setting this value manually, you need to include two place holdres for page no and page size, and make sure you include all other query string parameters if any manually to the template!
+
 [1]:Paging-TagHelper-Attributes.md
 [2]:Paging-TagHelper-Json-Settings.md
