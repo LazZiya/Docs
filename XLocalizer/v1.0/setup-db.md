@@ -209,9 +209,9 @@ This package provides a ready made user panel to manage XLocalizer DB resources.
 <a asp-area="XLocalizer" asp-page="/Resources/Index" localize-content>DB Resources</a>
 ````
 
-![XLocalizer DB UI - Cultures Editor](https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v6.0/images/xlocalizer-db-ui-cultures.png)
+![XLocalizer DB UI - Cultures Editor](https://github.com/LazZiya/Docs/raw/master/XLocalizer/v1.0/images/xlocalizer-db-ui-cultures.png)
 
-![XLocalizer DB UI - Resources Editor](https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v6.0/images/xlocalizer-db-ui-resources.png)
+![XLocalizer DB UI - Resources Editor](https://github.com/LazZiya/Docs/raw/master/XLocalizer/v1.0/images/xlocalizer-db-ui-resources.png)
 
 
 ##### Bootstrap 5.x
