@@ -6,7 +6,7 @@
 > * Keywords: <i id="md-keywords">localization, asp.net-core, db</i>
 > * Description: <i id="md-description">Learn how to use database as source for localization with XLocalizer.DB in Asp.Net Core.</i>
 > * Author: <i id="md-author">Ziya Mollamahmut</i>
-> * Date: <i id="md-date">01-Jan-2022</i>
+> * Date: <i id="md-date">23-Jul-2022</i>
 > * Image: <i id="md-image">https://github.com/LazZiya/Docs/raw/master/XLocalizer/v1.0/images/xlocalizer-logo.png</i>
 > * Image-alt: <i id="md-image-alt">XLocalizer Logo</i>
 > * Version: <i id="md-version">v1.0</i>
@@ -27,6 +27,7 @@ This pacakge adds database support for `XLocalizer`.
 - [Caching](#caching)
 - [Localization stores setup](#localization-stores-setup)
 - [ApplicationDbContext Lifetime](#applicationdbcontext-lifetime)
+- [XLocalizer DB UI](#xlocalizer-db-ui)
 - [Full startup code for DB setup](#full-startup-code-for-db-setup)
 - [Sample project](#sample-project)
 - [Next: Localizing Views][4]
@@ -37,9 +38,12 @@ Install nuget package:
 PM > Install-Package XLocalizer
 PM > Install-Package XLocalizer.DB
 PM > Install-Package XLocalizer.Translate.MymemoryTranslate
+
+// Optional:
+PM > Install-Package XLocalizer.DB.UI
 ````
 
-> Notice: To install the latest preview add `-Pre` to the command line
+> Notice: `XLocalizer.DB.UI` provides an interface to manage DB localization resources and cultures
 
 #### Startup settings
 
@@ -192,6 +196,31 @@ Finally, create a migration and update the database:
 ````
 PM > add-migration XLocalizerStores
 PM > update-database
+````
+
+#### XLocalizer DB UI
+This package provides a ready made user panel to manage XLocalizer DB resources. After installing the package simply use below links to access the management panel.
+
+##### Bootstrap 4.x
+```` HTML
+<!-- /XLocalizer/Cultures/Index -->
+<a asp-area="XLocalizer" asp-page="/Cultures/Index" localize-content>DB Cultures</a>
+
+<a asp-area="XLocalizer" asp-page="/Resources/Index" localize-content>DB Resources</a>
+````
+
+![XLocalizer DB UI - Cultures Editor](https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v6.0/images/xlocalizer-db-ui-cultures.png)
+
+![XLocalizer DB UI - Resources Editor](https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v6.0/images/xlocalizer-db-ui-resources.png)
+
+
+##### Bootstrap 5.x
+```` HTML
+<!-- /XLocalizerBS5/Cultures/Index -->
+<a asp-area="XLocalizerBS5" asp-page="/Cultures/Index" localize-content>DB Cultures</a>
+
+<!-- /XLocalizerBS5/Resources/Index -->
+<a asp-area="XLocalizerBS5" asp-page="/Resources/Index" localize-content>DB Resources</a>
 ````
 
 #### Full startup code for DB setup
