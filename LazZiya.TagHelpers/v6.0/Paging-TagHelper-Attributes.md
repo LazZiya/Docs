@@ -103,7 +103,7 @@ Attributes to set class names for the html parts of the paging controls.
 
 | Html attribute name | Json attribute | Value type | Default value | Description |
 |:---|:---|:---|:---|:---|
-| `render-mode` | [`RenderMode`][3] | `RenderMode.Bootstrap` | Render with bootstrap supporteded version., `Bootstrap`, `Bootstrap5`. |
+| `render-mode` | - | `RenderMode.Bootstrap` | Render with bootstrap supporteded version., `Bootstrap`, `Bootstrap5`. |
 | `class` | yes | `string` | `row` | Class name of the main div |
 | `class-paging-control-div` | yes | `string` | `col` | Class name for the paging control div |
 | `class-info-div` | yes | `string` | `col-2` | Class name for the info div |
