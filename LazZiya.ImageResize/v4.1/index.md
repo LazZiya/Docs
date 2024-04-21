@@ -56,8 +56,10 @@ using(var img = Image.FromFile("wwwroot/images/image-file.jpg"))
 ````
 
 ## Supported OS
-- Windows
-- Linux
+`LazZiya.ImageResize` depends on `System.Drawing.Common`, so OS compatibility with the latter may affect the project compatibility.
+
+- Windows: all .net versions.
+- Linux: all .net versions prior to .net6 (see [breaking change announcement](https://learn.microsoft.com/en-us/dotnet/core/compatibility/core-libraries/6.0/system-drawing-common-windows-only))
 
 ### Notice for Linux Users
 This package depends on `System.Drawing.Common` which is a cross platform GDI+ graphic processing package, and in order for it to work on linux/ubuntu systems install below libraries:
