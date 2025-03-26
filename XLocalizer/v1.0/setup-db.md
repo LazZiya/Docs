@@ -31,6 +31,7 @@ This pacakge adds database support for `XLocalizer`.
 - [Full startup code for DB setup](#full-startup-code-for-db-setup)
 - [Sample project](#sample-project)
 - [Next: Localizing Views][4]
+- ##### [Recommended to read: Fixing concurrency issue][7]
 
 #### Install
 Install nuget package:
@@ -343,3 +344,4 @@ namespace DbLocalizationSample
 [4]:localizing-views.md
 [5]:https://github.com/LazZiya/XLocalizer.Samples/tree/master/DbLocalizationSample
 [6]:translate-services-mymemory.md
+[7]:setup-db-factory-pattern.md
