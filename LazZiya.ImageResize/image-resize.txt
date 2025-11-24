@@ -1,0 +1,11 @@
+https://docs.ziya.info.tr/en/LazZiya.ImageResize/v4.1/index.md
+https://docs.ziya.info.tr/en/LazZiya.ImageResize/v4.1/image-resizing-methods.md
+https://docs.ziya.info.tr/en/LazZiya.ImageResize/v4.1/image-watermark.md
+https://docs.ziya.info.tr/en/LazZiya.ImageResize/v4.1/text-watermark.md
+https://docs.ziya.info.tr/en/LazZiya.ImageResize/v4.1/animated-image.md
+https://docs.ziya.info.tr/en/LazZiya.ImageResize/v4.1/animated-text-watermark.md
+https://docs.ziya.info.tr/en/LazZiya.ImageResize/v4.1/animated-image-watermark.md
+https://docs.ziya.info.tr/en/LazZiya.ImageResize/v4.1/conditional-methods.md
+https://docs.ziya.info.tr/en/LazZiya.ImageResize/v4.1/image-frame.md
+https://docs.ziya.info.tr/en/LazZiya.ImageResize/v4.1/image-mask.md
+https://docs.ziya.info.tr/en/LazZiya.ImageResize/v4.1/image-rotate-flip.md
