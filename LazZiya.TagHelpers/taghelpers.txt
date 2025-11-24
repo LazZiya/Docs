@@ -1,0 +1,14 @@
+https://docs.ziya.info.tr/en/LazZiya.TagHelpers/v6.0/index.md
+https://docs.ziya.info.tr/en/LazZiya.TagHelpers/v6.0/Paging-TagHelper-Basic-Setup.md
+https://docs.ziya.info.tr/en/LazZiya.TagHelpers/v6.0/Paging-TagHelper-Attributes.md
+https://docs.ziya.info.tr/en/LazZiya.TagHelpers/v6.0/Paging-TagHelper-Json-Settings.md
+https://docs.ziya.info.tr/en/LazZiya.TagHelpers/v6.0/Paging-TagHelper-Ajax-Support.md
+https://docs.ziya.info.tr/en/LazZiya.TagHelpers/v6.0/Paging-TagHelper-Number-Formats.md
+https://docs.ziya.info.tr/en/LazZiya.TagHelpers/v6.0/Alert-TagHelper-Overview.md
+https://docs.ziya.info.tr/en/LazZiya.TagHelpers/v6.0/Alerts-TagHelper-Front-end-Alerts.md
+https://docs.ziya.info.tr/en/LazZiya.TagHelpers/v6.0/Alerts-TagHelper-Back-end-Alerts.md
+https://docs.ziya.info.tr/en/LazZiya.TagHelpers/v6.0/LanguageNav-TagHelper-Setup.md
+https://docs.ziya.info.tr/en/LazZiya.TagHelpers/v6.0/LanguageNav-TagHelper-Attributes.md
+https://docs.ziya.info.tr/en/LazZiya.TagHelpers/v6.0/LocalizationValidationScripts-TagHelper-Setup.md
+https://docs.ziya.info.tr/en/LazZiya.TagHelpers/v6.0/Paging-TagHelper-Styling.md
+https://docs.ziya.info.tr/en/LazZiya.TagHelpers/v6.0/Migrating-to-v6.md
