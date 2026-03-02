@@ -70,7 +70,7 @@ sudo apt install libgdiplus
 ````
 
 ### Live demos (not covering v4.0 yet):
-http://demo.ziyad.info/en/
+http://demo.ziya.info.tr/en/
 
 ### Disclaimer :
 Parts of the animated gif support depends on a customized version of the code provided by [gOODiDEA.NET](https://www.codeproject.com/Articles/11505/NGif-Animated-GIF-Encoder-for-NET) in CodeProject.com.
