@@ -78,7 +78,7 @@ Add all client side scripts that are required for validating localized inputs li
 [![Localization number es](https://github.com/LazZiya/Docs/raw/master/LazZiya.TagHelpers/v6.0/images/localization-validiation-scripts-number-es.PNG)][4]
 
 ## Live demos:
-http://demo.ziyad.info/en/
+http://demo.ziya.info.tr/en/
 
 [1]:Paging-TagHelper-Basic-Setup.md
 [2]:Alerts-TagHelper-Front-end-Alerts.md
