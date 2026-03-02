@@ -47,7 +47,7 @@ _ExpressLocalization_ does all below localization settings easily:
 Some options requires installing additional nuget packages like : 
 - [LazZiya.TagHelpers][5]
 
-[0]:https://docs.ziyad.info/en/XLocalizer/v1.0/index.md
+[0]:https://docs.ziya.info.tr/en/XLocalizer/v1.0/index.md
 [1]:https://github.com/LazZiya/ExpressLocalization/blob/master/LazZiya.ExpressLocalization/RouteSegmentCultureProvider.cs
 [3]:https://github.com/LazZiya/ExpressLocalization/blob/master/LazZiya.ExpressLocalization/SharedCultureLocalizer.cs
 [5]:index.md
